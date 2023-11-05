@@ -1,0 +1,514 @@
+ /*Reset CSS*/
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+ body {
+     line-height: 1;
+ }
+ ol, ul {
+     list-style: none;
+ }
+ blockquote, q {
+     quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ /***WRAPPER***/
+
+
+ .wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.center {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/************HEADER*************/
+
+.container-navigation header {
+    background-color: #030823;
+  position: fixed;
+}
+
+.container-navigation header img {
+    width: 80px;
+    height: 80px;
+    padding: 8px 31px 8px 70px;
+}
+
+.container-navigation .emblem {   /*!!!!!!!*/
+    display: flex;
+    float: left;
+}
+
+.container-navigation .emblem .language select {
+    background-color: transparent;
+    font-family: Manrope;
+    color: #F4F6FF;
+    border: 0;
+    font-size: 18px;
+    margin-top: 34px;
+    margin-right: 150px;
+    width: 37px;
+    appearance: none; 
+    overflow: hidden;
+    border: 0;
+    background: url('../images/rectangle.svg');
+    background-repeat: no-repeat;
+    background-position: 27px;
+    outline: none;
+    -moz-appearance: none;
+-webkit-appearance: none;
+}
+
+.container-navigation .emblem .language select option {
+    background-color: #030823;
+}
+
+
+
+.container-navigation header .menu ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+   
+}
+
+.container-navigation header .menu ul li a {
+    color: #F4F6FF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.container-navigation header .menu ul li a:hover{
+    text-decoration: underline;
+}
+
+.container-navigation header .menu .tour a{
+    color: #030823;
+    display: block;
+    padding: 8px 35px;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 19px;
+    font-weight: 400;
+    background-color: #F4F6FF;
+    border-radius: 7px;
+    transition: 1s;
+    box-sizing: border-box;
+    margin-left: 97px;
+}
+
+.container-navigation header .menu .tour a:hover {
+    color:#F4F6FF;
+    background-color: #162161;
+    text-decoration: none;
+}
+
+
+
+/*CARUSEL*/
+
+.container-carusel .background-image {
+    background-image: url(../images/111.jpg);
+    width: 100%; 
+    height: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-carusel .background-image .background-color {
+    background-color: rgba(3, 8, 35, 0.71); 
+    width: 100%; 
+    height: 100%; 
+    background-size: cover;
+    
+}
+
+
+
+.container-carusel .background-image .background-color h1 {
+    color: #F4F6FF;
+    font-family: Oswald;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.62px;
+    width: 635px;
+    padding-top: 519px;
+    padding-left: 70px;
+}
+
+.container-carusel .background-image .background-color p{
+    color:  #F4F6FF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 116.667%;
+    letter-spacing: -0.18px;
+    width: 524px;
+    text-align: left;
+    margin-top: 15px;
+    padding-left: 183px;
+    text-align: start;
+}
+
+.container-carusel .background-image .background-color img {
+    width: 66px;
+    margin-top: 60px;
+    margin-left: 688px;
+    margin-bottom: 69px;
+    cursor: pointer;
+}
+
+/*LOCATIONS*/
+
+.container-locations {
+    background-color: #F4F6FF;
+}
+
+.container-locations .info {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 55px;
+    gap: 242px;
+}
+
+.container-locations .info h2 a{
+    text-decoration: none;
+    color:#030823;
+    font-family: Oswald;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.5px;
+}
+
+.container-locations .info h2 a:hover{
+    text-decoration: underline;
+}
+
+.container-locations .locations {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 413px 413px 413px;
+    column-gap: 31px;
+}
+
+.container-locations .locations .card {
+box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+text-align: left;
+margin-bottom: 31px;
+
+
+}
+
+.container-locations .locations .card img {
+    width: 373px;
+    height: 250px;
+    padding: 20px 20px 15px 20px;
+}
+
+.container-locations .locations .card h5 {
+    color: #030823;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.3px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.container-locations .locations .card p {
+    color:#030823;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 116.667%;
+    letter-spacing: -0.18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.container-locations .locations .card details summary {
+    color:  #5D5E8C;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 40px 151px;
+    cursor: pointer;
+    display: block;
+    cursor: pointer;
+}
+
+.container-locations .locations .card details summary:hover {
+    text-decoration: underline;
+}
+
+.container-locations .show-all .all-locations{
+    color: #030823;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.222%;
+    width: 267px;
+    height: 52px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: block;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    justify-content: center;
+    margin-left: 587px;
+    transition: 1s;
+    padding: 14px 35px;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+
+/***CONTAINER ABOUT***/
+
+.container-about {
+    background-color: #F4F6FF;
+}
+
+.container-about h2 {
+    color: #030823;
+    font-family: Oswald;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 100.6%; 
+    letter-spacing: 0.62px;
+    padding-left: 70px;
+    padding-bottom: 42px;
+}
+
+.container-about .center p,
+.container-about .center ul {
+    color: #030823;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height:  137%;
+    letter-spacing: normal;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.container-about .center ul {
+    list-style-type: disc;
+    margin-left: 70px;
+    text-indent: 5px;
+}
+
+
+
+
+
+/***CONTAINER MAP***/
+
+.container-map{
+    background-color:  #F4F6FF;
+}
+
+.container-map h2 {
+    color:#030823;
+    font-family: Oswald;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.62px;
+    padding-left: 70px;
+    padding-top: 126px;
+}
+
+.container-map .content .map {
+    display: inline-block;
+    margin-left: 181px;
+    margin-top: 55px;
+    margin-bottom: 225px;
+    box-shadow: 4px 2px 24px 2px rgba(34, 60, 80, 0.2);
+    height: 430px;
+}
+
+.container-map .content {
+    display: flex;
+    gap: 181px;
+}
+
+.container-map .content .info h5 {
+    color: #030823;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.3px;
+    padding-bottom: 20px;
+}
+
+.container-map .content .info ul {
+color: #030823;
+font-family: Manrope;
+font-size: 20px;
+font-weight: 300;
+letter-spacing: 0px;
+cursor: pointer;
+}
+
+.container-map .content .info ul li {
+    margin-bottom: 10px;
+}
+
+.container-map .content .info ul li strong {
+    font-weight: 600;
+    text-decoration: underline;
+    display: block;
+    padding-bottom: 6px;
+}
+
+
+.container-map .content .info ul li details hr {
+    color: wheat;
+}
+
+
+
+
+
+
+/***CONTAINER FOOTER***/
+
+.container-footer {
+    background-color: #030823;
+}
+
+.container-footer footer .ucp a p {
+    color:  #9A9BD0;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 8px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.container-footer footer .ucp a{
+    display: flex;
+    text-decoration: none;
+}
+
+.container-footer footer .ucp a .emblem {
+    width: 148px;
+    height: 148px;
+    display: block;
+}
+
+.container-footer footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 270px 336px 296px 350px 100px;
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.container-footer footer .contacts,
+.container-footer footer .menu,
+.container-footer footer .payments {
+    padding-top: 250px;
+}
+
+.container-footer footer .contacts h6,
+.container-footer footer .menu h6,
+.container-footer footer .payments h6 {
+    color:  #9A9BD0;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.container-footer footer .contacts ul li a,
+.container-footer footer .menu ul li a {
+    color:  #F4F6FF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.container-footer footer .payments ul {
+    display: flex;
+    gap: 17px;
+}
+
+
+
+.container-footer footer .arrow {
+    height: 64px;
+    padding-top: 59px;
+}
+
+
+.container-footer .ucp-bottom {
+    color:  #F4F6FF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 18px;
+}

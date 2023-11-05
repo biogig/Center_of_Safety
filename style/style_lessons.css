@@ -1,0 +1,407 @@
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***WRAPPER***/
+
+
+.wrapper {
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto; 
+}
+
+.center {
+   max-width: 1440px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+
+/************HEADER*************/
+
+.container-navigation header {
+   background-color: #030823;
+ /*position: fixed; */
+}
+
+.container-navigation header img {
+   width: 80px;
+   height: 80px;
+   padding: 8px 31px 8px 70px;
+}
+
+.container-navigation .emblem {   /*!!!!!!!*/
+   display: flex;
+   float: left;
+}
+
+.container-navigation .emblem .language select {
+   background-color: transparent;
+   font-family: Manrope;
+   color: #F4F6FF;
+   border: 0;
+   font-size: 18px;
+   margin-top: 34px;
+   margin-right: 150px;
+   width: 37px;
+   appearance: none; 
+   overflow: hidden;
+   border: 0;
+   background: url('../images/rectangle.svg');
+   background-repeat: no-repeat;
+   background-position: 27px;
+}
+
+.container-navigation .emblem .language select option {
+   background-color: #030823;
+}
+
+
+
+.container-navigation header .menu ul {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   padding-top: 26px;
+   padding-bottom: 26px;
+  
+}
+
+.container-navigation header .menu ul li a {
+   color: #F4F6FF;
+   font-family: Manrope;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: normal;
+   text-decoration: none;
+}
+
+.container-navigation header .menu ul li a:hover{
+   text-decoration: underline;
+}
+
+.container-navigation header .menu .tour a{
+   color: #030823;
+   display: block;
+   padding: 8px 35px;
+   text-align: center;
+   font-family: Manrope;
+   font-size: 19px;
+   font-weight: 400;
+   background-color: #F4F6FF;
+   border-radius: 7px;
+   transition: 1s;
+   box-sizing: border-box;
+   margin-left: 97px;
+}
+
+.container-navigation header .menu .tour a:hover {
+   color:#F4F6FF;
+   background-color: #162161;
+   text-decoration: none;
+}
+
+
+
+
+/***CONTAINER INFO***/
+
+.container-info {
+    background-color:  #F4F6FF;
+}
+
+ .container-info h1 {
+    padding-left: 70px;
+    color: #030823;
+    font-family: Oswald;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.62px;
+    padding-top: 70px;
+ }
+
+ .container-info .month h2 {
+color: #5D5E8C;
+font-family: Manrope;
+font-size: 35px;
+font-weight: 800;
+ }
+
+ .container-info .month img {
+    width: 47px;
+    height: 47px;
+ }
+
+ .container-info .month {
+    display: flex;
+    gap: 29px;
+    padding-left: 181px;
+    padding-top: 55px;
+    padding-bottom: 15px;
+ }
+
+ .container-info .month-slider {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 70px ;
+}
+
+.container-info .month-slider a img {
+    width: 35px;
+    height: 35px;
+}
+
+.container-info .lessons-table table tr,
+.container-info .lessons-table table td,
+.container-info .lessons-table table th {
+    border: 1px solid;
+    width: 218px;
+}
+
+
+
+.container-info .lessons-table table {
+    padding-bottom: 70px;
+    display: block;
+   
+}
+
+.container-info .lessons-table table tr th div{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+}
+
+.container-info .lessons-table table tr th div .date,
+.container-info .lessons-table table tr th div .day{
+    color:  #030823;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.container-info .lessons-table table tr th{
+    height: 44px;
+    padding-top: 9px;
+}
+
+.container-info hr {
+    background-color: black;
+    height: 1px;
+    border: 0;
+}
+
+.container-info .lessons-table table tr td ul .time {
+    color: #030823;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 20px;
+} 
+
+.container-info .lessons-table table tr td ul .time::before{
+    content: '●';
+    color: green;
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    border: 1;
+}
+
+.container-info .lessons-table table tr td ul .age {
+    color:  #030823;
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.container-info .lessons-table table tr td ul .theme {
+    color: #030823;
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 115.6%; 
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.container-info .lessons-table table tr td ul .place-left,
+.container-info .lessons-table table tr td ul .price {
+    color:  #5D5E8C;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.container-info .lessons-table table tr td ul .place-left span,
+.container-info .lessons-table table tr td ul .price span {
+    color: #030823;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.container-info .lessons-table table tr td button {
+    color: #030823;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 196px;
+    height: 32px;
+    margin: 16px 10px;
+    background-color: #F4F6FF;
+    border: 1px solid black;
+    border-radius: 6px;
+   
+}
+
+.container-info .lessons-table table tr .no-lessons{
+    color: #5D5E8C;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+}
+ 
+
+
+
+/***CONTAINER FOOTER***/
+
+.container-footer {
+    background-color: #030823;
+}
+
+.container-footer footer .ucp a p {
+    color:  #9A9BD0;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 8px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.container-footer footer .ucp a{
+    display: flex;
+    text-decoration: none;
+}
+
+.container-footer footer .ucp a .emblem {
+    width: 148px;
+    height: 148px;
+    display: block;
+}
+
+.container-footer footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 270px 336px 296px 350px 100px;
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.container-footer footer .contacts,
+.container-footer footer .menu,
+.container-footer footer .payments {
+    padding-top: 250px;
+}
+
+.container-footer footer .contacts h6,
+.container-footer footer .menu h6,
+.container-footer footer .payments h6 {
+    color:  #9A9BD0;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.container-footer footer .contacts ul li a,
+.container-footer footer .menu ul li a {
+    color:  #F4F6FF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.container-footer footer .payments ul {
+    display: flex;
+    gap: 17px;
+}
+
+.container-footer footer .arrow {
+    height: 64px;
+    padding-top: 59px;
+}
+
+
+.container-footer .ucp-bottom {
+    color:  #F4F6FF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 18px;
+}

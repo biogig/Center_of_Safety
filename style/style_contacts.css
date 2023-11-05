@@ -1,0 +1,391 @@
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***WRAPPER***/
+
+
+.wrapper {
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto; 
+}
+
+.center {
+   max-width: 1440px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+
+/************HEADER*************/
+
+.container-navigation header {
+   background-color: #030823;
+ position: fixed;
+}
+
+.container-navigation header img {
+   width: 80px;
+   height: 80px;
+   padding: 8px 31px 8px 70px;
+}
+
+.container-navigation .emblem {   /*!!!!!!!*/
+   display: flex;
+   float: left;
+}
+
+.container-navigation .emblem .language select {
+   background-color: transparent;
+   font-family: Manrope;
+   color: #F4F6FF;
+   border: 0;
+   font-size: 18px;
+   margin-top: 34px;
+   margin-right: 150px;
+   width: 37px;
+   appearance: none; 
+   overflow: hidden;
+   border: 0;
+   background: url('../images/rectangle.svg');
+   background-repeat: no-repeat;
+   background-position: 27px;
+   outline: none;
+   -moz-appearance: none;
+-webkit-appearance: none;
+}
+
+.container-navigation .emblem .language select option {
+   background-color: #030823;
+}
+
+
+
+.container-navigation header .menu ul {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   padding-top: 26px;
+   padding-bottom: 26px;
+  
+}
+
+.container-navigation header .menu ul li a {
+   color: #F4F6FF;
+   font-family: Manrope;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: normal;
+   text-decoration: none;
+}
+
+.container-navigation header .menu ul li a:hover{
+   text-decoration: underline;
+}
+
+.container-navigation header .menu .tour a{
+   color: #030823;
+   display: block;
+   padding: 8px 35px;
+   text-align: center;
+   font-family: Manrope;
+   font-size: 19px;
+   font-weight: 400;
+   background-color: #F4F6FF;
+   border-radius: 7px;
+   transition: 1s;
+   box-sizing: border-box;
+   margin-left: 97px;
+}
+
+.container-navigation header .menu .tour a:hover {
+   color:#F4F6FF;
+   background-color: #162161;
+   text-decoration: none;
+}
+
+
+/***CONTAINER CONTACTS***/
+
+.container-contacts {
+    background-color: #F4F6FF ;
+    font-family: Manrope;
+}
+
+.container-contacts h1 {
+    color: #030823;
+    font-family: Oswald;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.62px;
+    padding-left: 70px;
+    padding-bottom: 42px;
+    padding-top: 160px;
+}
+
+.container-contacts hr {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0;
+    margin: 50px 0;
+    padding: 0;
+    height: 1px;
+}
+
+
+.container-contacts .photo
+{
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
+}
+
+.container-contacts figcaption  {
+    text-align: center;
+    color: #030823;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.3px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 50px
+}
+
+.container-contacts .map {
+    padding-top: 100px;
+}
+
+.container-contacts .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.container-contacts .info h2 {
+    font-weight: 600;
+    display: block;
+    padding-bottom: 0px;
+    font-size: 22px;
+    line-height: 160%;
+}
+
+.container-contacts .info p,
+.container-contacts a {
+    font-weight: normal;
+    padding-bottom: 6px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #030823;
+    line-height: 133%;
+}
+
+.container-contacts .info .insta{
+    display: flex;
+}
+
+.container-contacts .info .insta img {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.container-contacts .info .bus,
+.container-contacts .info .mini-bus
+ {
+    display: flex;
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+.container-contacts .info .bus p {
+    border: solid 1px black;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 7px;
+    width: 40px;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 6px;
+}
+
+.container-contacts .info .mini-bus p{
+    border: solid 1px black;
+    margin-right: 5px;
+    margin-left: 15px;
+    border-radius: 7px;
+    width: auto;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 6px;
+    display: block;
+    padding-bottom: 36px;
+
+}
+
+.container-contacts .info .bus img,
+.container-contacts .info .mini-bus {
+    width: 35px;
+    height: 35px;
+}
+
+.container-contacts .rules {
+    text-align: center;
+}
+
+.container-contacts .rules h3 {
+    font-weight: normal;
+    padding-bottom: 6px;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #030823;
+    line-height: 133%;
+    padding-bottom: 50px;
+}
+
+.container-contacts .rules ol {
+    list-style-type: decimal;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: inline-block;
+    text-align: left;
+    font-size: 22px;
+}
+
+
+
+
+
+/***CONTAINER FOOTER***/
+
+.container-footer {
+    background-color: #030823;
+}
+
+.container-footer footer .ucp a p {
+    color:  #9A9BD0;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 8px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.container-footer footer .ucp a{
+    display: flex;
+    text-decoration: none;
+}
+
+.container-footer footer .ucp a .emblem {
+    width: 148px;
+    height: 148px;
+    display: block;
+}
+
+.container-footer footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 270px 336px 296px 350px 100px;
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.container-footer footer .contacts,
+.container-footer footer .menu,
+.container-footer footer .payments {
+    padding-top: 250px;
+}
+
+.container-footer footer .contacts h6,
+.container-footer footer .menu h6,
+.container-footer footer .payments h6 {
+    color:  #9A9BD0;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.container-footer footer .contacts ul li a,
+.container-footer footer .menu ul li a {
+    color:  #F4F6FF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.container-footer footer .payments ul {
+    display: flex;
+    gap: 17px;
+}
+
+
+
+.container-footer footer .arrow {
+    height: 64px;
+    padding-top: 59px;
+}
+
+
+.container-footer .ucp-bottom {
+    color:  #F4F6FF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 18px;
+}
