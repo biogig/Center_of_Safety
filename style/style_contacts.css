@@ -255,10 +255,12 @@ table {
 }
 
 .container-contacts .info .transport .bus img,
-.container-contacts .info .transport .mini-bus {
+.container-contacts .info .transport .mini-bus img
+ {
     width: 35px;
     height: 35px;
 }
+
 
 .container-contacts .info .map iframe {
     box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
@@ -350,6 +352,10 @@ text-indent: 70px;
 
 /***CONTAINER FOOTER***/
 
+.map {
+    margin-bottom: -3px;}
+
+
 .container-footer {
     background-color: #030823;
 }
@@ -376,18 +382,28 @@ text-indent: 70px;
     display: block;
 }
 
-.container-footer footer {
+.container-footer footer .info {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 270px 336px 296px 350px 100px;
+    grid-template-columns: 280px 336px 296px 350px 100px;
     padding-top: 70px;
     padding-left: 70px;
+    justify-content: space-between;
+    padding-bottom: 80px;
 }
 
+.container-footer .center .geraldika {
+    display: flex;
+    padding-top: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
 .container-footer footer .contacts,
-.container-footer footer .menu,
-.container-footer footer .payments {
-    padding-top: 250px;
+.container-footer footer .menu
+ {
+    padding-left: 70px;
 }
 
 .container-footer footer .contacts h6,
@@ -418,9 +434,9 @@ text-indent: 70px;
 
 
 
-.container-footer footer .arrow {
+.container-footer footer .up {
     height: 64px;
-    padding-top: 59px;
+    padding-left: 230px;
 }
 
 
@@ -432,4 +448,52 @@ text-indent: 70px;
     text-align: center;
     padding-top: 55px;
     padding-bottom: 18px;
+}
+
+
+
+/********Auto Carousel*******/
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 7));
+   }
+}
+.slider {
+    background: #030823;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #030823 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    height: 150px;
+    width: 160px;
 }
