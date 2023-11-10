@@ -162,7 +162,6 @@ table {
     line-height: 100.6%;
     letter-spacing: 0.62px;
     padding-left: 70px;
-    padding-bottom: 42px;
     padding-top: 160px;
 }
 
@@ -175,37 +174,23 @@ table {
 }
 
 
-.container-contacts .photo
-{
-    width: 700px;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
-}
 
-.container-contacts figcaption  {
-    text-align: center;
-    color: #030823;
-    font-family: Oswald;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 100.6%;
-    letter-spacing: 0.3px;
-    padding-left: 20px;
-    padding-bottom: 15px;
-    padding-top: 50px
-}
-
-.container-contacts .map {
-    padding-top: 100px;
-}
 
 .container-contacts .info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     padding-left: 70px;
     padding-right: 70px;
+    justify-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+
+.container-contacts .info .contacts,
+.container-contacts .info .map {
+    justify-self: start;
 }
 
 .container-contacts .info h2 {
@@ -226,26 +211,26 @@ table {
     line-height: 133%;
 }
 
-.container-contacts .info .insta{
+.container-contacts .info .contacts .insta{
     display: flex;
 }
 
-.container-contacts .info .insta img {
+.container-contacts .info .contacts .insta img {
     width: 25px;
     height: 25px;
     align-self: center;
     padding-left: 10px;
 }
 
-.container-contacts .info .bus,
-.container-contacts .info .mini-bus
+.container-contacts .info .transport .bus,
+.container-contacts .info .transport .mini-bus
  {
     display: flex;
     align-self: center;
     padding-bottom: 20px;
 }
 
-.container-contacts .info .bus p {
+.container-contacts .info .transport .bus p {
     border: solid 1px black;
     margin-right: 10px;
     margin-left: 10px;
@@ -256,7 +241,7 @@ table {
     padding-top: 6px;
 }
 
-.container-contacts .info .mini-bus p{
+.container-contacts .info .transport .mini-bus p{
     border: solid 1px black;
     margin-right: 5px;
     margin-left: 15px;
@@ -270,39 +255,99 @@ table {
 
 }
 
-.container-contacts .info .bus img,
-.container-contacts .info .mini-bus {
+.container-contacts .info .transport .bus img,
+.container-contacts .info .transport .mini-bus {
     width: 35px;
     height: 35px;
+}
+
+.container-contacts .info .map iframe {
+    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
 }
 
 .container-contacts .rules {
     text-align: center;
 }
 
-.container-contacts .rules h3 {
+.container-contacts .rules h3,
+.container-contacts .price-list h3,
+.container-contacts .payment-methods h3 {
     font-weight: normal;
     padding-bottom: 6px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
     text-decoration: none;
     color: #030823;
     line-height: 133%;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .container-contacts .rules ol {
     list-style-type: decimal;
-    padding-left: 70px;
+    padding-left: 90px;
     padding-right: 70px;
     display: inline-block;
     text-align: left;
     font-size: 22px;
+    line-height: 150%;
 }
 
 
 
+.container-contacts .rules ol b,
+.container-contacts .payment-methods b {
+    font-weight: 900;
+}
 
+.container-contacts .price-list {
+    text-align: center;
+}
+
+.container-contacts .price-list table {
+
+    display: inline-block;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    text-decoration: none;
+    color: #030823;
+    line-height: 173%;
+}
+
+.container-contacts .price-list table th {
+    font-weight: 900;
+}
+
+.container-contacts .price-list table tr,
+.container-contacts .price-list table th,
+.container-contacts .price-list table td {
+    padding: 5px;
+    border: 1px black solid;
+}
+
+.container-contacts .payment-methods p {
+display: inline-block;
+border-collapse: collapse;
+text-align: center;
+font-weight: normal;
+font-size: 22px;
+text-decoration: none;
+color: #030823;
+line-height: 173%;
+margin: 0 70px;
+text-align: justify;
+text-indent: 70px;
+}
+
+.container-contacts .payment-methods .qr img {
+    width: 140px;
+    position: relative;
+    left: 800px;
+    bottom: 20px;
+
+}
 
 /***CONTAINER FOOTER***/
 

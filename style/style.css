@@ -64,11 +64,12 @@
 .container-navigation header {
     background-color: #030823;
   position: fixed;
+  z-index: 100;
 }
 
 .container-navigation header img {
-    width: 80px;
-    height: 80px;
+    
+    height: 95px;
     padding: 8px 31px 8px 70px;
 }
 
@@ -150,37 +151,32 @@
 
 /*CARUSEL*/
 
-.container-carusel .background-image {
-    background-image: url(../images/111.jpg);
-    width: 100%; 
-    height: 100%; 
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+
+
+.container-carusel .slideshow-container .mySlides .text {
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
 }
 
-.container-carusel .background-image .background-color {
-    background-color: rgba(3, 8, 35, 0.71); 
-    width: 100%; 
-    height: 100%; 
-    background-size: cover;
-    
-}
-
-
-
-.container-carusel .background-image .background-color h1 {
+.container-carusel .slideshow-container .mySlides .text h2 {
     color: #F4F6FF;
     font-family: Oswald;
     font-size: 62px;
     font-weight: 400;
     line-height: 100.6%;
     letter-spacing: 0.62px;
-    width: 635px;
-    padding-top: 519px;
-    padding-left: 70px;
+    position: relative;
+    width: 800px;
+    text-align: left;
+    
 }
 
-.container-carusel .background-image .background-color p{
+.container-carusel .slideshow-container .mySlides .text p{
     color:  #F4F6FF;
     font-family: Manrope;
     font-size: 18px;
@@ -189,18 +185,91 @@
     letter-spacing: -0.18px;
     width: 524px;
     text-align: left;
-    margin-top: 15px;
-    padding-left: 183px;
-    text-align: start;
+    left: 300px;
+    position: relative;
+    top: 15px;
+    width: 400px;
 }
 
-.container-carusel .background-image .background-color img {
-    width: 66px;
-    margin-top: 60px;
-    margin-left: 688px;
-    margin-bottom: 69px;
-    cursor: pointer;
+
+
+.container-carusel .slideshow-container .mySlides img {
+    max-width: 1440px;
+    min-width: 1440px;
+    height: 800px;
+    margin-bottom: -140px;
+    object-fit: cover;
 }
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1440px;
+  
+  margin: auto;
+  padding-top: 93px;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+  position: relative;
+  bottom: 40px;
+    
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.7} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
 
 /*LOCATIONS*/
 
@@ -214,6 +283,7 @@
     padding-top: 70px;
     padding-bottom: 55px;
     gap: 242px;
+    margin-top: -17px;
 }
 
 .container-locations .info h2 a{
@@ -319,6 +389,7 @@ margin-bottom: 31px;
 
 .container-about {
     background-color: #F4F6FF;
+    padding-bottom: 40px;
 }
 
 .container-about h2 {
@@ -357,7 +428,7 @@ margin-bottom: 31px;
 
 
 /***CONTAINER MAP***/
-
+/***
 .container-map{
     background-color:  #F4F6FF;
 }
@@ -373,18 +444,19 @@ margin-bottom: 31px;
     padding-top: 126px;
 }
 
-.container-map .content .map {
-    display: inline-block;
-    margin-left: 181px;
-    margin-top: 55px;
-    margin-bottom: 225px;
-    box-shadow: 4px 2px 24px 2px rgba(34, 60, 80, 0.2);
-    height: 430px;
+.container-map .content .info {
+    padding-left: 70px;
 }
 
-.container-map .content {
+
+.container-map .content .info ul {
     display: flex;
-    gap: 181px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 60px;
+
+   
 }
 
 .container-map .content .info h5 {
@@ -424,10 +496,13 @@ cursor: pointer;
 
 
 
-
-
+***/
 
 /***CONTAINER FOOTER***/
+
+.map {
+    margin-bottom: -3px;}
+
 
 .container-footer {
     background-color: #030823;
@@ -455,18 +530,28 @@ cursor: pointer;
     display: block;
 }
 
-.container-footer footer {
+.container-footer footer .info {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 270px 336px 296px 350px 100px;
     padding-top: 70px;
     padding-left: 70px;
+    justify-content: space-between;
+    padding-bottom: 80px;
 }
 
+.container-footer .center .geraldika {
+    display: flex;
+    padding-top: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
 .container-footer footer .contacts,
-.container-footer footer .menu,
-.container-footer footer .payments {
-    padding-top: 250px;
+.container-footer footer .menu
+ {
+    padding-left: 70px;
 }
 
 .container-footer footer .contacts h6,
@@ -497,9 +582,9 @@ cursor: pointer;
 
 
 
-.container-footer footer .arrow {
+.container-footer footer .up {
     height: 64px;
-    padding-top: 59px;
+    padding-left: 230px;
 }
 
 
@@ -511,4 +596,52 @@ cursor: pointer;
     text-align: center;
     padding-top: 55px;
     padding-bottom: 18px;
+}
+
+
+
+/********Auto Carousel*******/
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 7));
+   }
+}
+.slider {
+    background: #030823;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #030823 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    height: 150px;
+    width: 160px;
 }
