@@ -67,9 +67,8 @@ table {
 }
 
 .container-navigation header img {
-   width: 80px;
-   height: 80px;
-   padding: 8px 31px 8px 70px;
+    height: 95px;
+    padding: 8px 31px 8px 70px;
 }
 
 .container-navigation .emblem {   /*!!!!!!!*/
@@ -216,7 +215,7 @@ table {
 }
 
 .container-contacts .info .contacts .insta img {
-    width: 25px;
+    align-items: center;
     height: 25px;
     align-self: center;
     padding-left: 10px;
