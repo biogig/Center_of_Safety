@@ -64,7 +64,7 @@
 .container-navigation header {
     background-color: #030823;
   position: fixed;
-  z-index: 100;
+  z-index: 108;
 }
 
 .container-navigation header img {
@@ -400,7 +400,7 @@ margin-bottom: 31px;
     line-height: 100.6%; 
     letter-spacing: 0.62px;
     padding-left: 70px;
-    padding-bottom: 42px;
+    padding-bottom: 62px;
 }
 
 .container-about .center p,
@@ -414,7 +414,8 @@ margin-bottom: 31px;
     padding-left: 70px;
     padding-right: 70px;
     text-align: justify;
-    text-indent: 50px;
+    text-indent: 70px;
+    padding-bottom: 30px;
 }
 
 .container-about .center ul {
@@ -423,8 +424,52 @@ margin-bottom: 31px;
     text-indent: 5px;
 }
 
+.container-about .center h3 {
+    color: #030823;
+    font-family: Oswald;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100.6%; 
+    letter-spacing: 0.62px;
+    padding-left: 70px;
+    padding-bottom: 22px;
+    text-indent: 70px;
+}
+
+.container-about .center .accordion {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container-about .center .info{
+    color: #030823;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    cursor: pointer;
+    list-style-type: none;
+}
 
 
+.container-about .center .info summary {
+    font-weight: 600;
+}
+
+.container-about .center .info li strong {
+    font-weight: 600;
+}
+
+.container-about .center .info li details .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-about .center .info li details img {
+    height: 200px;
+    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
+}
 
 
 /***CONTAINER MAP***/
@@ -449,14 +494,12 @@ margin-bottom: 31px;
 }
 
 
-.container-map .content .info ul {
+.container-about .content .info{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 800px;
     gap: 60px;
-
-   
 }
 
 .container-map .content .info h5 {
