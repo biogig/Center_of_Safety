@@ -11,8 +11,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -60,10 +63,17 @@
             <h2>Телефоны для записи:<br></h2>
             <p><a href="tel:80172697060">8 (017) 269 - 70 - 60</a><br>
                 <a href="tel:80448040054">8 (044) 804 - 00 - 54</a></p><br>
-                <a href="https://www.instagram.com/centr_bezopasnosti_minsk/" class="insta">
-                <h2>Страница в Instagram<br></h2>
-                <img src="./images/instagram.png" alt="insta">
+
+                <a href="https://www.instagram.com/centr_bezopasnosti_minsk/" class="insta animate__animated  animate__rubberBand" >
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                        Наш Instagram
+                        <img src="./images/instagram.png" alt="insta">
+                      </button>
+                
                 </a>
+
+
+
         </div>
         <div class="transport"> <h2>Эти транспортные маршруты<br> проходят рядом:</h2><br>
                 <div class="bus">
@@ -76,7 +86,7 @@
                 </div>
                 <div class="mini-bus">
                     <img src="./images/mini_bus.png" alt="маршрутки" title="маршрутки">
-                <p>1008</p><p>1076</p><p>1409</p><p>1191</p><p>1151</p><p>1111</p>
+                <p >1008</p><p>1076</p><p>1409</p><p>1191</p><p>1151</p><p>1111</p>
                 </div>
         </div>
             <div class="map">
@@ -99,7 +109,7 @@
     </div><hr>
     <div class="price-list center">
         <h3>Прейскурант цен</h3>
-        <table>
+        <table class="table  table-striped table-hover">
             <tr>
                 <th>№ п/п</th>
                 <th>Наименование, краткая характеристика</th>
@@ -194,7 +204,7 @@
         <img src="./images/ucp-emblem.png" height="110"  alt="" />
     </div>
     <div class="slide">
-        <img src="./images/ippk.jpg" height="110"  alt="" />
+        <img src="./images/ippk.png" height="110"  alt="" />
     </div>
     <div class="slide">
         <img src="./images/bdpo.png" height="110" alt="" />
@@ -218,7 +228,7 @@
         <img src="./images/ucp-emblem.png" height="110"  alt="" />
     </div>
     <div class="slide">
-        <img src="./images/ippk.jpg" height="110"  alt="" />
+        <img src="./images/ippk.png" height="110"  alt="" />
     </div>
     <div class="slide">
         <img src="./images/bdpo.png" height="110" alt="" />
@@ -242,7 +252,7 @@
         <img src="./images/ucp-emblem.png" height="110"  alt="" />
     </div>
     <div class="slide">
-        <img src="./images/ippk.jpg" height="110"  alt="" />
+        <img src="./images/ippk.png" height="110"  alt="" />
     </div>
     <div class="slide">
         <img src="./images/bdpo.png" height="110" alt="" />
@@ -281,10 +291,10 @@
             <h6>Сылки:</h6> 
             <ul>
                 <li><a href="#">Площадки</a></li>
-                <li><a href="#">Экскурсии</a></li>
+                <li><a href="./lessons.html">Занятия</a></li>
                 <li><a href="#">Тесты</a></li>
                 <li><a href="#">О центре</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
             </ul>
         </div>
 
