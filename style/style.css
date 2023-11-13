@@ -305,6 +305,7 @@ img {vertical-align: middle;}
     justify-content: center;
     grid-template-columns: 413px 413px 413px;
     column-gap: 31px;
+
 }
 
 .container-locations .locations .card {
@@ -315,9 +316,14 @@ margin-bottom: 31px;
 
 }
 
+
+.container-locations .locations .card {
+    text-align: center;
+}
+
 .container-locations .locations .card img {
-    width: 373px;
-    height: 250px;
+    width: 400px;
+    height: 270px;
     padding: 20px 20px 15px 20px;
 }
 
@@ -342,6 +348,7 @@ margin-bottom: 31px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 
@@ -617,6 +624,10 @@ cursor: pointer;
     display: inline-block;
     margin-bottom: 5px;
 }
+
+.container-footer footer .menu ul li a:hover {
+    text-decoration: underline;
+    }
 
 .container-footer footer .payments ul {
     display: flex;

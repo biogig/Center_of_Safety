@@ -64,7 +64,6 @@ table {
 .container-navigation header {
    background-color: #030823;
  position: fixed;
- z-index: 100;
 }
 
 .container-navigation header img {
@@ -147,253 +146,35 @@ table {
 }
 
 
-/***CONTAINER CONTACTS***/
+/***CONTAINER LOCATIONS***/
 
-.container-contacts {
-    background-color: #F4F6FF ;
-    font-family: Manrope;
+.container-locations {
+    padding-top: 100px;
+    background-color: #F4F6FF;
 }
 
-.container-contacts h1 {
-    color: #030823;
+
+.container-locations h1 {
+    color:  #030823;
     font-family: Oswald;
     font-size: 62px;
     font-weight: 400;
-    line-height: 100.6%;
+    line-height: 100.6%; /* 62.372px */
     letter-spacing: 0.62px;
-    padding-left: 70px;
-    padding-top: 160px;
 }
 
-.container-contacts hr {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 0;
-    margin: 50px 0;
-    padding: 0;
-    height: 1px;
-}
-
-
-
-
-.container-contacts .info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    padding-left: 70px;
-    padding-right: 70px;
-    justify-items: center;
-    row-gap: 50px;
-    column-gap: 50px;
-}
-
-
-.container-contacts .info .contacts,
-.container-contacts .info .address,
-.container-contacts .info .map,
-.container-contacts .info .transport {
-    justify-self: start;
-}
-
-.container-contacts .info .transport,
-.container-contacts .info .address {
-    padding-left: 50px;
-}
-
-.container-contacts .info h2 {
-    font-weight: 600;
-    display: block;
-    padding-bottom: 0px;
-    font-size: 22px;
-    line-height: 160%;
-}
-
-.container-contacts .info p,
-.container-contacts a {
-    font-weight: normal;
-    padding-bottom: 6px;
-    font-size: 22px;
-    text-decoration: none;
-    color: #030823;
-    line-height: 133%;
-}
-
-.container-contacts .info .contacts .insta{
-    display: flex;
-}
-
-.container-contacts .info .contacts .insta .btn {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    color: #F4F6FF;
-    border: 0;
-}
-
-.container-contacts .info .contacts .insta img {
-    align-items: center;
-    height: 25px;
-    align-self: center;
-    padding-left: 10px;
-}
-
-.container-contacts .info .transport .bus,
-.container-contacts .info .transport .mini-bus,
-.container-contacts .info .transport .tram
- {
-    display: flex;
-    align-self: center;
-    padding-bottom: 20px;
-}
-
-.container-contacts .info .transport .bus p
-{
-   background:  rgb(36,158,14);
-   color: #F4F6FF;
-   border: 0;
-}
-
-.container-contacts .info .transport .mini-bus p {
-    background-color: rgb(181, 182, 182);
-    color: #F4F6FF;
-    /*border: solid 1px black; */
-    border: 0;
-}
-
-.container-contacts .info .transport .tram p {
-    background-color: rgb(3,159,173);
-    color: #F4F6FF;
-}
-
-.container-contacts .info .transport .bus p,
-.container-contacts .info .transport .tram p {
-    
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 7px;
-    width: 40px;
-    text-align: center;
-    font-weight: 800;
-    padding-top: 6px;
-}
-
-.container-contacts .info .transport .mini-bus p{
-   
-    margin-right: 5px;
-    margin-left: 15px;
-    border-radius: 7px;
-    width: auto;
-    text-align: center;
-    font-weight: 800;
-    padding-top: 6px;
-    display: block;
-    padding-bottom: 6px;
-
-}
-
-.container-contacts .info .transport .bus img,
-.container-contacts .info .transport .tram img
- {
-    width: 35px;
-    height: 35px;
-}
-
-.container-contacts .info .transport .mini-bus img {
-    height: 32px;
-}
-
-
-.container-contacts .info .map iframe {
-    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
-}
-
-.container-contacts .rules {
-    text-align: center;
-}
-
-.container-contacts .rules h3,
-.container-contacts .price-list h3,
-.container-contacts .payment-methods h3 {
-    font-weight: normal;
-    padding-bottom: 6px;
-    font-size: 35px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #030823;
-    line-height: 133%;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-.container-contacts .rules ol {
-    list-style-type: decimal;
-    padding-left: 90px;
-    padding-right: 70px;
-    display: inline-block;
-    text-align: left;
-    font-size: 22px;
-    line-height: 150%;
+.container-locations p {
+    color: var(--, #030823);
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 116.667%;
+    letter-spacing: -0.18px;
 }
 
 
 
-.container-contacts .rules ol b,
-.container-contacts .payment-methods b {
-    font-weight: 900;
-}
 
-.container-contacts .price-list {
-    text-align: center;
-}
-
-.container-contacts .price-list .table {
-
-  
-    border-collapse: collapse;
-    width: 1000px;
-    margin: 0 auto;
-    font-weight: normal;
-    font-size: 22px;
-    text-decoration: none;
-    color: #030823;
-    line-height: 173%;
-}
-
-.container-contacts .price-list .table th {
-    font-weight: 900;
-}
-
-.container-contacts .price-list table tr,
-.container-contacts .price-list table th,
-.container-contacts .price-list table td {
-    padding: 5px;
-    border: 1px black solid;
-}
-
-.container-contacts .payment-methods p {
-display: inline-block;
-border-collapse: collapse;
-text-align: center;
-font-weight: normal;
-font-size: 22px;
-text-decoration: none;
-color: #030823;
-line-height: 173%;
-margin: 0 70px;
-text-align: justify;
-text-indent: 70px;
-}
-
-.container-contacts .payment-methods .qr img {
-    width: 140px;
-    position: relative;
-    left: 800px;
-    bottom: 25px;
-    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
-
-}
 
 /***CONTAINER FOOTER***/
 
@@ -470,8 +251,8 @@ text-indent: 70px;
 }
 
 .container-footer footer .menu ul li a:hover {
-    text-decoration: underline;
-    }
+text-decoration: underline;
+}
 
 .container-footer footer .payments ul {
     display: flex;
