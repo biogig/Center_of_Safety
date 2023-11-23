@@ -179,7 +179,7 @@ table {
 .container-contacts .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr;
     padding-left: 70px;
     padding-right: 70px;
     justify-items: center;
@@ -230,22 +230,44 @@ table {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     color: #F4F6FF;
     border: 0;
+    font-size: 23px;
+    font-weight: 600;
+}
+/*
+.container-contacts .info .contacts {
+    display: grid;
+    grid-template-columns: 260px 260px;
+    grid-template-rows: 1fr 1fr;
+    
 }
 
+.container-contacts .info .contacts .insta {
+    grid-row: 7/1;
+}
+*/
 .container-contacts .info .contacts .insta img {
     align-items: center;
-    height: 25px;
+    height: 30px;
     align-self: center;
     padding-left: 10px;
 }
 
 .container-contacts .info .transport .bus,
 .container-contacts .info .transport .mini-bus,
-.container-contacts .info .transport .tram
+.container-contacts .info .transport .tram,
+.container-contacts .info .transport .metro
  {
     display: flex;
     align-self: center;
     padding-bottom: 20px;
+}
+
+.container-contacts .info .transport .metro {
+    gap: 7px;
+}
+
+.container-contacts .info .transport .metro p {
+    font-weight: 700;
 }
 
 .container-contacts .info .transport .bus p
@@ -294,7 +316,8 @@ table {
 }
 
 .container-contacts .info .transport .bus img,
-.container-contacts .info .transport .tram img
+.container-contacts .info .transport .tram img,
+.container-contacts .info .transport .metro img
  {
     width: 35px;
     height: 35px;
@@ -359,6 +382,7 @@ table {
     text-decoration: none;
     color: #030823;
     line-height: 173%;
+    
 }
 
 .container-contacts .price-list .table th {
@@ -446,7 +470,10 @@ text-indent: 70px;
 }
 
 
-
+.container-footer footer .payments ul li:hover,
+.container-footer footer .contacts ul li a:hover{
+    cursor: pointer;
+}
 
 .container-footer footer .contacts h6,
 .container-footer footer .menu h6,
@@ -492,7 +519,7 @@ text-indent: 70px;
     font-size: 12px;
     font-weight: 400;
     text-align: center;
-    padding-top: 55px;
+   
     padding-bottom: 18px;
 }
 

@@ -63,13 +63,14 @@ table {
 
 .container-navigation header {
    background-color: #030823;
- /*position: fixed; */
+    position: fixed;
+    z-index: 100;
 }
 
 .container-navigation header img {
-   width: 80px;
-   height: 80px;
+    height: 95px;
    padding: 8px 31px 8px 70px;
+   
 }
 
 .container-navigation .emblem {   /*!!!!!!!*/
@@ -150,6 +151,7 @@ table {
 
 .container-info {
     background-color:  #F4F6FF;
+    padding-top: 70px;
 }
 
  .container-info h1 {
@@ -180,7 +182,7 @@ font-weight: 800;
     gap: 29px;
     padding-left: 181px;
     padding-top: 55px;
-    padding-bottom: 15px;
+    margin-bottom: 10px;
  }
 
  .container-info .month-slider {
@@ -189,7 +191,7 @@ font-weight: 800;
     padding: 7px 70px ;
 }
 
-.container-info .month-slider a img {
+.container-info .lessons-table .swiper  .month-slider a img {
     width: 35px;
     height: 35px;
 }
@@ -204,8 +206,9 @@ font-weight: 800;
 
 
 .container-info .lessons-table table {
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     display: block;
+    padding-top: 11px;
    
 }
 
@@ -228,8 +231,9 @@ font-weight: 800;
 
 .container-info .lessons-table table tr th{
     height: 44px;
-    padding-top: 9px;
 }
+
+
 
 .container-info hr {
     background-color: black;
@@ -243,7 +247,7 @@ font-weight: 800;
     font-size: 20px;
     font-weight: 400;
     padding-left: 10px;
-    padding-top: 20px;
+    padding-top: 2px;
 } 
 
 .container-info .lessons-table table tr td ul .time::before{
@@ -253,6 +257,7 @@ font-weight: 800;
     width: 3px;
     height: 3px;
     border: 1;
+    padding-right: 8px;
 }
 
 .container-info .lessons-table table tr td ul .age {
@@ -310,6 +315,11 @@ font-weight: 800;
    
 }
 
+.container-info .lessons-table table tr td button:hover {
+    background-color: #162161;
+    color: #F4F6FF;
+}
+
 .container-info .lessons-table table tr .no-lessons{
     color: #5D5E8C;
     font-family: Manrope;
@@ -318,11 +328,50 @@ font-weight: 800;
     text-align: center;
     vertical-align: middle;
 }
- 
 
+
+/*.container-info .lessons-table .swiper-button-next {
+    position: relative;
+    left: 1340px;
+    bottom: 1125px;
+    opacity: 1;
+    border: 20px solid transparent; border-left: 20px solid green;
+    
+}
+
+.container-info .lessons-table .swiper-button-prev {
+    position: relative;
+    left: 75px;
+    bottom: 1150px;
+
+
+    border: 20px solid transparent; border-right: 20px solid green;
+}*/
+
+
+.swiper-button-next {display: none;}
+
+.container-info .information {
+    margin: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 60px;
+    color: #030823;
+    font-family: manrope;
+    font-size: 20px;
+    font-weight: 0;
+    line-height: 130%;
+    letter-spacing: 0.62px;
+    text-align: center;
+    
+}
 
 
 /***CONTAINER FOOTER***/
+
+.map {
+    margin-bottom: -3px;}
+
 
 .container-footer {
     background-color: #030823;
@@ -350,19 +399,26 @@ font-weight: 800;
     display: block;
 }
 
-.container-footer footer {
+.container-footer footer .info {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 270px 336px 296px 350px 100px;
     padding-top: 70px;
     padding-left: 70px;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    padding-left: 100px;
 }
 
-.container-footer footer .contacts,
-.container-footer footer .menu,
-.container-footer footer .payments {
-    padding-top: 250px;
+.container-footer .center .geraldika {
+    display: flex;
+    padding-top: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
+
+
+
 
 .container-footer footer .contacts h6,
 .container-footer footer .menu h6,
@@ -372,6 +428,7 @@ font-weight: 800;
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 8px;
+   
 }
 
 .container-footer footer .contacts ul li a,
@@ -382,17 +439,28 @@ font-weight: 800;
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 5px;
 }
+
+.container-footer footer .menu ul li a:hover {
+    text-decoration: underline;
+    }
 
 .container-footer footer .payments ul {
     display: flex;
     gap: 17px;
 }
 
-.container-footer footer .arrow {
+.container-footer footer .payments ul li:hover,
+.container-footer footer .contacts ul li a:hover{
+    cursor: pointer;
+}
+
+
+
+
+.container-footer footer .up {
     height: 64px;
-    padding-top: 59px;
+    padding-left: 230px;
 }
 
 
@@ -402,6 +470,54 @@ font-weight: 800;
     font-size: 12px;
     font-weight: 400;
     text-align: center;
-    padding-top: 55px;
+    
     padding-bottom: 18px;
+}
+
+
+
+/********Auto Carousel*******/
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 7));
+   }
+}
+.slider {
+    background: #030823;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #030823 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    height: 150px;
+    width: 160px;
 }

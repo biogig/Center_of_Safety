@@ -11,6 +11,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <div class="wrapper">
@@ -18,7 +24,7 @@
     <section class="container-navigation">
         <header class="center">
            <div class="emblem"> 
-            <img alt="emblem" src="./images/emblem.png">
+           <a href="./index.html"> <img alt="emblem" src="./images/emblem.png"></a>
             <form class="language">
                 <select onchange="window.location.href=this.options[this.selectedIndex].value">
                     <option><a href="#">RU</a></option>
@@ -27,10 +33,10 @@
         </form>
            </div>
             <nav class="menu">
-                <ul>
+                <ul class="m-0">
                     <li><a href="./index.html">Главная</a></li>
-                    <li><a href="#">Площадки</a></li>
-                    <li><a href="#">Занятия</a></li>
+                    <li><a href="./locations.html">Площадки</a></li>
+                    <li><a href="./lessons.html">Занятия</a></li>
                     <li><a href="#">Тесты</a></li>
                     <li><a href="#about">О центре</a></li>
                     <li><a href="#contacts">Контакты</a></li>
@@ -48,260 +54,1533 @@
             <img alt="calendar" src="./images/calendar.svg">
         </div>
         <hr>
-        <div class="month-slider">
-           <a href="#"><img alt="left" src="./images/left-arrow.svg"></a>
-           <a href="#"><img alt="right" src="./images/right-arrow.svg"></a>
-        </div>
+       
         <div class="lessons-table">
-            <table>
-                <tr>
-                    <th><div><span class="date">1</span><span class="day">ПН</span></th></div>
-                    <th><div><span class="date">2</span><span class="day">ВТ</span></th></div>
-                    <th><div><span class="date">3</span><span class="day">СР</span></th></div>
-                    <th><div><span class="date">4</span><span class="day">ЧТ</span></th></div>
-                    <th><div><span class="date">5</span><span class="day">ПТ</span></th></div>
-                    <th><div><span class="date">6</span><span class="day">СБ</span></th></div>
-                    <th><div><span class="date">7</span><span class="day">ВС</span></th></div>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td class="no-lessons">В этот день занятий нет</td>
-                </tr>
 
-                <tr>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td><td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td><td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td><td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td></td>
-                    <td class="no-lessons">В этот день занятий нет</td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td class="no-lessons">В этот день занятий нет</td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td>
-                        <ul>
-                            <li class="time">13:00-14:00</li>
-                            <li class="age">Группа 11-14 лет</li>
-                            <li class="theme">Обучение правилам пожарной безопасности</li>
-                            <li class="place-left">Осталось мест:<span> 14</span></li>
-                            <li class="price">Стоимость:<span> 10р/ч</span></li>
-                        </ul>
-                        <button>Запись</button>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="no-lessons">В этот день занятий нет</td>
-                </tr>
-            </table>
+           
+
+
+            <div class="swiper mySwiper">
+
+                <div class="month-slider">
+                    <img class="left-arrow" alt="left" src="./images/left-arrow.svg">
+                    <img class="right-arrow" alt="right" src="./images/right-arrow.svg">
+                 </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <table>
+                    <tr>
+                        <th><div><span class="date">1</span><span class="day">ПН</span></th></div>
+                        <th><div><span class="date">2</span><span class="day">ВТ</span></th></div>
+                        <th><div><span class="date">3</span><span class="day">СР</span></th></div>
+                        <th><div><span class="date">4</span><span class="day">ЧТ</span></th></div>
+                        <th><div><span class="date">5</span><span class="day">ПТ</span></th></div>
+                        <th><div><span class="date">6</span><span class="day">СБ</span></th></div>
+                        <th><div><span class="date">7</span><span class="day">ВС</span></th></div>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Запись</button>
+
+<!--Modal-->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Регистрация на занятие</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Ваше имя</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+          <button type="button" class="btn btn-primary">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Modal-->
+                           
+                        </td>
+                        <td>
+                            <ul class="p-0 m-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 3</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 8-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 10</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 7-10 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 12</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа от 17 лет</li>
+                                <li class="theme">Занятия по теме Наркомания</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 1</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 7-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0"> 
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                </table></div>
+                  <div class="swiper-slide"><table>
+                    <tr>
+                        <th><div><span class="date">8</span><span class="day">ПН</span></th></div>
+                        <th><div><span class="date">9</span><span class="day">ВТ</span></th></div>
+                        <th><div><span class="date">10</span><span class="day">СР</span></th></div>
+                        <th><div><span class="date">11</span><span class="day">ЧТ</span></th></div>
+                        <th><div><span class="date">12</span><span class="day">ПТ</span></th></div>
+                        <th><div><span class="date">13</span><span class="day">СБ</span></th></div>
+                        <th><div><span class="date">14</span><span class="day">ВС</span></th></div>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="p-0 m-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 3</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 8-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 10</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 7-10 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 12</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа от 17 лет</li>
+                                <li class="theme">Занятия по теме Наркомания</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 1</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 7-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0"> 
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                </table></div>
+                  <div class="swiper-slide"><table>
+                    <tr>
+                        <th><div><span class="date">15</span><span class="day">ПН</span></th></div>
+                        <th><div><span class="date">16</span><span class="day">ВТ</span></th></div>
+                        <th><div><span class="date">17</span><span class="day">СР</span></th></div>
+                        <th><div><span class="date">18</span><span class="day">ЧТ</span></th></div>
+                        <th><div><span class="date">19</span><span class="day">ПТ</span></th></div>
+                        <th><div><span class="date">20</span><span class="day">СБ</span></th></div>
+                        <th><div><span class="date">21</span><span class="day">ВС</span></th></div>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="p-0 m-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 3</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 8-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 10</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 7-10 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 12</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа от 17 лет</li>
+                                <li class="theme">Занятия по теме Наркомания</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 1</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 7-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0"> 
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                </table></div>
+                  <div class="swiper-slide"><table>
+                    <tr>
+                        <th><div><span class="date">22</span><span class="day">ПН</span></th></div>
+                        <th><div><span class="date">23</span><span class="day">ВТ</span></th></div>
+                        <th><div><span class="date">24</span><span class="day">СР</span></th></div>
+                        <th><div><span class="date">25</span><span class="day">ЧТ</span></th></div>
+                        <th><div><span class="date">26</span><span class="day">ПТ</span></th></div>
+                        <th><div><span class="date">27</span><span class="day">СБ</span></th></div>
+                        <th><div><span class="date">28</span><span class="day">ВС</span></th></div>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="p-0 m-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 3</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 8-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 10</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 7-10 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 12</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа от 17 лет</li>
+                                <li class="theme">Занятия по теме Наркомания</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">9:00-10:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 1</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 7-12 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0"> 
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td><td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">11:00-12:30</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">13:00-14:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">14:00-16:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td>
+                            <ul class="m-0 p-0">
+                                <li class="time">16:00-18:00</li>
+                                <li class="age">Группа 11-14 лет</li>
+                                <li class="theme">Обучение правилам пожарной безопасности</li>
+                                <li class="place-left">Осталось мест:<span> 14</span></li>
+                                <li class="price">Стоимость:<span> 10р/ч</span></li>
+                            </ul>
+                            <button>Запись</button>
+                        </td>
+                        <td class="no-lessons">В этот день занятий нет</td>
+                    </tr>
+                </table>
+            </div>
+                
+                </div>
+        
+               
+                
+              </div>
+        </div>
+
+
+        <p class="information">Информация в данной таблице является справочной и служит для отображения примерной загрузки дней и времени. Для уточнения наиболее акутальной информации по свободным местам, просьба набирать по телефонам внизу станицы. <br>Спасибо за понимание!</p>
     </section>
+    
 
-    <!-- TABLE -->
-<section class="container-table">
 
-</section>
+
     <!--FOOTER-->
-<section class="container-footer">
-    <footer class="center">
-    <div class="ucp"> <a href="https://ucp.by/"><img class="emblem" alt="emblem" src="./images/ucp-emblem.png">
-       <p>УНИВЕРСИТЕТ<br> ГРАЖДАНСКОЙ<br> ЗАЩИТЫ</p></div></a>
-        <div class="contacts">
-            <h6 id="contacts">Контакты:</h6>
-            <ul>
-            <li><a href="tel:80172697060">8 (017) 269 - 70 - 60</a></li>
-            <li><a href="tel:80448040054">8 (044) 804 - 00 - 54</a></li>
-            <li><a href="mailto:cb@ucp.by">cb@ucp.by</a></li>
-            </ul>
+    <section class="container-footer">
+        <footer class="center">
+    
+        <div class="geraldika">
+        <div class="ucp"> 
+            <a href="https://ucp.by/"><img class="emblem" alt="emblem" src="./images/ucp-emblem.png">
+           <p>УНИВЕРСИТЕТ<br> ГРАЖДАНСКОЙ<br> ЗАЩИТЫ</p></a>
         </div>
-        <div class="menu"> 
-            <h6>Сылки:</h6> 
-            <ul>
-                <li><a href="#">Площадки</a></li>
-                <li><a href="#">Экскурсии</a></li>
-                <li><a href="#">Тесты</a></li>
-                <li><a href="#">О центре</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+    
+       <div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="./images/emblem.png" height="110"  alt="" />
         </div>
-        <div class="payments">
-            <h6>Платежные системы:</h6>
-            <ul>
-                <li><img alt="mastercard" src="./images/mastercard.svg"></li>
-                <li><img alt="visa" src="./images/visa.svg"></li>
-                <li><img alt="maestro" src="./images/maestro.svg"></li>
-            </ul>
+        <div class="slide">
+            <img src="./images/ucp-emblem.png" height="110"  alt="" />
         </div>
-        <a href="#" title="В начало"><img class="arrow" alt="arrow" src="./images/arrow.svg"></a>
-    </footer>
-    <div class="ucp-bottom"><p>Образовательный центр безопасноти <br> Университет гражданоской защиты МЧС Республики Беларусь</p></div>
-</section>
-</div>
+        <div class="slide">
+            <img src="./images/ippk.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/bdpo.png" height="110" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/nii.png" height="110" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/min_aduk.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/bsuir.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/medik.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/emblem.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/ucp-emblem.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/ippk.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/bdpo.png" height="110" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/nii.png" height="110" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/min_aduk.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/bsuir.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/medik.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/emblem.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/ucp-emblem.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/ippk.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/bdpo.png" height="110" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/nii.png" height="110" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/min_aduk.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/bsuir.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/medik.png" height="110"  alt="" />
+        </div>
+        <div class="slide">
+            <img src="./images/emblem.png" height="110"  alt="" />
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="info">
+            <div class="contacts">
+                <h6 id="contacts">Контакты:</h6>
+                <ul class="m-0 p-0">
+                <li><a href="tel:80172697060">8 (017) 269 - 70 - 60</a></li>
+                <li><a href="tel:80448040054">8 (044) 804 - 00 - 54</a></li>
+                <li><a href="mailto:cb@ucp.by">cb@ucp.by</a></li>
+                <li><a href="https://www.instagram.com/centr_bezopasnosti_minsk/">Instagram</a></li>
+                </ul>
+            </div>
+    
+            <div class="menu"> 
+                <h6>Сылки:</h6> 
+                <ul class="m-0 p-0">
+                    <li><a href="./locations.html">Площадки</a></li>
+                    <li><a href="./lessons.html">Занятия</a></li>
+                    <li><a href="#">Тесты</a></li>
+                    <li><a href="#">О центре</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="payments">
+                <h6>Платежные системы:</h6>
+                <ul class="m-0 p-0">
+                    <li><img alt="mastercard" src="./images/mastercard.svg"></li>
+                    <li><img alt="visa" src="./images/visa.svg"></li>
+                    <li><img alt="maestro" src="./images/maestro.svg"></li>
+                </ul>
+            </div>
+    
+            <div class="up"><a href="#" title="В начало"><img class="arrow" alt="arrow" src="./images/arrow.svg"></a>
+            </div>
+        </div>
+        </footer>
+    
+        <div class="ucp-bottom"><p>Образовательный центр безопасноти <br> Университет гражданоской защиты МЧС Республики Беларусь</p></div>
+    </section>
+    </div>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: " ",
+          },
+          navigation: {
+            nextEl: ".right-arrow",
+            prevEl: ".left-arrow",
+          },
+        });
+      </script>
+
+      <script>
+        const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    const recipient = button.getAttribute('data-bs-whatever')
+    // If necessary, you could initiate an Ajax request here
+    // and then do the updating in a callback.
+
+    // Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+    modalTitle.textContent = `New message to ${recipient}`
+    modalBodyInput.value = recipient
+  })
+}
+      </script>
+
 </body>
-</html>
+    </html>

@@ -176,6 +176,8 @@ table {
 
 
 
+
+
 /***CONTAINER FOOTER***/
 
 .map {
@@ -251,15 +253,18 @@ table {
 }
 
 .container-footer footer .menu ul li a:hover {
-text-decoration: underline;
-}
+    text-decoration: underline;
+    }
 
 .container-footer footer .payments ul {
     display: flex;
     gap: 17px;
 }
 
-
+.container-footer footer .payments ul li:hover,
+.container-footer footer .contacts ul li a:hover{
+    cursor: pointer;
+}
 
 .container-footer footer .up {
     height: 64px;
@@ -273,7 +278,6 @@ text-decoration: underline;
     font-size: 12px;
     font-weight: 400;
     text-align: center;
-    padding-top: 55px;
     padding-bottom: 18px;
 }
 
