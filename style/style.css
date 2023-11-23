@@ -215,6 +215,25 @@
     width: 400px;
   }
 
+  .container-carusel .swiper-button-next, 
+  .container-carusel .swiper-button-prev
+ {
+   color: #fff;
+  }
+
+  .container-carusel .swiper-pagination .swiper-pagination-bullet{
+    background-color: #fff;
+  }
+
+
+
+
+
+/* On smaller screens, decrease text size *//*
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
 /*
 .container-carusel .slideshow-container .mySlides .text {
     position: relative;
