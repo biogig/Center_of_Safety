@@ -173,11 +173,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
-
-    
-    
   }
+
+
 
   .container-carusel  .swiper-slide .text {
     position: relative;
@@ -185,7 +183,10 @@
     display: flex;
     flex-direction: column;
     padding-left: 70px;
-    
+  }
+
+  .container-carusel  .swiper-slide a {
+    text-decoration: none;
   }
 
   .container-carusel  .swiper-slide .text h2  {
@@ -198,6 +199,7 @@
     position: relative;
     width: 800px;
     text-align: left;
+    
   }
 
   .container-carusel  .swiper-slide .text p {
@@ -213,6 +215,7 @@
     position: relative;
     top: 15px;
     width: 400px;
+    
   }
 
   .container-carusel .swiper-button-next, 
@@ -497,13 +500,6 @@ margin-bottom: 31px;
     background-color: #F4F6FF;
     box-shadow: none;
 }
-
-
-
-
-
-
-
 
 
 
