@@ -107,68 +107,7 @@
 
    
 
- <!--    
-        <div class="slideshow-container center">
-        <div class="mySlides fade">  
-          <img src="./images/111.png">
-          <div class="text">
-            <h2>Набор групп для обучения</h2>
-        <p>Образовательный центр безопасности МЧС набирает группы детей 6-16 лет для обучения правилам безопасности жизнедеятельности</p> 
-        </div></div>
-
-        <div class="mySlides fade">
-            <img src="./images/444.png">
-            <div class="text">
-              <h2>Выставка экипировки спасателей</h2>
-          <p>НИИ ПБ и ЧС проводит выставку пожарно-спасательной экипировки на базе центра безопасности</p>
-            </div>
-          </div>
-        
-        <div class="mySlides fade">
-          <img src="./images/333.png">
-          <div class="text">
-            <h2>Киносеанс в центре</h2>
-        <p>Центр безопасности МЧС проводит показ фильмов белорусских киностудий о Великой Отечественной Войне. Цена билета: 2 рубля. </p>
-          </div>
-        </div>
-        
-        <div class="mySlides fade">
-          <img src="./images/555.png">
-          <div class="text">
-            <h2>Выставка пожарной техники</h2>
-        <p>Образовательный центр безопасности МЧС проводит выставку старинной пожарной техники. Вход бесплатный!</p>
-          </div>
-        </div>
-        </div>
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
-
-        <script>
-        var slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-               slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 4 seconds
-        }
-        </script>
--->   
+ 
 
 </section>
 
@@ -176,17 +115,25 @@
     <!-- LOCATIONS -->
 <section class="container-locations center">
     <div class="info">
-        <h2><a href="#">Площадки</a></h2>
+        <h2><a href="./locations.html">Площадки</a></h2>
         <h2><a href="./lessons.html">Расписание</a></h2>
     </div>
     <div class="locations">
-        <div class="card">
+
+
+        <div class="card1">
             <img alt="road" src="./images/road.JPG">
             <h5>Безопаность на дороге</h5>
             <p>Обучающая площадка предназначена для отработки навыка безопасного перехода проезжей части по регулируемому и нерегулируемому пешеходному переходу.</p>
-            <details>
-                <summary class="animate__animated animate__fadeInDown wow">Подробнее</summary>
-                <p>Транспортная безопасность является одной из важнейших составляющих
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed animate__animated animate__fadeInDown wow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Подробнее
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+                  <div class="accordion-body"><p class="m-0 p-0">Транспортная безопасность является одной из важнейших составляющих
                     безопасности государства, поскольку, наряду с другими инфраструктурными отраслями,
                     транспорт обеспечивает базовые условия жизнедеятельности общества. Населению
                     необходимо активно участвовать в обеспечении транспортной безопасности, а каждый
@@ -194,32 +141,62 @@
                     позиции и уважать жизнь и права других людей. При обеспечении транспортной
                     безопасности необходимо учитывать все возможные угрозы техногенного, природного,
                     террористического и иного характера.</p>
-              </details>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="card">
+
+
+        <div class="card1">
             <img alt="road" src="./images/smart-house.JPG">
             <h5>Умный дом</h5>
             <p>Площадка построена аналогично умному дому. Все элементы комнаты работают на различный датчиках, а также могут управляться дистанционно</p>
-            <details>
-                <summary class="animate__animated animate__fadeInDown wow">Подробнее</summary>
-                <p>Это – умный дом. Защищенная территория, умный почтовый ящик, защита детей от опасности выпадения из окон, системы безопасности от пожара, взлома или утечки газа – технологии будущего все быстрее входят в нашу жизнь.
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed animate__animated animate__fadeInDown wow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Подробнее
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+                  <div class="accordion-body"><p class="m-0 p-0">Это – умный дом. Защищенная территория, умный почтовый ящик, защита детей от опасности выпадения из окон, системы безопасности от пожара, взлома или утечки газа – технологии будущего все быстрее входят в нашу жизнь.
                     Площадка позволяет увидеть преимущества использования систем умного дома как в режиме повседневной жизнедеятельности, так и при возникновении чрезвычайных ситуаций.</p>
-              </details>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="card">
+
+
+        <div class="card1">
             <img alt="road" src="./images/house.JPG">
             <h5>Безопасность в быту</h5>
             <p>На данной площадке используется технология дополненной реальности для поиска возможных опасностей в жилой комнтае</p>
-            <details>
-                <summary class="animate__animated animate__fadeInDown wow">Подробнее</summary>
-                <p>На площадке с использованием технологии дополненной реальности можно ознакомиться с факторами риска возникновения пожара при неправильной эксплуатации бытовых приборов, усвоить правила пожарной безопасности в жилом помещении увидеть источники потенциальных угроз и причины возникновения чрезвычайных ситуаций в быту.</p>
-              </details>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed animate__animated animate__fadeInDown wow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Подробнее
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+                  <div class="accordion-body"><p class="m-0 p-0">На площадке с использованием технологии дополненной реальности можно ознакомиться с факторами риска возникновения пожара при неправильной эксплуатации бытовых приборов, усвоить правила пожарной безопасности в жилом помещении увидеть источники потенциальных угроз и причины возникновения чрезвычайных ситуаций в быту.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
+
     </div>
     <details class="show-all">
         <summary class="all-locations animate__animated animate__fadeInLeft wow">Все площадки</summary>
+
+
+
         <div class="locations">
-            <div class="card">
+            <div class="card1">
                 <img alt="road" src="./images/train.JPG">
                 <h5>Транспортная безопасность</h5>
                 <p>Основным элементом площадки для отработки правил безопасности в транспорте является макет вагона электропоезда в натуральную величину</p>
@@ -230,7 +207,9 @@
                         Также посетителям центра напоминают о правилах перехода железнодорожных путей.</p>
                   </details>
             </div>
-            <div class="card">
+
+            
+            <div class="card1">
                 <img alt="road" src="./images/forest.JPG">
                 <h5>Правила поведения в лесу</h5>
                 <p>На площадке отрабатываются правила подготовки к походу в лес, ориентирования, безопасного разведения костров, а также поведения на водоемах и др.</p>
@@ -239,7 +218,9 @@
                     <p>Многие не осознают, что лес – это место повышенной опасности. Здесь могут подстерегать дикие звери, клещи, змеи, ядовитые растения. Самая распространенная опасность – заблудиться, а то и вовсе попасть в болото. С начала года подразделениями МЧС в лесах найдено более 600 заблудившихся, 29 из них дети.</p>
                   </details>
             </div>
-            <div class="card">
+
+
+            <div class="card1">
                 <img alt="road" src="./images/car.jpg">
                 <h5>Опрокидывающийся автомобиль</h5>
                 <p>Тренажер позволяет продемонстрировать возможные последствия дорожно-транспортного происшествия с опрокидыванием автомобиля</p>
@@ -248,7 +229,9 @@
                     <p>При данном виде аварий происходит перемещение пассажира по инерции, при этом возможно его столкновение с деталями интерьера транспортного средства или другими пассажирами. Минимизировать данные негативные последствия позволяют ремни безопасности и детские автомобильные кресла</p>
                   </details>
             </div>
-            <div class="card">
+
+
+            <div class="card1">
                 <img alt="road" src="./images/hospital.JPG">
                 <h5>Первая помощь</h5>
                 <p>Оказание первой помощи – важный элемент в защите жизни и здоровья граждан. От правильных действий очевидцев в первые секунды может зависеть жизнь человека</p>
@@ -257,7 +240,9 @@
                     <p>Данная экспозиция направлена на изучение и практическую отработку алгоритмов оказания первой помощи пострадавшим. В зависимости от возраста разыгрываются различные ситуации – от укусов насекомых, порезов до переломов, потери сознания и оказание помощи при сердечно-легочной недостаточности</p>
                   </details>
             </div>
-            <div class="card">
+
+
+            <div class="card1">
                 <img alt="road" src="./images/crowd.jpg">
                 <h5>Правила поведения в толпе</h5>
                 <p>Площадка позволяет почувствовать напор толпы и отработать правильные действия, если вы оказались зажаты толпой, для детей старше 10 лет</p>
@@ -266,7 +251,9 @@
                     <p> «толпа» - бесструктурное скопление людей, лишенных ясно осознаваемой общности целей, но взаимно связанных сходством эмоционального состояния и общим объектом внимания. При объединении маленьких групп в большую, резко возрастает вероятность проявления стихийного поведения. Важными психологическими характеристиками толпы являются ее бессознательность, инстинктивность и импульсивность.</p>
                   </details>
             </div>
-            <div class="card">
+
+            
+            <div class="card1">
                 <img alt="road" src="./images/earthquake.jpg">
                 <h5>Безопасность при землетрясении</h5>
                 <p>Представленный на площадке учебный тренажер позволяет ощутить на себе воздействие землетрясения с магнитудой от 1,0 до 9,0.</p>
@@ -330,7 +317,7 @@
                     <strong>Телефоны для записи:</strong><br>
                     8 (029) 504 - 00 - 54<br>
                     8 (017) 269 - 70 - 60
-                </p> <img alt="misk" src="./images/111.png">
+                </p> <img alt="misk" src="./images/1111.png">
             </div>
               </div>
             </div>
@@ -342,6 +329,15 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="about">
+                  <p><br><strong>Адрес:</strong><br>
+                      г. Брест,<br> ул. Лейтенанта Рябцева, 54<br><br>
+                      <strong>Телефоны для записи:</strong><br>
+                      8 (162) 50 - 08 - 89 <br>
+                      8 (162) 52 - 51 - 01,
+                  </p> <img alt="stolin" src="images/brest.jpg"> 
+              </div>
+                <hr class="m-0 p-0">
+                <div class="about">
                     <p><br><strong>Адрес:</strong><br>
                         г. Столин,<br> ул. Пинская, 70<br><br>
                         <strong>Телефоны для записи:</strong><br>
@@ -349,6 +345,16 @@
                         8 (016) 556 - 60 - 14
                     </p> <img alt="stolin" src="images/stolin.jpg"> 
                 </div>
+                <hr class="m-0 p-0">
+                <div class="about">
+                  <p><br><strong>Адрес:</strong><br>
+                      г. Каменец,<br> ул. Матросова, 5<br><br>
+                      <strong>Телефоны для записи:</strong><br>
+                      8 (016) 319 - 07 - 88<br>
+                  </p> <img alt="stolin" src="images/kamenec.png"> 
+              </div>
+
+                
               </div>
             </div>
             <div class="accordion-item">
@@ -364,7 +370,8 @@
                         <strong>Телефоны для записи:</strong><br>
                         8 (033) 614 - 06 - 42<br>
                         8 (021) 655 - 25 - 30
-                    </p> <img alt="baran'" src="images/baran.jpg"></div>
+                    </p> <img alt="baran'" src="images/baran.jpg">
+                  </div>
                     <hr class="m-0 p-0">
                     <div class="about">
                         <p><strong>Адрес:</strong><br>

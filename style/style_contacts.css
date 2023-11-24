@@ -233,18 +233,7 @@ table {
     font-size: 23px;
     font-weight: 600;
 }
-/*
-.container-contacts .info .contacts {
-    display: grid;
-    grid-template-columns: 260px 260px;
-    grid-template-rows: 1fr 1fr;
-    
-}
 
-.container-contacts .info .contacts .insta {
-    grid-row: 7/1;
-}
-*/
 .container-contacts .info .contacts .insta img {
     align-items: center;
     height: 30px;
@@ -280,7 +269,7 @@ table {
 .container-contacts .info .transport .mini-bus p {
     background-color: rgb(181, 182, 182);
     color: #F4F6FF;
-    /*border: solid 1px black; */
+    
     border: 0;
 }
 
@@ -382,7 +371,10 @@ table {
     text-decoration: none;
     color: #030823;
     line-height: 173%;
-    
+}
+
+.container-contacts .price-list .table{
+    --bs-table-bg: none;
 }
 
 .container-contacts .price-list .table th {

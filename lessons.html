@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Центр Безопасности МЧС</title>
+    <title>Расписание занятий</title>
     <link rel="shortcut icon" href="./images/emblem.png" type="images/png">
     <link rel="stylesheet" href="./style/style_lessons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
                     <li><a href="./lessons.html">Занятия</a></li>
                     <li><a href="#">Тесты</a></li>
                     <li><a href="#about">О центре</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
                     <li class="tour"><a href="https://center.ucp.by/virtual/">3D-тур</a></li>
                 </ul>
             </nav>
@@ -103,9 +103,18 @@
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Ваше имя</label>
               <input type="text" class="form-control" id="recipient-name">
+
+               <label for="recipient-name" class="col-form-label">Номер телефона</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+              <label for="recipient-name" class="col-form-label">Количество человек</label>
+              <input type="text" class="form-control" id="recipient-name">
+
+              <label for="recipient-name" class="col-form-label">Возраст</label>
+              <input type="text" class="form-control" id="recipient-name">
             </div>
             <div class="mb-3">
-              <label for="message-text" class="col-form-label">Message:</label>
+              <label for="message-text" class="col-form-label">Комментарий</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
           </form>
@@ -117,6 +126,10 @@
       </div>
     </div>
   </div>
+
+  <script>$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })</script>
 
 <!--Modal-->
                            
@@ -1576,7 +1589,7 @@ if (exampleModal) {
     const modalTitle = exampleModal.querySelector('.modal-title')
     const modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-    modalTitle.textContent = `New message to ${recipient}`
+    modalTitle.textContent = `Записаться на обучающее занятие`
     modalBodyInput.value = recipient
   })
 }

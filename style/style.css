@@ -229,127 +229,6 @@
 
 
 
-/* On smaller screens, decrease text size *//*
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-/*
-.container-carusel .slideshow-container .mySlides .text {
-    position: relative;
-    bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 70px;
-}
-
-.container-carusel .slideshow-container .mySlides .text h2 {
-    color: #F4F6FF;
-    font-family: Oswald;
-    font-size: 62px;
-    font-weight: 400;
-    line-height: 100.6%;
-    letter-spacing: 0.62px;
-    position: relative;
-    width: 800px;
-    text-align: left;
-    
-}
-
-.container-carusel .slideshow-container .mySlides .text p{
-    color:  #F4F6FF;
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 116.667%;
-    letter-spacing: -0.18px;
-    width: 524px;
-    text-align: left;
-    left: 300px;
-    position: relative;
-    top: 15px;
-    width: 400px;
-}
-
-
-
-.container-carusel .slideshow-container .mySlides img {
-    max-width: 1440px;
-    min-width: 1440px;
-    height: 800px;
-    margin-bottom: -140px;
-    object-fit: cover;
-}
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container *//*
-.slideshow-container {
-  max-width: 1440px;
-  
-  margin: auto;
-  padding-top: 93px;
-  
-}
-
-/* Caption text *//*
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-/* The dots/bullets/indicators *//*
-.dot {
-  height: 8px;
-  width: 8px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  cursor: pointer;
-  position: relative;
-  bottom: 40px;
-    
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation *//*
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 0.7} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: 0.7} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size *//*
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-*/
 
 /*LOCATIONS*/
 
@@ -383,12 +262,12 @@ img {vertical-align: middle;}
 .container-locations .locations {
     display: grid;
     justify-content: center;
-    grid-template-columns: 413px 413px 413px;
+    grid-template-columns: 407px 407px 407px;
     column-gap: 31px;
 
 }
 
-.container-locations .locations .card {
+.container-locations .locations .card1 {
 box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
 text-align: left;
 margin-bottom: 31px;
@@ -397,17 +276,18 @@ margin-bottom: 31px;
 }
 
 
-.container-locations .locations .card {
+.container-locations .locations .card1 {
     text-align: center;
 }
 
-.container-locations .locations .card img {
+.container-locations .locations .card1 img {
     width: 400px;
     height: 270px;
-    padding: 20px 20px 15px 20px;
+    padding: 15px;
+    border-radius: 19px;
 }
 
-.container-locations .locations .card h5 {
+.container-locations .locations .card1 h5 {
     color: #030823;
     font-family: Oswald;
     font-size: 30px;
@@ -416,9 +296,10 @@ margin-bottom: 31px;
     letter-spacing: 0.3px;
     padding-left: 20px;
     padding-bottom: 15px;
+    text-align: left;
 }
 
-.container-locations .locations .card p {
+.container-locations .locations .card1 p {
     color:#030823;
     font-family: Manrope;
     font-size: 18px;
@@ -432,19 +313,24 @@ margin-bottom: 31px;
 }
 
 
-.container-locations .locations .card details summary {
+.container-locations .locations .card1 .accordion .accordion-button {
     color:  #5D5E8C;
     font-family: Manrope;
     font-size: 20px;
     font-weight: 500;
-    margin: 40px 151px;
-    cursor: pointer;
     display: block;
-    cursor: pointer;
+    text-align: center;
+    box-shadow: none;
+    padding-bottom: 40px;
 }
 
-.container-locations .locations .card details summary:hover {
+
+
+
+.container-locations .locations .card1 .accordion .accordion-button:hover {
     text-decoration: underline;
+    color:  #030823;
+
 }
 
 .container-locations .show-all .all-locations{
@@ -469,6 +355,16 @@ margin-bottom: 31px;
     padding: 14px 35px;
     transition: 1s;
     box-sizing: border-box;
+}
+
+
+.container-locations .locations .card1 .accordion .accordion-body {
+    background-color: #F4F6FF;
+}
+
+.container-locations .locations .card1 .accordion .accordion-item,
+.container-locations .locations .card1 .accordion .accordion-button  {
+    background-color: #F4F6FF;
 }
 
 
@@ -539,7 +435,7 @@ margin-bottom: 31px;
 
 
 .container-about .center .accordion {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -618,7 +514,7 @@ margin-bottom: 31px;
 /***CONTAINER FOOTER***/
 
 .map {
-    margin-bottom: -3px;}
+    margin-bottom: -8px;}
 
 
 .container-footer {
