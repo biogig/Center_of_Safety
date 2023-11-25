@@ -64,7 +64,7 @@
 .container-navigation header {
     background-color: #030823;
   position: fixed;
-  z-index: 108;
+  z-index: 1080;
 }
 
 .container-navigation header img {
@@ -143,8 +143,9 @@
 
 .container-navigation header .menu .tour a:hover {
     color:#F4F6FF;
-    background-color: #162161;
+    background-color: #030823;
     text-decoration: none;
+    transition: 1s;
 }
 
 
@@ -262,7 +263,8 @@
     text-decoration: underline;
 }
 
-.container-locations .locations {
+.container-locations .locations,
+.container-locations .locations-all  {
     display: grid;
     justify-content: center;
     grid-template-columns: 407px 407px 407px;
@@ -270,27 +272,31 @@
 
 }
 
-.container-locations .locations .card1 {
+.container-locations .locations .card1,
+.container-locations .locations-all .card1 {
 box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
 text-align: left;
-margin-bottom: 31px;
-
 
 }
 
+.container-locations .locations-all .card1 {
+    margin-bottom: 31px;
+}
 
 .container-locations .locations .card1 {
     text-align: center;
 }
 
-.container-locations .locations .card1 img {
+.container-locations .locations .card1 img,
+.container-locations .locations-all .card1 img {
     width: 400px;
     height: 270px;
     padding: 15px;
     border-radius: 19px;
 }
 
-.container-locations .locations .card1 h5 {
+.container-locations .locations .card1 h5,
+.container-locations .locations-all .card1 h5 {
     color: #030823;
     font-family: Oswald;
     font-size: 30px;
@@ -302,7 +308,8 @@ margin-bottom: 31px;
     text-align: left;
 }
 
-.container-locations .locations .card1 p {
+.container-locations .locations .card1 p,
+.container-locations .locations-all .card1 p {
     color:#030823;
     font-family: Manrope;
     font-size: 18px;
@@ -316,27 +323,28 @@ margin-bottom: 31px;
 }
 
 
-.container-locations .locations .card1 .accordion .accordion-button {
+
+.container-locations .locations .card1 a,
+.container-locations .locations-all .card1 a{
     color:  #5D5E8C;
     font-family: Manrope;
     font-size: 20px;
     font-weight: 500;
     display: block;
-    text-align: center;
+    margin: 0 auto;
     box-shadow: none;
     padding-bottom: 40px;
 }
 
 
-
-
-.container-locations .locations .card1 .accordion .accordion-button:hover {
+.container-locations .locations .card1 a:hover {
     text-decoration: underline;
     color:  #030823;
 
 }
 
-.container-locations .show-all .all-locations{
+.container-locations .show-all .all-locations
+{
     color: #030823;
     text-align: center;
     font-family: Manrope;
@@ -350,25 +358,69 @@ margin-bottom: 31px;
     border-radius: 7px;
     display: block;
     cursor: pointer;
-    margin-top: 35px;
-    margin-bottom: 55px;
+    
     justify-content: center;
-    margin-left: 587px;
+    margin: 35px auto;
     transition: 1s;
     padding: 14px 35px;
-    transition: 1s;
+    transition: 2s;
     box-sizing: border-box;
 }
 
+.container-locations .show-all .all-locations:hover {
+    background-color: #030823;
+    color: #F4F6FF;
+}
 
-.container-locations .locations .card1 .accordion .accordion-body {
+
+
+
+.container-locations .locations .card1 
+ {
     background-color: #F4F6FF;
 }
 
-.container-locations .locations .card1 .accordion .accordion-item,
-.container-locations .locations .card1 .accordion .accordion-button  {
-    background-color: #F4F6FF;
+
+.container-locations .btn {
+    border: 0;
 }
+
+.popover-body{
+    background-color: #F4F6FF;
+    color: #030823;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 116.667%;
+    letter-spacing: -0.18px;
+    text-align: left;
+    /* border: solid rgba(0, 0, 0, 0.1) 1px;
+    width: 407px; */
+    /* border-radius: 7px; */
+  
+    
+}
+
+/* .custom-popover {
+    --bs-popover-max-width: 210px;
+    --bs-popover-border-color: var(--bs-primary);
+    --bs-popover-header-bg: var(--bs-primary);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  } */
+
+  
+.popover {
+    min-width:407px;
+    max-width:800px;
+    --bs-popover-bg: #F4F6FF;
+}
+
+
+
+
+
 
 
 /***CONTAINER ABOUT***/
@@ -385,6 +437,7 @@ margin-bottom: 31px;
     font-weight: 400;
     line-height: 100.6%; 
     letter-spacing: 0.62px;
+    padding-top: 20px
 }
 
 .container-about .abot {
@@ -438,7 +491,7 @@ margin-bottom: 31px;
 
 
 .container-about .center .accordion {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -472,12 +525,17 @@ margin-bottom: 31px;
     
 }
 
+.accordion-button {
+
+    --bs-accordion-btn-icon-width: 0;
+}
 
 .container-about .center .accordion .accordion-item .show .about {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 
 .container-about .center .accordion .accordion-item .show .about img {
     width: 40%;

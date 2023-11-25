@@ -140,7 +140,7 @@ table {
 
 .container-navigation header .menu .tour a:hover {
    color:#F4F6FF;
-   background-color: #162161;
+   background-color: #030823;
    text-decoration: none;
 }
 
@@ -316,7 +316,7 @@ font-weight: 800;
 }
 
 .container-info .lessons-table table tr td button:hover {
-    background-color: #162161;
+    background-color: #030823;
     color: #F4F6FF;
 }
 
