@@ -363,7 +363,11 @@ font-weight: 800;
     line-height: 130%;
     letter-spacing: 0.62px;
     text-align: center;
-    
+}
+
+
+.container-info .modal-backdrop {
+    z-index: 0;
 }
 
 

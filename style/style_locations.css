@@ -141,9 +141,10 @@ table {
 
 .container-navigation header .menu .tour a:hover {
    color:#F4F6FF;
-   background-color: #162161;
-   text-decoration: none;
+   background-color: #030823;
 }
+
+
 
 
 
@@ -155,6 +156,7 @@ table {
 .container-locations {
     padding-top: 100px;
     background-color: #F4F6FF;
+    padding-bottom: 55px;
 }
 
 
@@ -169,14 +171,14 @@ table {
     padding-top: 70px;
 }
 
-.container-locations p {
+.container-locations .summary {
     color:  #030823;
     font-family: Manrope;
     font-size: 18px;
     font-weight: 300;
     line-height: 116.667%;
     letter-spacing: -0.18px;
-    margin: 55px 182px 55px 182px;
+    margin: 55px 132px 55px 132px;
 }
 
 .container-locations select {
@@ -184,9 +186,88 @@ table {
     border: 0;
     margin-left: 70px;
     outline: none;
-    
     width: 250px;
- 
+}
+
+
+
+
+
+
+.container-locations .locations,
+.container-locations .locations-all  {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 407px 407px 407px;
+    column-gap: 31px;
+
+}
+
+.container-locations .locations .card1 {
+box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+text-align: left;
+margin-bottom: 30px;
+
+}
+
+.container-locations .locations-all .card1 {
+    margin-bottom: 31px;
+}
+
+.container-locations .locations .card1 {
+    text-align: center;
+}
+
+.container-locations .locations .card1 img {
+    width: 400px;
+    height: 270px;
+    padding: 15px;
+    border-radius: 19px;
+}
+
+.container-locations .locations .card1 h5 {
+    color: #030823;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.3px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.container-locations .locations .card1 p{
+    color:#030823;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 116.667%;
+    letter-spacing: -0.18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.container-locations .locations .card1 a{
+    color:  #5D5E8C;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    box-shadow: none;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+
+.container-locations .locations .card1 a:hover {
+    text-decoration: underline;
+    color:  #030823;
 
 }
 
@@ -195,8 +276,9 @@ table {
 
 
 
-
 /***CONTAINER FOOTER***/
+
+
 
 .map {
     margin-bottom: -3px;}
