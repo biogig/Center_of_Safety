@@ -388,15 +388,33 @@ font-weight: 800;
     letter-spacing: 0.62px;
 }
 
-.modal h1 {
+.modal h5 {
     margin: 0;
     color: #030823;
     font-family: manrope;
-    font-size: 17px;
-    font-weight: 0;
+    font-size: 26px;
+    font-weight: 600;
     line-height: 130%;
     letter-spacing: 0.62px;
 }
+
+.modal .modal-content .modal-footer button {
+    color: #030823;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #F4F6FF;
+    border: 1px solid #858586;
+    border-radius: 6px
+}
+
+.modal .modal-content .modal-footer button:hover{
+    background-color: #030823;
+    color: #F4F6FF;
+}
+
 
 
 /***CONTAINER FOOTER***/

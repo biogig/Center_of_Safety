@@ -1560,24 +1560,24 @@ if (exampleModal) {
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Регистрация на занятие</h1>
+                  <h5 class="modal-title" id="exampleModalLabel">Регистрация на занятие</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
                       <label for="recipient-name" class="col-form-label">Ваше имя</label>
-                      <input type="text" class="form-control" id="recipient-name">
+                      <input type="text" class="form-control" id="recipient-name" required>
         
                        <label for="recipient-name" class="col-form-label">Номер телефона</label>
                       <input type="tel" class="form-control" id="recipient-name"
-                      placeholder="+375 (29)" value="+375 (29) ">
+                      placeholder="+375 (29)" value="+375 (29) " required>
         
                       <label for="recipient-name" class="col-form-label">Количество человек</label>
-                      <input type="number" class="form-control" id="recipient-name">
+                      <input type="number" class="form-control" id="recipient-name" required>
         
                       <label for="recipient-name" class="col-form-label">Возраст</label>
-                      <input type="number" class="form-control" id="recipient-name" max="100">
+                      <input type="number" class="form-control" id="recipient-name" max="100" required>
                     </div>
                     <div class="mb-3">
                       <label for="message-text" class="col-form-label">Комментарий</label>
@@ -1586,8 +1586,8 @@ if (exampleModal) {
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
-                  <button type="button" class="btn btn-primary">Отправить</button>
+                  <button type="button" class="btn" data-bs-dismiss="modal">Отменить</button>
+                 <button type="submit" class="btn" action="">Отправить</button>
                 </div>
               </div>
             </div>

@@ -392,7 +392,7 @@ margin-right: 15px;
       
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body  .swiper-slide {
+.container-locations .locations .cards-wiper-style .modal-body  .swiper-slide {
       text-align: center;
       font-size: 18px;
       background-color: #F4F6FF;
@@ -402,14 +402,12 @@ margin-right: 15px;
     }
 
 
-
-
-
-
-
-    
-
-    .container-locations .locations .cards-wiper-style .modal-body .mySwiper2 .swiper-slide img {
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper2 
+.swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper4 
+.swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper6 
+.swiper-slide img{
       display: block;
       width: 100%;
      
@@ -421,7 +419,9 @@ margin-right: 15px;
     
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body .mySwiper .swiper-slide img {
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper .swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper3 .swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper5 .swiper-slide img {
         display: block;
         width: 100%;
         height: 110px;
@@ -435,45 +435,53 @@ margin-right: 15px;
     }
 
 
-    .container-locations .locations .cards-wiper-style .modal-body .swiper-slide-active {
+.container-locations .locations .cards-wiper-style .modal-body .swiper-slide-active {
         height: 100%;
     }
   
 
-    .container-locations .locations .cards-wiper-style .modal-body .swiper {
+.container-locations .locations .cards-wiper-style .modal-body .swiper {
       width: 100%;
       height: 80%;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body .swiper-slide {
+.container-locations .locations .cards-wiper-style .modal-body .swiper-slide {
       background-size: cover;
       background-position: center;
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body.mySwiper2 {
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper2,
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper4,
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper6 {
       height: 100%;
       width: 100%;
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body .mySwiper {
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper3,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper5 {
       height: 20%;
       box-sizing: border-box;
       padding: 10px 0;
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body  .mySwiper .swiper-slide {
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper .swiper-slide,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper3 .swiper-slide,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper5 .swiper-slide {
       width: 100%;
       height: 100%;
       opacity: 0.4;
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body  .mySwiper .swiper-slide-thumb-active {
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper .swiper-slide-thumb-active,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper3 .swiper-slide-thumb-active,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper5 .swiper-slide-thumb-active {
       opacity: 1;
     }
 
-    .container-locations .locations .cards-wiper-style .modal-body.swiper-slide img {
+.container-locations .locations .cards-wiper-style .modal-body.swiper-slide img {
       display: block;
       width: 100%;
       height: 100%;
