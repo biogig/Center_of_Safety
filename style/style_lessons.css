@@ -358,16 +358,44 @@ font-weight: 800;
     padding-bottom: 60px;
     color: #030823;
     font-family: manrope;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 0;
     line-height: 130%;
     letter-spacing: 0.62px;
     text-align: center;
 }
 
+/* ***********************MODAL*********************** */
 
-.container-info .modal-backdrop {
-    z-index: 0;
+.modal .modal-content {
+    background-color: #F4F6FF;
+    border-radius: 0;
+}
+
+.modal .modal-content .modal-body input,
+.modal .modal-content .modal-body textarea {
+    background-color: #fdfdff;
+    border-radius: 0;
+}
+
+.modal .modal-content label {
+    margin: 0;
+    color: #030823;
+    font-family: manrope;
+    font-size: 17px;
+    font-weight: 0;
+    line-height: 130%;
+    letter-spacing: 0.62px;
+}
+
+.modal h1 {
+    margin: 0;
+    color: #030823;
+    font-family: manrope;
+    font-size: 17px;
+    font-weight: 0;
+    line-height: 130%;
+    letter-spacing: 0.62px;
 }
 
 
