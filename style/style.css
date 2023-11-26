@@ -337,11 +337,13 @@ text-align: left;
 }
 
 
-.container-locations .locations .card1 a:hover {
+.container-locations .locations .card1 a:hover,
+.container-locations  .locations-all .card1 a:hover {
     text-decoration: underline;
     color:  #030823;
-
 }
+
+
 
 .container-locations .show-all .all-locations
 {
@@ -354,7 +356,7 @@ text-align: left;
     line-height: 122.222%;
     width: 267px;
     height: 52px;
-    border: 1px solid black;
+    border: 1px solid rgb(211, 210, 210);
     border-radius: 7px;
     display: block;
     cursor: pointer;
