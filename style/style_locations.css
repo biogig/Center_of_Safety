@@ -252,7 +252,7 @@ margin-bottom: 30px;
 
 
 
-.container-locations .locations .card1 button{
+.container-locations .locations .card1 .about-btn{
     color:  #5D5E8C;
     font-family: Manrope;
     font-size: 20px;
@@ -265,7 +265,7 @@ margin-bottom: 30px;
 }
 
 
-.container-locations .locations .card1 a:hover {
+.container-locations .locations .card1 .about-btn:hover {
     text-decoration: underline;
     color:  #030823;
 
@@ -299,7 +299,7 @@ margin-bottom: 30px;
 .modal h2 {
     color: var(--, #030823);
     font-family: Oswald;
-    font-size: 52px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 400;
     line-height: 100.6%; /* 62.372px */
@@ -307,6 +307,7 @@ margin-bottom: 30px;
     text-align: left;
     margin-left: 71px;
     margin-top: 20px;
+    padding-bottom: 54px;
 }
 
 .modal h3 {
@@ -337,10 +338,41 @@ margin-bottom: 30px;
 .container-locations .locations .card1 .modal .modal-footer .about_location p {
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
     text-indent: 50px;
+    color: var(--, #030823);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.222%;
 }
 
+.container-locations .locations .card1 .modal .modal-body .col-4 p {
+    color: var(--, #030823);
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%;
+}
 
+.container-locations .locations .card1 .modal .modal-footer .btn {
+    color: var(--, #030823);
+text-align: center;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 122.222%;
+height: 40px;
+}
+
+.container-locations .locations .card1 .modal .modal-footer .btn:hover {
+    background-color: #030823;
+    color: #F4F6FF;
+}
 
 /* ***********************MODAL*********************** */
 
