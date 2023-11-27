@@ -82,7 +82,6 @@
     background-color: transparent;
     font-family: Manrope;
     color: #F4F6FF;
-    border: 0;
     font-size: 18px;
     margin-top: 34px;
     margin-right: 150px;
@@ -436,6 +435,9 @@ text-align: left;
 
 /***CONTAINER ABOUT***/
 
+
+
+
 .container-about {
     background-color: #F4F6FF;
     padding-bottom: 40px;
@@ -493,12 +495,179 @@ text-align: left;
     letter-spacing: 0.62px;
     padding-left: 70px;
     padding-bottom: 22px;
+    padding-top: 22px;
     text-indent: 70px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-about .center .city-show {
+    width: 65%;
+    
+}
+
+.container-about .center .info{
+    color: #030823;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+
+
+.container-about .center .city-show .show .about strong{
+    font-weight: 600;
+}
+
+.container-about .center .city-show .btn {
+    color: var(--, #030823);
+    font-family: Manrope;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 84%;
+    letter-spacing: -0.25px;
+    text-transform: uppercase;
+    border: 0; 
+}
+
+/* .container-about .center .city-show .btn:hover {
+    text-decoration: underline;
+} */
+
+.city-show .btn {
+
+    --bs-accordion-btn-icon-width: 0;
+}
+
+.container-about .center .city-show .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.container-about .center .city-show  img {
+    width: 220px;
+    box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+     margin-top: 25px;
+}
+
+.container-about .center .city-show p {
+    padding: 0;
+    margin: 0;
+}
+
+.container-about .center .city-show .row {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+.container-about .center .city-show .about hr {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-about .center .city-show .card,
+.container-about .center .city-show .btn  {
+    background-color: #F4F6FF;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+}
+
+.container-about .center .city-show .btn {
+    border-bottom: solid 1px rgb(189, 189, 189);
+    padding-bottom: 10px;
+    width: 300px;
+    text-align: left; 
+    font-weight: 500;
+}
+
+.container-about .center .city-show .row .col:nth-child(1){
+    width: 300px;
+    justify-content: start;
+}
+
+/* .container-about .center .city-show:nth-of-type(3),
+.container-about .center .city-show:nth-of-type(4){
+    
+  margin-top: -81px;
+} */
+
+.container-about .MultiCollapse {
+  padding-left: 70px;
+}
+
+.container-about .MultiCollapse h6 {
+    color: var(--, #030823);
+font-family: Oswald;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 100.6%;
+letter-spacing: 0.3px;
+margin: 0 auto;
+display: inline-block;
+padding-bottom: 20px;
+}
+
+
+.container-about .map {
+    /* box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2); */
+    margin-left: 90px; 
+    margin-bottom: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
+
 
 
 .container-about .center .accordion {
@@ -569,90 +738,6 @@ text-align: left;
     background-color: #F4F6FF;
     box-shadow: none;
 } */
-
-
-
-
-
-
-
-
-
-
-.container-about .center .city-show {
-    width: 65%;
-    margin: 0 auto;
-}
-
-.container-about .center .info{
-    color: #030823;
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0px;
-    cursor: pointer;
-    list-style-type: none;
-}
-
-
-
-.container-about .center .city-show .show .about strong{
-    font-weight: 600;
-}
-
-.container-about .center .city-show .btn {
-    text-transform: uppercase;
-    color: #030823;
-    font-family: Oswald;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 100.6%;
-    letter-spacing: 0.62px;
-    border: 0; 
-}
-
-.container-about .center .city-show .btn:hover {
-    text-decoration: underline;
-}
-
-.city-show .btn {
-
-    --bs-accordion-btn-icon-width: 0;
-}
-
-.container-about .center .city-show .about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-.container-about .center .city-show  img {
-    width: 360px;
-    box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
-    margin: 0 auto;
-}
-
-
-.container-about .center .city-show .about hr {
-    padding: 0;
-    margin: 0;
-}
-
-
-.container-about .center .city-show .card,
-.container-about .center .city-show .btn  {
-    background-color: #F4F6FF;
-    box-shadow: none;
-    border: 0;
-    border-radius: 0;
-}
-
-.container-about .center .city-show .btn {
-    border-bottom: solid 1px rgb(189, 189, 189);
-    padding-bottom: 10px;
- 
-}
 
 
 
