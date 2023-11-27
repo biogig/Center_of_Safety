@@ -149,6 +149,8 @@
 
 
 
+
+
 /*CARUSEL*/
 
 .container-carusel .swiper {
@@ -617,6 +619,8 @@ text-align: left;
     justify-content: start;
 }
 
+.container-about .center .city-show .row {width: 200px;}
+
 /* .container-about .center .city-show:nth-of-type(3),
 .container-about .center .city-show:nth-of-type(4){
     
@@ -897,4 +901,52 @@ padding-bottom: 20px;
 .slider .slide {
     height: 150px;
     width: 160px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .container-navigation header {
+        position: relative;
+        
+        
+    }
+    .container-navigation header .menu .tour  {
+        margin: 0;
+    }
+
+    
+.container-navigation header .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* align-items: center; */
+    padding-top: 26px;
+    padding-bottom: 26px;
+   
+}
+
+
+    .container-locations .locations, 
+    .container-locations .locations-all {
+        grid-template-columns: 407px 407px 407px;
+    }
+
+
+    .container-carusel .swiper {
+        padding-top: -5px;
+    }
+
+
+    .container-navigation header .menu .tour a {
+        margin: 0;
+    }
+
+    .card1 {
+        
+    }
 }
