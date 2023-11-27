@@ -940,6 +940,14 @@ padding-bottom: 20px;
         margin: 0;
     }
 
+    .container-navigation header .menu ul {
+  
+        gap: 60px;
+        padding-left: 0;
+        margin-left: 30px;
+       
+    }
+
 
 }
 
@@ -952,14 +960,7 @@ padding-bottom: 20px;
 
     
 
-    
-.container-navigation header .menu ul {
-  
-    gap: 60px;
-    padding-left: 0;
-    margin-left: 30px;
-   
-}
+
 
 .container-navigation header .menu ul a {
     font-size: medium;
@@ -1107,8 +1108,10 @@ padding-bottom: 20px;
     }
 
     .container-navigation header .menu ul {
-        gap: 70px;
+        gap: 75px;
     }
+
+
 
 }
 
@@ -1125,7 +1128,7 @@ padding-bottom: 20px;
 
     .container-about .map {
         margin: 0 auto;
-        width: ;
+       
     }
 
 
@@ -1230,8 +1233,10 @@ padding-bottom: 20px;
 }
 
 .container-navigation header .menu ul {
-    gap: 39px;
+    gap: 30px;
 }
+
+
 
 .container-footer .geraldika{
     padding: 0 !important;
@@ -1252,7 +1257,7 @@ padding-bottom: 20px;
     }
 
     .container-navigation header .menu ul{
-        gap: 30px;
+        gap: 25px;
     }
 
     .slider {
