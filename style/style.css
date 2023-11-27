@@ -752,7 +752,7 @@ padding-bottom: 20px;
 /***CONTAINER FOOTER***/
 
 .map {
-    margin-bottom: -8px;}
+    margin-bottom: -3px;}
 
 
 .container-footer {
@@ -789,6 +789,7 @@ padding-bottom: 20px;
     padding-left: 70px;
     justify-content: space-between;
     padding-bottom: 80px;
+    padding-left: 100px;
 }
 
 .container-footer .center .geraldika {
@@ -799,10 +800,9 @@ padding-bottom: 20px;
 }
 
 
-.container-footer footer .contacts,
-.container-footer footer .menu
- {
-    padding-left: 70px;
+.container-footer footer .payments ul li:hover,
+.container-footer footer .contacts ul li a:hover{
+    cursor: pointer;
 }
 
 .container-footer footer .contacts h6,
@@ -813,6 +813,7 @@ padding-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 8px;
+    padding-left: 30px;
 }
 
 .container-footer footer .contacts ul li a,
@@ -823,7 +824,6 @@ padding-bottom: 20px;
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 5px;
 }
 
 .container-footer footer .menu ul li a:hover {
@@ -835,10 +835,7 @@ padding-bottom: 20px;
     gap: 17px;
 }
 
-.container-footer footer .payments ul li:hover,
-.container-footer footer .contacts ul li a:hover{
-    cursor: pointer;
-}
+
 
 .container-footer footer .up {
     height: 64px;
@@ -852,6 +849,7 @@ padding-bottom: 20px;
     font-size: 12px;
     font-weight: 400;
     text-align: center;
+   
     padding-bottom: 18px;
 }
 
