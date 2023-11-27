@@ -193,7 +193,6 @@ table {
 
 
 
-
 .container-locations .locations,
 .container-locations .locations-all  {
     display: grid;
@@ -374,6 +373,11 @@ margin-right: 15px;
 .container-locations .locations .card1 .modal .modal-footer .btn:hover {
     background-color: #030823;
     color: #F4F6FF;
+}
+
+.modal .btn-close{
+
+    --bs-btn-close-focus-shadow: 0;
 }
 
 /* ***********************MODAL*********************** */

@@ -368,14 +368,16 @@ font-weight: 800;
 /* ***********************MODAL*********************** */
 
 .modal .modal-content {
-    background-color: #F4F6FF;
+    /* background-color: #F4F6FF; */
     border-radius: 0;
+    background-color: #fdfdff;
 }
 
 .modal .modal-content .modal-body input,
 .modal .modal-content .modal-body textarea {
     background-color: #fdfdff;
-    border-radius: 0;
+    border-radius: 4px;
+    border: solid #0b1654 1px;
 }
 
 .modal .modal-content label {
@@ -415,6 +417,10 @@ font-weight: 800;
     color: #F4F6FF;
 }
 
+.modal .btn-close {
+    color: #030823;
+    border: 0;
+}
 
 
 /***CONTAINER FOOTER***/

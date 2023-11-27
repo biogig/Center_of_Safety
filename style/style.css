@@ -351,7 +351,6 @@ text-align: left;
     text-align: center;
     font-family: Manrope;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 122.222%;
     width: 267px;
@@ -360,18 +359,26 @@ text-align: left;
     border-radius: 7px;
     display: block;
     cursor: pointer;
-    
     justify-content: center;
     margin: 35px auto;
     transition: 1s;
     padding: 14px 35px;
     transition: 2s;
     box-sizing: border-box;
+
 }
 
 .container-locations .show-all .all-locations:hover {
     background-color: #030823;
     color: #F4F6FF;
+}
+
+.container-locations .show-all .all-locations:focus{
+    display: none;
+}
+
+.container-locations .show-all .locations-all {
+    margin-top: 31px;
 }
 
 
@@ -468,7 +475,7 @@ text-align: left;
     padding-right: 70px;
     text-align: justify;
     text-indent: 70px;
-    padding-bottom: 30px;
+    
 }
 
 .container-about .center ul {
@@ -491,7 +498,7 @@ text-align: left;
 
 
 
-
+/* 
 
 
 .container-about .center .accordion {
@@ -561,8 +568,91 @@ text-align: left;
 .container-about .center .accordion .accordion-button  {
     background-color: #F4F6FF;
     box-shadow: none;
+} */
+
+
+
+
+
+
+
+
+
+
+.container-about .center .city-show {
+    width: 65%;
+    margin: 0 auto;
 }
 
+.container-about .center .info{
+    color: #030823;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+
+
+.container-about .center .city-show .show .about strong{
+    font-weight: 600;
+}
+
+.container-about .center .city-show .btn {
+    text-transform: uppercase;
+    color: #030823;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100.6%;
+    letter-spacing: 0.62px;
+    border: 0; 
+}
+
+.container-about .center .city-show .btn:hover {
+    text-decoration: underline;
+}
+
+.city-show .btn {
+
+    --bs-accordion-btn-icon-width: 0;
+}
+
+.container-about .center .city-show .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.container-about .center .city-show  img {
+    width: 360px;
+    box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    margin: 0 auto;
+}
+
+
+.container-about .center .city-show .about hr {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-about .center .city-show .card,
+.container-about .center .city-show .btn  {
+    background-color: #F4F6FF;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+}
+
+.container-about .center .city-show .btn {
+    border-bottom: solid 1px rgb(189, 189, 189);
+    padding-bottom: 10px;
+ 
+}
 
 
 
@@ -715,7 +805,7 @@ text-align: left;
     top: 0;
 }
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 80s linear infinite;
     display: flex;
     width: calc(250px * 14);
 }
