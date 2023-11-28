@@ -1008,7 +1008,6 @@ padding-bottom: 20px;
 
 /* BURGER */
 
-
 .container-navigation .menu ul .close{
     display: none;
 }
@@ -1020,10 +1019,6 @@ padding-bottom: 20px;
 .container-navigation .menu .burger img {
     width: 30px;
 }
-
-
-
-
 
 /* BURGER */
 
@@ -1604,7 +1599,7 @@ padding-bottom: 20px;
 
 .container-navigation .center .menu ul{
     min-height: 100vh;
-    background: rgba(0,0,0,0.8);
+    background: rgba(3,8,35,0.8);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
