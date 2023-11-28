@@ -1159,6 +1159,11 @@ padding-bottom: 20px;
 
 @media screen and (max-width: 900px) {
 
+/* 
+.container-locations .info{
+        display: none;
+      } */
+
 
 .container-locations .locations, 
 .container-locations .locations-all {
@@ -1201,8 +1206,9 @@ padding-bottom: 20px;
 
 .container-about .abot,
 .container-about .center p {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-indent: 20px;
 }
 
 .container-about .abot {
@@ -1211,6 +1217,18 @@ padding-bottom: 20px;
 
 .container-about .center h3{
     font-size: 29px;
+    padding: 0;
+    padding-left: 20px;
+    text-indent: 20px;
+}
+
+.container-about .center .abot h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.container-about .center .abot ul {
+    padding: 0;
 }
 
 .container-about .map iframe {
@@ -1386,9 +1404,16 @@ padding-bottom: 20px;
 
   .container-about .abot {
     font-size: 41px;
-    padding-bottom: 0;
+    padding: 20px;
+    margin: 0;
 
   }
+
+  .container-about .abot p {
+    padding: 20px;
+  }
+
+
 
 }
 
@@ -1425,7 +1450,13 @@ padding-bottom: 20px;
     }
 /* Burger */
 
+.container-locations .locations .card1 p{
+    display: inline-block;
+}
 
+.container-locations .locations .card1 h5 {
+    font-size: 24px;
+}
 
     .container-navigation header .menu ul {
         display: none;
@@ -1507,4 +1538,40 @@ padding-bottom: 20px;
         height: 70%;
         
     }
+
+    .container-locations .locations .card1 p {
+        font-size: 18px;
+    }
+
+    .container-locations .locations .card1 h5 {
+        font-size: 30px;
+    }
+
+    .container-about .map iframe {
+        display: none;
+          
+      }
+  
+      .container-about .MultiCollapse{
+          padding-top: 0;
+      }
+  }
+
+
+
+@media screen and (max-width: 400px) {
+    .container-footer footer .info {
+        row-gap: 20px;
+        justify-items: center;
+        grid-template-columns: 1fr;       
+    }
+
+    .container-footer footer .info .menu {
+        justify-content: end;
+    }
+
+    .container-footer footer .geraldika .ucp a{
+        flex-direction: column;
+    }
 }
+  
