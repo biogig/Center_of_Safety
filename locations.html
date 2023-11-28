@@ -28,23 +28,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <section class="container-navigation">
             <header class="center">
                <div class="emblem"> 
-               <a href="./index.html"><img alt="emblem" src="./images/emblem.png"></a> 
+               <a href="./index.html" title="На главную"><img alt="emblem" src="./images/emblem.png"></a> 
                 <form class="language">
                     <select onchange="window.location.href=this.options[this.selectedIndex].value">
-                        <option><a href="#">RU</a></option>
-                        <option value="./indexEN.html"><a href="#">EN</a></option>
+                        <option><a href="#" title="Русский"> RU</a></option>
+                        <option value="./indexEN.html"><a href="#" title="Английский"> EN</a></option>
                     </select>
             </form>
                </div>
                 <nav class="menu">
                     <ul class="m-0">
-                        <li><a href="./index.html">Главная</a></li>
-                        <li><a href="./locations.html">Площадки</a></li>
-                        <li><a href="./lessons.html">Занятия</a></li>
-                        <li><a href="./404.html">Тесты</a></li>
-                        <li><a href="./404.html">О центре</a></li>
-                        <li><a href="./contacts.html">Контакты</a></li>
-                        <li class="tour"><a href="https://center.ucp.by/virtual/">3D-тур</a></li>
+                      <li class="menu-item"><a href="#" title="Главная">Главная</a></li>
+                      <li class="menu-item"><a href="./locations.html" title="Площадки">Площадки</a></li>
+                      <li class="menu-item"><a href="./lessons.html" title="Занятия">Занятия</a></li>
+                      <li class="menu-item"><a href="./404.html" title="Тесты">Тесты</a></li>
+                      <li class="menu-item"><a href="./404.html" title="О центре">О центре</a></li>
+                      <li class="menu-item"><a href="./contacts.html" title="Контакты">Контакты</a></li>
+                      <li class="tour animate__animated animate__shakeX animate__delay-1s"><a href="https://center.ucp.by/virtual/">3D-тур</a></li>
+                      <li class="close" id="close-btn">x</li>
                     </ul>
                     <div class="burger p-0">
                       <img class="p-0" src="images/burger.svg" alt="burger">
@@ -81,7 +82,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             
 
 
-            <div class="card1 cards-wiper-style">
+            <div class="card1 cards-wiper-style nature">
                 <img alt="road" src="./images/forest/IMG_1227.jpg">
                 <h5>Правила безопасности в лесу</h5>
                 <p>На площадке отрабатываются правила подготовки к походу в лес,
@@ -219,7 +220,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 
 
-          <div class="card1 cards-wiper-style">
+          <div class="card1 cards-wiper-style road">
                 <img alt="road" src="./images/road/IMG_0975.jpg">
                 <h5>Безопасность дороге</h5>
                 <p>Обучающая площадка предназначена для
@@ -339,7 +340,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 
 
-    <div class="card1 cards-wiper-style">
+    <div class="card1 cards-wiper-style road">
         <img alt="road" src="./images/transport/IMG_0821.jpg">
         <h5>Транспортная безопаcность</h5>
         <p>Макет электропоезда в натуральную величину предназначен для отработки правил безопасности
@@ -451,7 +452,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <!-- ------------WITHOUT CAROUSEL AND MODAL------------ -->
 
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style nature">
             <img alt="road" src="./images/ecologia.jpg">
             <h5>Экологическая безопаcность</h5>
             <p>Несмотря на все достижения человека, экологическая проблема остается
@@ -459,7 +460,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
         </div>
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style people">
             <img alt="road" src="./images/GO.jpg">
             <h5>Сигнал гражданской оборона</h5>
             <p>Сигнал гражданской обороны предназначен для оповещения
@@ -467,7 +468,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
         </div>
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style nature">
             <img alt="road" src="./images/earthquake.jpg">
             <h5>Безопасность при обрушениях</h5>
             <p>Представленный учебный тренажер позволяет ощутить на себе воздействие землетрясения
@@ -477,7 +478,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style people">
             <img alt="road" src="./images/bunker.jpg">
             <h5>Защитные сооружения</h5>
             <p>На данной площадке можно увидеть основные элементы защитного
@@ -486,7 +487,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
 
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style people">
             <img alt="road" src="./images/house.JPG">
             <h5>Безопасность в быту</h5>
             <p>На площадке с использованием технологии дополненной реальности
@@ -494,7 +495,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
         </div>
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style people">
             <img alt="road" src="./images/aes.jpg">
             <h5>Атомная безопасность</h5>
             <p>Просто о сложном: на данной площадке можно узнать о безопасности
@@ -518,7 +519,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   
           
   
-            <div class="card1 cards-wiper-style">
+            <div class="card1 cards-wiper-style medic">
               <img alt="road" src="./images/zozh.JPG">
               <h5>Здоровый образ жизни</h5>
               <p>Пять уникальных тренажеров позволяют напомнить о вреде активного
@@ -527,7 +528,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
           </div>
           
-          <div class="card1 cards-wiper-style">
+          <div class="card1 cards-wiper-style nature">
             <img alt="wind" src="./images/wind.jpg">
             <h5>Сильный ветер</h5>
             <p>Сильные ветры, шквалы и смерчи – стихийное бедствие, которое
@@ -537,7 +538,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           </div>
           
           
-          <div class="card1 cards-wiper-style">
+          <div class="card1 cards-wiper-style people">
             <img alt="wind" src="./images/smocky_maze.JPG">
             <h5>Задымленный лабиринт
             </h5>
@@ -546,7 +547,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
           </div>
 
-          <div class="card1 cards-wiper-style">
+          <div class="card1 cards-wiper-style people">
             <img alt="road" src="./images/101.jpg">
             <h5>Правила вызова спасателей</h5>
             <p>Данные тренажеры позволяют закрепить номера экстренных
@@ -554,7 +555,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
         </div>
         
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style people">
             <img alt="road" src="./images/padik.jpg">
             <h5>Общественная безопаcность</h5>
             <p>Правонарушения
@@ -563,7 +564,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
         </div>
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style people">
             <img alt="road" src="./images/prom.jpg">
             <h5>Промышленная безопасность</h5>
             <p>На площадке рассматриваются вопросы безопасности при работе
@@ -572,7 +573,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
         </div>
 
-        <div class="card1 cards-wiper-style">
+        <div class="card1 cards-wiper-style nature">
           <img alt="road" src="./images/voda.jpg">
           <h5>Безопасность на водоемах</h5>
           <p>Интерактивная система тренажера позволяет выработать навыки
@@ -581,14 +582,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
       </div>
 
-      <div class="card1 cards-wiper-style">
+      <div class="card1 cards-wiper-style people">
         <img alt="road" src="./images/crowd.jpg">
         <h5>Промышленная безопасность</h5>
         <p>Площадка позволяет почувствовать напор толпы и отработать правильные действия, если вы оказались зажаты толпой, для детей старше 10 лет</p>
         <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#transport">Больше информации</button>
     </div>
 
-    <div class="card1 cards-wiper-style">
+    <div class="card1 cards-wiper-style drugs">
       <img alt="road" src="./images/arseni.jpg">
       <h5>История одного заключенного</h5>
       <p>Осужденный за распространение нарокотиков расскажет вам свою историю и на своем примере покажет как не стоит поступать  </p>
@@ -700,21 +701,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <div class="contacts">
             <h6 id="contacts">Контакты:</h6>
             <ul>
-            <li><a href="tel:80172697060">8 (017) 269 - 70 - 60</a></li>
-            <li><a href="tel:80448040054">8 (044) 804 - 00 - 54</a></li>
-            <li><a href="mailto:cb@ucp.by">cb@ucp.by</a></li>
-            <li><a href="https://www.instagram.com/centr_bezopasnosti_minsk/">Instagram</a></li>
+              <li><a href="tel:80172697060" title="Городской">8 (017) 269 - 70 - 60</a></li>
+              <li><a href="tel:80448040054" title="Мобильный Life">8 (044) 804 - 00 - 54</a></li>
+              <li><a href="mailto:cb@ucp.by" title="Почта">cb@ucp.by</a></li>
+              <li><a href="https://www.instagram.com/centr_bezopasnosti_minsk/" title="Наш Инстаграмм">Instagram</a></li>
             </ul>
         </div>
 
         <div class="menu"> 
             <h6>Сылки:</h6> 
             <ul>
-                <li><a href="./locations.html">Площадки</a></li>
-                <li><a href="./lessons.html">Занятия</a></li>
-                <li><a href="./404.html">Тесты</a></li>
-                <li><a href="./404.html">О центре</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
+              <li><a href="./locations.html" title="Площадки">Площадки</a></li>
+              <li><a href="./lessons.html" title="Занятия">Занятия</a></li>
+              <li><a href="./404.html" title="Тесты">Тесты</a></li>
+              <li><a href="./404.html" title="О центре">О центре</a></li>
+              <li><a href="./contacts.html" title="Контакты">Контакты</a></li>
             </ul>
         </div>
 
@@ -850,6 +851,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   
 
 </script> -->
+
+
+<script>
+
+
+
+  var el = document.getElementById("div-02");
+el.remove();  // Удалит элемент div с идентификатором 'div-02'
+
+
+
+</script>
 
 </body>
 </html>

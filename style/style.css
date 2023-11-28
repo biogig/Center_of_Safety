@@ -1708,7 +1708,7 @@ padding-bottom: 20px;
 @media screen and (max-width: 500px) {
 
     .container-carusel .swiper {
-        height: 40vh;
+        height: 50vh;
       }
     
       .container-carusel .swiper .swiper-slide .text {
@@ -1851,15 +1851,11 @@ padding-bottom: 20px;
 
       .container-carusel .swiper .swiper-slide .text p {
         left: 20px;
-
         font-size: 12px;
         width: 200px;
       }
 
-    .container-carusel .swiper .swiper-slide .text {
-        bottom: 500px;
-        right: 60px;
-      }
+ 
 
     .container-footer footer .info {
         row-gap: 20px;
@@ -1932,9 +1928,14 @@ padding-bottom: 20px;
         font-size: 16px;
     }
     
- 
+    .container-carusel .swiper {
+        height: 50vh;
+      }
     
-  
+      .container-carusel .swiper .swiper-slide .text {
+        bottom: 400px;
+        right: 60px;
+      }
     
    
 }

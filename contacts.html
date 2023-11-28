@@ -23,23 +23,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <section class="container-navigation">
         <header class="center">
            <div class="emblem"> 
-           <a href="./index.html"><img alt="emblem" src="./images/emblem.png"></a> 
+           <a href="./index.html" title="На главную"><img alt="emblem" src="./images/emblem.png"></a> 
             <form class="language">
                 <select onchange="window.location.href=this.options[this.selectedIndex].value">
                     <option><a href="#">RU</a></option>
-                    <option value="./indexEN.html">EN</option>
+                    <option value="./indexEN.html"><a>EN</a></option>
                 </select>
         </form>
            </div>
             <nav class="menu">
                 <ul class="m-0">
-                    <li class="menu-item"><a href="./index.html">Главная</a></li>
-                    <li class="menu-item"><a href="./locations.html">Площадки</a></li>
-                    <li class="menu-item"><a href="./lessons.html">Занятия</a></li>
-                    <li class="menu-item"><a href="./404.html">Тесты</a></li>
-                    <li class="menu-item"><a href="./404.html">О центре</a></li>
-                    <li class="menu-item"><a href="./contacts.html">Контакты</a></li>
-                    <li class="tour"><a href="https://center.ucp.by/virtual/">3D-тур</a></li>
+                    <li class="menu-item"><a href="./index.html" title="Главная">Главная</a></li>
+                    <li class="menu-item"><a href="./locations.html" title="Площадки">Площадки</a></li>
+                    <li class="menu-item"><a href="./lessons.html" title="Занятия">Занятия</a></li>
+                    <li class="menu-item"><a href="./404.html" title="Тесты">Тесты</a></li>
+                    <li class="menu-item"><a href="./404.html" title="О центре">О центре</a></li>
+                    <li class="menu-item"><a href="./contacts.html" title="Контакты">Контакты</a></li>
+                    <li class="tour"><a href="https://center.ucp.by/virtual/" title="Виртуальный тур">3D-тур</a></li>
                     <li class="close" id="close-btn">x</li>
                 </ul>
                 <div class="burger p-0">
@@ -62,12 +62,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                выходной: воскресенье.</p>
         </div>
         <div class="contacts"> <h2>Email:<br></h2>
-            <a href="mailto: cb@ucp.by">cb@ucp.by</a><br><br>
+            <a href="mailto: cb@ucp.by" title="Почта">cb@ucp.by</a><br><br>
             <h2>Телефоны для записи:<br></h2>
-            <p><a href="tel:80172697060">8 (017) 269 - 70 - 60</a><br>
-                <a href="tel:80448040054">8 (044) 804 - 00 - 54</a></p><br>
+            <p><a href="tel:80172697060" title="Городской">8 (017) 269 - 70 - 60</a><br>
+                <a href="tel:80448040054" title="Мобильный Life">8 (044) 804 - 00 - 54</a></p><br>
 
-                <a href="https://www.instagram.com/centr_bezopasnosti_minsk/" class="insta animate__animated  animate__rubberBand" >
+                <a title="Наш Инстаграмм" href="https://www.instagram.com/centr_bezopasnosti_minsk/" class="insta animate__animated  animate__rubberBand" >
                     <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
                         Наш 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎
                         <img src="./images/instagram.png" alt="insta">
@@ -100,9 +100,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div>
             <div class="map">
 
+
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A106e5c4b67f21e5cb6bb4e3948aa91b86c1c604a7939aa3a200d02dc4776a577&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
               
-                    <iframe src="https://yandex.by/map-widget/v1/?l=stv%2Csta&ll=27.608898%2C53.944944&panorama%5Bdirection%5D=344.093896%2C4.088749&panorama%5Bfull%5D=true&panorama%5Bpoint%5D=27.609629%2C53.944670&panorama%5Bspan%5D=94.821092%2C46.244950&z=20" width="600" height="430" frameborder="1" allowfullscreen="true" style="position:relative;">
-                    </iframe>
+                    <!-- <iframe src="https://yandex.by/map-widget/v1/?l=stv%2Csta&ll=27.608898%2C53.944944&panorama%5Bdirection%5D=344.093896%2C4.088749&panorama%5Bfull%5D=true&panorama%5Bpoint%5D=27.609629%2C53.944670&panorama%5Bspan%5D=94.821092%2C46.244950&z=20" width="600" height="430" frameborder="1" allowfullscreen="true" style="position:relative;">
+                    </iframe> -->
               
 <!-- 
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa862dbe19fd8b1a9259d394c5aad9a94658cc510cf00f11fb69110ae3a3d7f5d&amp;source=constructor" width="600px" height="430px" frameborder="0" loading="lazy"></iframe> -->
@@ -194,7 +196,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 Платежи и переводы - Система "Расчёт" (ЕРИП) – Оплата в ЕРИП по коду услуги – Ввести код и оплатить (код услуги 4749881) – Ввести Ф.И.О. – Сумма – Оплатить</p><br>
 <p>3.      <b> По QR-коду: </b>отсканируйте QR-код и произведите оплату. </p><div class="qr"><img alt="QR" src="./images/QR.jpg"></div> 
-<p> <b>Для юридических лиц:</b></p><br><br>
+<p class="urlica"> <b>Для юридических лиц:</b></p><br><br>
 
     <p>1.     Оплата производится по заключенному договору. Справка по телефону: +375172697060.</p><br><br>
     </div>
@@ -208,86 +210,86 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
     <div class="geraldika">
     <div class="ucp"> 
-        <a href="https://ucp.by/"><img class="emblem" alt="emblem" src="./images/ucp-emblem.png">
+        <a title="Сайт УГЗ" href="https://ucp.by/"><img class="emblem" alt="emblem" src="./images/ucp-emblem.png">
        <p>УНИВЕРСИТЕТ<br> ГРАЖДАНСКОЙ<br> ЗАЩИТЫ</p></a>
     </div>
 
    <div class="slider">
 <div class="slide-track">
     <div class="slide">
-        <img src="./images/emblem.png" height="110"  alt="" />
+        <img src="./images/emblem.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/ucp-emblem.png" height="110"  alt="" />
+        <img src="./images/ucp-emblem.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/ippk.png" height="110"  alt="" />
+        <img src="./images/ippk.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/bdpo.png" height="110" alt="" />
+        <img src="./images/bdpo.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/nii.png" height="110" alt="" />
+        <img src="./images/nii.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/min_aduk.png" height="110"  alt="" />
+        <img src="./images/min_aduk.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/bsuir.png" height="110"  alt="" />
+        <img src="./images/bsuir.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/medik.png" height="110"  alt="" />
+        <img src="./images/medik.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/emblem.png" height="110"  alt="" />
+        <img src="./images/emblem.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/ucp-emblem.png" height="110"  alt="" />
+        <img src="./images/ucp-emblem.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/ippk.png" height="110"  alt="" />
+        <img src="./images/ippk.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/bdpo.png" height="110" alt="" />
+        <img src="./images/bdpo.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/nii.png" height="110" alt="" />
+        <img src="./images/nii.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/min_aduk.png" height="110"  alt="" />
+        <img src="./images/min_aduk.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/bsuir.png" height="110"  alt="" />
+        <img src="./images/bsuir.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/medik.png" height="110"  alt="" />
+        <img src="./images/medik.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/emblem.png" height="110"  alt="" />
+        <img src="./images/emblem.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/ucp-emblem.png" height="110"  alt="" />
+        <img src="./images/ucp-emblem.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/ippk.png" height="110"  alt="" />
+        <img src="./images/ippk.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/bdpo.png" height="110" alt="" />
+        <img src="./images/bdpo.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/nii.png" height="110" alt="" />
+        <img src="./images/nii.png" height="110" alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/min_aduk.png" height="110"  alt="" />
+        <img src="./images/min_aduk.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/bsuir.png" height="110"  alt="" />
+        <img src="./images/bsuir.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/medik.png" height="110"  alt="" />
+        <img src="./images/medik.png" height="110"  alt="emblem">
     </div>
     <div class="slide">
-        <img src="./images/emblem.png" height="110"  alt="" />
+        <img src="./images/emblem.png" height="110" alt="emblem">
     </div>
 </div>
 </div>
@@ -297,21 +299,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <div class="contacts">
             <h6 id="contacts">Контакты:</h6>
             <ul>
-            <li><a href="tel:80172697060">8 (017) 269 - 70 - 60</a></li>
-            <li><a href="tel:80448040054">8 (044) 804 - 00 - 54</a></li>
-            <li><a href="mailto:cb@ucp.by">cb@ucp.by</a></li>
-            <li><a href="https://www.instagram.com/centr_bezopasnosti_minsk/">Instagram</a></li>
+                <li><a href="tel:80172697060" title="Городской">8 (017) 269 - 70 - 60</a></li>
+                <li><a href="tel:80448040054" title="Мобильный Life">8 (044) 804 - 00 - 54</a></li>
+                <li><a href="mailto:cb@ucp.by" title="Почта">cb@ucp.by</a></li>
+                <li><a href="https://www.instagram.com/centr_bezopasnosti_minsk/" title="Наш Инстаграмм">Instagram</a></li>
             </ul>
         </div>
 
         <div class="menu"> 
             <h6>Сылки:</h6> 
             <ul>
-                <li><a href="./locations.html">Площадки</a></li>
-                <li><a href="./lessons.html">Занятия</a></li>
-                <li><a href="./404.html">Тесты</a></li>
-                <li><a href="./404.html">О центре</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="./locations.html" title="Площадки">Площадки</a></li>
+                <li><a href="./lessons.html" title="Занятия">Занятия</a></li>
+                <li><a href="./404.html" title="Тесты">Тесты</a></li>
+                <li><a href="./404.html" title="О центре">О центре</a></li>
+                <li><a href="./contacts.html" title="Контакты">Контакты</a></li>
             </ul>
         </div>
 
