@@ -28,7 +28,7 @@
             <form class="language">
                 <select onchange="window.location.href=this.options[this.selectedIndex].value">
                     <option><a href="#">RU</a></option>
-                    <option value="./indexEN.html">EN</option>
+                    <option value="./indexEN.html"><a href="#">EN</a></option>
                 </select>
         </form>
            </div>
@@ -41,7 +41,11 @@
                     <li><a href="./404.html">О центре</a></li>
                     <li><a href="./contacts.html">Контакты</a></li>
                     <li class="tour"><a href="https://center.ucp.by/virtual/">3D-тур</a></li>
+                    <li class="close" id="close-btn">x</li>
                 </ul>
+                <div class="burger p-0">
+                    <img class="p-0" src="images/burger.svg" alt="burger">
+                </div>
             </nav>
         </header>
     </section>
@@ -1595,6 +1599,6 @@ if (exampleModal) {
 
 
 
-
+          <script src="./js/script.js"></script>
 </body>
     </html>

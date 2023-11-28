@@ -426,8 +426,8 @@ font-weight: 700;
 
 
 
-/* BURGER */
 
+/* BURGER */
 
 .container-navigation .menu ul .close{
     display: none;
@@ -440,6 +440,11 @@ font-weight: 700;
 .container-navigation .menu .burger img {
     width: 30px;
 }
+
+/* BURGER */
+
+
+
 
 
 
@@ -466,26 +471,26 @@ font-weight: 700;
     }
 
     .container-footer footer .info > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
        
     }
 
     .container-footer footer .info > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 2;
+          -ms-grid-row: 1;
+          -ms-grid-column: 2;
        
     }
 
     .container-footer footer .info > *:nth-child(3) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
+          -ms-grid-row: 1;
+          -ms-grid-column: 3;
        
     }
 
     .container-footer footer .info > *:nth-child(4) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 4;
+          -ms-grid-row: 1;
+          -ms-grid-column: 4;
        
     }
 
@@ -573,32 +578,32 @@ font-weight: 700;
     
 
     .container-footer footer .info > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
        
     }
 
     
 
     .container-footer footer .info > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 2;
+          -ms-grid-row: 1;
+          -ms-grid-column: 2;
        
     }
 
     
 
     .container-footer footer .info > *:nth-child(3) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
+          -ms-grid-row: 1;
+          -ms-grid-column: 3;
        
     }
 
     
 
     .container-footer footer .info > *:nth-child(4) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 4;
+          -ms-grid-row: 1;
+          -ms-grid-column: 4;
        
     }
 
@@ -1012,7 +1017,24 @@ font-weight: 700;
 
 @media screen and (max-width: 600px) {
 /* Burger */
-    .container-navigation .menu .close{
+
+.container-navigation .center .menu ul{
+    min-height: 100vh;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    color: #fff;
+    padding-top: 130px;
+    transition: 1s;
+}
+
+    .container-navigation .center .menu .close{
         display: block;
         position: absolute;
         top: 15px;
@@ -1024,9 +1046,7 @@ font-weight: 700;
     left: 0;
  
     }
-    .container-navigation .menu ul.mob-menu li a{
-        color: #fff;
-    }
+    
     
     .container-navigation .menu .burger{
         display: block;
@@ -1054,6 +1074,10 @@ font-weight: 700;
         display: none;
     }
 
+    .container-about .center ul {
+        margin-left: 0px ;
+     } 
+
 
     .container-about .d-flex .MultiCollapse .city-show .row {
         display: -webkit-box;
@@ -1073,11 +1097,10 @@ font-weight: 700;
     .container-about .d-flex .MultiCollapse .city-show .card-body .about{
         width: 200px;
     }
-    
-}
 
-
-@media screen and (max-width: 500px) {
+    .container-about .abot {
+        font-size: 38px;
+    }
 
     .container-carusel .swiper {
         height: 35vh;
@@ -1086,6 +1109,24 @@ font-weight: 700;
       .container-carusel .swiper .swiper-slide .text {
         bottom: 600px;
         right: 50px;
+      }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .container-carusel .swiper {
+        height: 40vh;
+      }
+    
+      .container-carusel .swiper .swiper-slide .text {
+        bottom: 600px;
+        right: 20px;
+      }
+
+      .container-carusel .swiper .swiper-button-next,
+      .container-carusel .swiper .swiper-button-prev{
+        display: none;
       }
 
       .container-carusel .swiper .swiper-slide .text h2 {
@@ -1098,12 +1139,23 @@ font-weight: 700;
         width: 200px;
       }
 
+      .container-about .center ul {
+        padding-left: 50px !important ;
+        padding-right: 0 !important;
+     } 
+
+    .container-about .center ul {
+        margin-left: 0px ;
+     } 
+
 
 
     .container-locations .locations, 
     .container-locations .locations-all {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        row-gap: 30px
+        ;
     }
 
     .container-footer footer .info {
@@ -1116,18 +1168,19 @@ font-weight: 700;
             -ms-flex-align: start;
                 align-items: start;
         justify-items: start;
-       
+        
     }
 
+
     .container-footer footer .info > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
        
     }
 
     .container-footer footer .info > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 2;
+          -ms-grid-row: 1;
+          -ms-grid-column: 2;
        
     }
 
@@ -1169,6 +1222,10 @@ font-weight: 700;
       .container-about .MultiCollapse{
           padding-top: 0;
       }
+
+      .container-about .abot {
+        font-size: 34px;
+    }
   }
 
 
@@ -1176,9 +1233,21 @@ font-weight: 700;
 @media screen and (max-width: 400px) {
     .container-footer footer .info {
         row-gap: 20px;
-        justify-items: center;
+        justify-items: start;
         -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;       
+        grid-template-columns: 1fr 1fr; 
+    
+    }
+
+    .container-footer footer .info .contacts ul li a,
+    .container-footer footer .info .menu ul li a {
+        font-size: 12px;
+    }
+
+    .container-footer footer .info .contacts h6,
+    .container-footer footer .info .menu h6 {
+        font-size: 12px;
+        padding: 0;
     }
 
     .container-footer footer .info .menu {
@@ -1191,7 +1260,24 @@ font-weight: 700;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;
+                flex-direction: column; 
     }
+
+    .container-footer footer .geraldika .ucp {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .container-footer footer .geraldika .ucp .emblem {
+        margin: 0 auto;
+    }
+
+    .container-footer footer .geraldika .ucp p {
+        text-align: center;
+    }
+
+  
+    
+   
 }
   
