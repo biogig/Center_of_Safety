@@ -1123,6 +1123,11 @@ margin-right: 15px;
         height: 100px;
     }
 
+    .container-locations h1 {
+        font-size: 48px;
+        padding-top: 20px;
+    }
+
 
 
 }
@@ -1132,7 +1137,7 @@ margin-right: 15px;
 @media screen and (max-width: 900px) {
 
     .container-locations h1 {
-        font-size: 52px;
+        font-size: 48px;
     }
 
 .container-locations .locations, 
@@ -1374,7 +1379,7 @@ margin-right: 15px;
 
 
     .container-locations .locations, 
-    .container-locations .locations-all {
+    .container-locations .show-all .locations-all {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         row-gap: 30px
