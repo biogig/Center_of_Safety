@@ -1839,6 +1839,23 @@ padding-bottom: 20px;
     .container-locations .locations .card1 {
         width: 100vw;
     }
+
+
+    .container-locations .locations .card1 p,
+.container-locations .show-all .locations-all .card1 p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.container-locations .locations .card1 h5,
+.container-locations .show-all .locations-all .card1 h5 {
+    font-size: 26px;
+}
+
+.container-locations .show-all .locations-all .card1 .about-btn,
+.container-locations .locations .card1   .about-btn{
+    font-size: 14px;
+}
   }
 
 
