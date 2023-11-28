@@ -289,6 +289,10 @@ table {
 
 }
 
+.container-locations .locations {
+    padding-top: 55px;
+}
+
 .container-locations .locations .card1,
 .container-locations .show-all .locations-all .card1 {
 -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
@@ -361,7 +365,8 @@ margin-bottom: 30px;
 }
 
 
-.container-locations .locations .card1 .about-btn:hover {
+.container-locations .locations .card1 .about-btn:hover,
+.container-locations .show-all .locations-all .card1 .about-btn:hover {
     text-decoration: underline;
     color:  #030823;
 
@@ -1077,7 +1082,11 @@ margin-right: 15px;
 
 @media screen and (max-width: 1060px){
 
-
+    .container-locations .show-all .locations-all .card1 .about-btn,
+    .container-locations .locations .card1   .about-btn{
+        font-size: 16px;
+       margin-bottom: 30px;
+    }
 
     .slider .slide {
         margin-right: 60px;
@@ -1127,6 +1136,11 @@ margin-right: 15px;
         font-size: 48px;
         padding-top: 20px;
     }
+
+    .container-locations .locations {
+        padding-top: 25px;
+    }
+    
 
 
 
@@ -1303,7 +1317,15 @@ margin-right: 15px;
     font-size: 40px;
 }
 
+.container-locations .locations .card1 p,
+.container-locations .show-all .locations-all .card1 p {
+    font-size: 14px;
+}
 
+.container-locations .locations .card1 h5,
+.container-locations .show-all .locations-all .card1 h5 {
+    font-size: 24px;
+}
 
 }
 
@@ -1365,10 +1387,23 @@ margin-right: 15px;
     font-size: 24px;
 }
 
+.container-locations .locations {
+    padding-top: 15px;
+}
+
     .container-navigation header .menu ul {
         display: none;
     }
 
+    .container-locations .summary{
+        font-size: 16px;
+
+    }
+
+    .container-locations hr {
+      
+        margin: 10px;
+    }
 
    
       }
@@ -1377,17 +1412,24 @@ margin-right: 15px;
 
 @media screen and (max-width: 500px) {
 
+    .container-locations h1 {
+        font-size: 32px;
+    }
 
     .container-locations .locations, 
     .container-locations .show-all .locations-all {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        row-gap: 30px
-        ;
+        row-gap: 30px;
+    }
+
+    .container-locations .show-all .locations-all .card1 .about-btn,
+    .container-locations .locations .card1   .about-btn{
+        font-size: 20px;
     }
 
     .container-footer footer .info {
-        row-gap: 30px;
+       
         -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
         -ms-grid-columns: 1fr 1fr;
@@ -1433,6 +1475,7 @@ margin-right: 15px;
     .container-locations .locations .card1 p,
     .container-locations .show-all .locations-all .card1 p {
         font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .container-locations .locations .card1 h5,
@@ -1454,17 +1497,28 @@ margin-right: 15px;
         font-size: 12px;
     }
 
-    .container-locations .locations .card1
+    .container-locations .locations .card1,
     .container-locations .show-all .locations-all .card1 {
         width: 100vw;
     }
+
+    .container-locations .locations,
+    .container-locations .show-all .locations-all  {
+     gap: 0px;
+    }
+
+    
   
 }
 
 
 @media screen and (max-width: 400px) {
 
+    .container-locations h1 {
+        font-size: 28px;
+    }
    
+  
 
     .container-footer footer .info {
         row-gap: 20px;
