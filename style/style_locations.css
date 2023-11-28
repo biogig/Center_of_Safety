@@ -937,7 +937,7 @@ margin-right: 15px;
 
 
     .container-locations .locations, 
-    .container-locations .locations-all {
+    .container-locations .show-all .locations-all {
         /* grid-template-columns: 340px 340px 340px; */
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -948,20 +948,20 @@ margin-right: 15px;
 
 
     .container-locations .locations .card1,
-    .container-locations .locations-all .card1 {
+    .container-locations .show-all .locations-all .card1 {
         width: auto;
        
         text-align: center;
     }
 
     .container-locations .locations .card1 a, 
-    .container-locations .locations-all .card1 a {
+    .container-locations .show-all .locations-all .card1 a {
         padding-bottom: 15px;
         position: relative;
     }
 
     .container-locations .locations .card1 img,
-    .container-locations .locations-all .card1 img{
+    .container-locations .show-all .locations-all .card1 img{
         width: 100%;
        height: auto;
         /* height: 210px; */
@@ -1063,11 +1063,13 @@ margin-right: 15px;
         display: none;
     }
 
-    .container-locations .locations .card1 h5 {
+    .container-locations .locations .card1 h5,
+    .container-locations .show-all .locations-all .card1 h5 {
         font-size: 27px;
     }
 
-    .container-locations .locations .card1 p {
+    .container-locations .locations .card1 p,
+    .container-locations .show-all .locations-all .card1 p {
         font-size: 16px;
     }
 }
@@ -1134,7 +1136,7 @@ margin-right: 15px;
     }
 
 .container-locations .locations, 
-.container-locations .locations-all {
+.container-locations .show-all .locations-all {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -1348,11 +1350,13 @@ margin-right: 15px;
     }
 /* Burger */
 
-.container-locations .locations .card1 p{
+.container-locations .locations .card1 p,
+.container-locations .show-all .locations-all .card1 p{
     display: inline-block;
 }
 
-.container-locations .locations .card1 h5 {
+.container-locations .locations .card1 h5,
+.container-locations .show-all .locations-all .card1 h5 {
     font-size: 24px;
 }
 
@@ -1421,11 +1425,13 @@ margin-right: 15px;
 
     
 
-    .container-locations .locations .card1 p {
+    .container-locations .locations .card1 p,
+    .container-locations .show-all .locations-all .card1 p {
         font-size: 18px;
     }
 
-    .container-locations .locations .card1 h5 {
+    .container-locations .locations .card1 h5,
+    .container-locations .show-all .locations-all .card1 h5 {
         font-size: 30px;
     }
 
@@ -1443,7 +1449,8 @@ margin-right: 15px;
         font-size: 12px;
     }
 
-    .container-locations .locations .card1 {
+    .container-locations .locations .card1
+    .container-locations .show-all .locations-all .card1 {
         width: 100vw;
     }
   
@@ -1502,7 +1509,8 @@ margin-right: 15px;
 
 
 
-    .container-locations .locations .card1 p{
+    .container-locations .locations .card1 p,
+    .container-locations .show-all .locations-all .card1 p{
         font-size: 16px;
     }
     
