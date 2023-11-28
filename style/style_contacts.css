@@ -934,9 +934,10 @@ text-indent: 70px;
 
 @media screen and (max-width: 1140px){
     .container-contacts .info {
-
-        grid-template-columns: 1fr;
-        justify-items: start;
+        grid-template-columns: repeat( auto-fill, 320px);
+        /* grid-template-columns: 1fr; */
+        /* justify-items: start; */
+        
     }
 
     .container-contacts .info .address,
@@ -959,6 +960,10 @@ text-indent: 70px;
     .container-contacts .payment-methods .urlica {
         margin-top: 30px;
         display: inline-block;
+    }
+
+    .container-contacts .info .map {
+        display: none;
     }
 
 }
@@ -1015,7 +1020,9 @@ text-indent: 70px;
 
 
 
-
+    .container-contacts .payment-methods .qr img {
+        left: 360px;
+    }
 
 
 
@@ -1132,6 +1139,9 @@ text-indent: 70px;
 @media screen and (max-width: 700px) {
 
 
+    .container-contacts .payment-methods .qr img {
+        left: 280px;
+    }
 
 .container-navigation header .menu ul{
     gap: 20px;
@@ -1191,6 +1201,31 @@ text-indent: 70px;
 
     .container-navigation header .menu ul {
         display: none;
+    }
+
+    .container-contacts .payment-methods .qr img {
+        left: 220px;
+    }
+
+    .container-contacts .info {
+        gap: 0;
+    }
+
+    .container-contacts .info .address p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-contacts .info .transport .bus,
+    .container-contacts .info .transport .mini-bus,
+    .container-contacts .info .transport .tram,
+    .container-contacts  .info .transport .metro {
+        padding-bottom: 0;
+        
+    }
+
+    .container-contacts .info .contacts a .btn {
+        margin-bottom: 20px;
     }
 
 }
