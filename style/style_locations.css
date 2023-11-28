@@ -1088,6 +1088,11 @@ margin-right: 15px;
        margin-bottom: 30px;
     }
 
+    .container-locations .show-all .locations-all .card1 .about-btn,
+    .container-locations .locations .card1   .about-btn{
+        font-size: 20px;
+    }
+
     .slider .slide {
         margin-right: 60px;
     }
@@ -1325,6 +1330,11 @@ margin-right: 15px;
 .container-locations .locations .card1 h5,
 .container-locations .show-all .locations-all .card1 h5 {
     font-size: 24px;
+}
+
+.container-locations .show-all .locations-all .card1 .about-btn,
+.container-locations .locations .card1   .about-btn{
+    font-size: 16px;
 }
 
 }
