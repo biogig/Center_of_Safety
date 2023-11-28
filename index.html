@@ -45,8 +45,11 @@
                     <li><a href="./404.html">О центре</a></li>
                     <li><a href="./contacts.html">Контакты</a></li>
                     <li class="tour animate__animated animate__shakeX animate__delay-1s"><a href="https://center.ucp.by/virtual/">3D-тур</a></li>
+                    <li class="close" id="close-btn">x</li>
                 </ul>
-                
+                <div class="burger p-0">
+                  <img class="p-0" src="images/burger.svg" alt="burger">
+              </div>
             </nav>
         </header>
     </section>
@@ -131,7 +134,7 @@
         <div class="card1">
             <img alt="road" src="./images/road.JPG">
             <h5>Безопасность на дороге</h5>
-            <p>Обучающая площадка предназначена для отработки навыка безопасного перехода проезжей части по регулируемому и нерегулируемому пешеходному переходу.</p>
+            <p>Данная обучающая площадка предназначена для отработки навыка перехода проезжей части по различным пешеходным переходам</p>
 
             <a tabindex="0" class="btn animate__animated animate__fadeInDown wow" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top"  data-bs-content=" Транспортная безопасность является одной из важнейших составляющих
             безопасности государства, поскольку, наряду с другими инфраструктурными отраслями,
@@ -289,7 +292,7 @@
     <div class="row">
       <div class="col">
         <div class="multi-collapse collapse" id="multiCollapseExample1">
-          <div class="card card-body p-0">
+          <div class="card card-body">
             <div class="about"><p><strong>Адрес:</strong><br>
               г. Минск,<br> ул. Олешева, 2<br><br>
               <strong>Телефоны для записи:</strong><br>
@@ -434,7 +437,7 @@
       </div>
       <div class="col">
         <div class="multi-collapse2 collapse" id="multiCollapseExample2">
-          <div class="card card-body p-0">
+          <div class="card card-body">
             <img alt="vitebsk" src="./images/vitebsk.jpg">
           </div>
         </div>
@@ -575,7 +578,7 @@
       </div>
       <div class="col">
         <div class="multi-collapse6 collapse" id="multiCollapseExample2">
-          <div class="card card-body p-0">
+          <div class="card card-body">
             <img alt="borisov" src="./images/borisov.jpg">
           </div>
         </div>
@@ -910,34 +913,26 @@
 
 
 
-<!-- Всплывающее окно -->
+<!-- Popover -->
 <script>
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 </script>
 
 
-<!-- Загрузака Флекса до открытия -->
-<!-- <script>
-  $(function(){
-  var $dim=$('.dim:not(:visible)');
-  $dim.show();
-  setTimeout(function(){$dim.hide()},0);
-});
-</script> -->
 
 
 <!-- all location hide -->
 
-   <script>
+   <!-- <script>
    
    document.getElementById('all-locations').onclick = function() {
       document.getElementById('all-locations').hidden = true;
     }
   
 
-</script>
+</script> -->
 
-
+<script src="./js/script.js"></script>
 </body>
     </html>

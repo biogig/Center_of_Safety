@@ -903,6 +903,22 @@ padding-bottom: 20px;
 
 
 
+
+/* BURGER */
+
+
+.container-navigation .menu ul .close{
+    display: none;
+}
+
+.container-navigation .menu .burger{
+    display: none;
+}
+
+.container-navigation .menu .burger img {
+    width: 30px;
+}
+
 .container-about .map iframe {
     width: 630px;
     height: 430px;
@@ -913,10 +929,7 @@ padding-bottom: 20px;
 
 
 @media screen and (max-width: 1375px) {
-    /* .container-navigation header .menu ul {
-        
-     
-    } */
+    
 
     .container-navigation .emblem .language select {
         margin-right: 50px;
@@ -946,6 +959,10 @@ padding-bottom: 20px;
         padding-left: 0;
         margin-left: 30px;
        
+    }
+
+    .container-about .d-flex .MultiCollapse {
+        padding-left: 20px;
     }
 
 
@@ -993,7 +1010,7 @@ padding-bottom: 20px;
     .container-locations .locations .card1 img,
     .container-locations .locations-all .card1 img{
         width: 100%;
-       
+       height: auto;
         /* height: 210px; */
     }
 
@@ -1028,6 +1045,12 @@ padding-bottom: 20px;
 
     .container-about .d-flex .MultiCollapse {
         margin-top: -150px;
+        margin-right: 150px;
+        align-self: center;
+    }
+
+    .container-about .d-flex  .map {
+        align-self: center;
     }
 
   
@@ -1064,6 +1087,14 @@ padding-bottom: 20px;
 
     .container-navigation header .language {
         display: none;
+    }
+
+    .container-locations .locations .card1 h5 {
+        font-size: 27px;
+    }
+
+    .container-locations .locations .card1 p {
+        font-size: 16px;
     }
 }
 
@@ -1111,32 +1142,36 @@ padding-bottom: 20px;
         gap: 75px;
     }
 
+    .container-footer .ucp-bottom {
+        font-size: 8px;
+        padding-top: 30px;
+    }
+
+    .container-locations .locations .card1 p{
+        height: 100px;
+    }
+
 
 
 }
 
 
 
-
-
-
 @media screen and (max-width: 900px) {
-    .container-locations .locations, 
-    .container-locations .locations-all {
+
+
+.container-locations .locations, 
+.container-locations .locations-all {
         grid-template-columns: 1fr 1fr;
     }
 
-    .container-about .map {
+.container-about .map {
         margin: 0 auto;
        
     }
 
 
-    /* .container-locations .locations .card1:nth-last-of-type(1) {
-        margin-top: 30px;
-    } */
-
-    .container-locations .locations .card1:nth-last-of-type(3) {
+.container-locations .locations .card1:nth-last-of-type(3) {
        display: none;
     }
 
@@ -1162,10 +1197,7 @@ padding-bottom: 20px;
     width: 10px;
 }
 
-.container-footer .ucp-bottom {
-    font-size: 8px;
-    padding-top: 30px;
-}
+
 
 .container-about .abot,
 .container-about .center p {
@@ -1204,10 +1236,11 @@ padding-bottom: 20px;
     font-size: 15px;
 }
 
-.container-about .d-flex .MultiCollapse .city-show .row {
-    display: flex;
-    flex-direction: column;
-} 
+
+
+.container-about .d-flex .MultiCollapse{
+  padding-right: 200px;
+}
 
 .container-footer footer .info {
     padding: 0;
@@ -1229,13 +1262,17 @@ padding-bottom: 20px;
 }
 
 .container-navigation header .menu .tour {
-    margin: 0;
+    margin-left: 36px;
 }
 
 .container-navigation header .menu ul {
     gap: 30px;
 }
 
+.container-footer .ucp-bottom {
+    font-size: 8px;
+    margin-bottom: 0;
+}
 
 
 .container-footer .geraldika{
@@ -1281,6 +1318,25 @@ padding-bottom: 20px;
         margin-right: 30px;
     }
 
+    .container-carusel .swiper-slide .text h2 {
+        font-size: 44px;
+    }
+
+
+    .container-carusel  .swiper-slide .text p {
+        left: 50px;
+        font-size: 15px;
+    }
+
+    .container-locations .info {
+        gap: 120px;
+       
+    }
+
+    .container-navigation header .menu .tour {
+        margin-left: 0px;
+    }
+
 } 
 
 
@@ -1289,7 +1345,7 @@ padding-bottom: 20px;
 @media screen and (max-width: 700px) {
 
 .container-carusel .swiper .swiper-slide .text h2 {
-    font-size: 44px;
+    font-size: 40px;
 }
 
 .container-carusel  .swiper-slide .text p {
@@ -1328,18 +1384,94 @@ padding-bottom: 20px;
 
   } */
 
+  .container-about .abot {
+    font-size: 41px;
+    padding-bottom: 0;
+
+  }
+
 }
 
 
 @media screen and (max-width: 600px) {
+/* Burger */
+    .container-navigation .menu .close{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 25px;
+    }
+    .container-navigation .menu ul.mob-menu{
+       
+    left: 0;
+ 
+    }
+    .container-navigation .menu ul.mob-menu li a{
+        color: #fff;
+    }
+    
+    .container-navigation .menu .burger{
+        display: block;
+        float: right;
+     
+       
+    }
+    .container-navigation .menu .burger img {
+        width: 30px;
+        height: 30px;
+       margin-right: 40px;
+        margin-top: 30px;
+    }
+/* Burger */
+
+
+
     .container-navigation header .menu ul {
         display: none;
+    }
+
+
+    .container-about .d-flex .MultiCollapse .city-show .row {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .container-about .d-flex .MultiCollapse  {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .container-about .d-flex .MultiCollapse .city-show .card-body .about{
+        width: 200px;
     }
     
 }
 
 
 @media screen and (max-width: 500px) {
+
+    .container-carusel .swiper {
+        height: 35vh;
+      }
+    
+      .container-carusel .swiper .swiper-slide .text {
+        bottom: 600px;
+        right: 50px;
+      }
+
+      .container-carusel .swiper .swiper-slide .text h2 {
+        font-size: 27px;
+      }
+
+      .container-carusel .swiper .swiper-slide .text p {
+        left: 0;
+        font-size: 14px;
+        width: 200px;
+      }
+
+
+
     .container-locations .locations, 
     .container-locations .locations-all {
         grid-template-columns: 1fr;
@@ -1347,11 +1479,15 @@ padding-bottom: 20px;
 
     .container-footer footer .info {
         row-gap: 30px;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-items: center;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        justify-items: start;
        
+    }
+
+    .container-footer footer .info .up {
+        display: none;
     }
 
     .container-footer footer .ucp {
@@ -1368,6 +1504,7 @@ padding-bottom: 20px;
 
     .container-about .map iframe {
         width: 100%;
+        height: 70%;
         
     }
 }
