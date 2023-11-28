@@ -1385,7 +1385,7 @@ padding-bottom: 20px;
     text-indent: 20px;
 }
 
-.container-about .abot {
+.container-about .abot{
     font-size: 52px;
 }
 
@@ -1571,7 +1571,7 @@ padding-bottom: 20px;
   }
 
   .container-carusel .swiper .swiper-slide .text {
-    bottom: 500px;
+    bottom: 400px;
   }
 
   /* .container-carusel .swiper .swiper-slide img {
@@ -1589,6 +1589,10 @@ padding-bottom: 20px;
     padding: 20px;
   }
 
+  .container-carusel .swiper .swiper-button-next,
+  .container-carusel .swiper .swiper-button-prev{
+       --swiper-navigation-size: 30px;
+  }
 
 
 }
@@ -1682,12 +1686,21 @@ padding-bottom: 20px;
     }
 
     .container-carusel .swiper {
-        height: 35vh;
+        height: 40vh;
       }
     
       .container-carusel .swiper .swiper-slide .text {
-        bottom: 600px;
+        bottom: 500px;
         right: 50px;
+      }
+
+      .container-carusel .swiper .text h2 {
+        font-size: 2px;
+      }
+
+
+      .container-carusel .swiper .swiper-slide .text h2{
+        font-size: 35px;
       }
 }
 
@@ -1695,7 +1708,7 @@ padding-bottom: 20px;
 @media screen and (max-width: 500px) {
 
     .container-carusel .swiper {
-        height: 55vh;
+        height: 40vh;
       }
     
       .container-carusel .swiper .swiper-slide .text {
@@ -1705,11 +1718,11 @@ padding-bottom: 20px;
 
       .container-carusel .swiper .swiper-button-next,
       .container-carusel .swiper .swiper-button-prev{
-        display: none;
+           --swiper-navigation-size: 25px;
       }
 
       .container-carusel .swiper .swiper-slide .text h2 {
-        font-size: 27px;
+        font-size: 30px;
       }
 
       .container-carusel .swiper .swiper-slide .text p {
@@ -1803,8 +1816,12 @@ padding-bottom: 20px;
           padding-top: 0;
       }
 
-      .container-about .abot {
-        font-size: 34px;
+      .container-about .abot{
+        font-size: 30px;
+    }
+
+    .container-about .center h3 {
+        font-size: 24px;
     }
 
     .container-footer footer .info .contacts h6,
@@ -1818,11 +1835,32 @@ padding-bottom: 20px;
     .container-footer footer .info .menu ul li a{
         font-size: 12px;
     }
+
+    .container-locations .locations .card1 {
+        width: 100vw;
+    }
   }
 
 
 
 @media screen and (max-width: 400px) {
+
+    .container-carusel .swiper .swiper-slide .text h2 {
+        font-size: 25px;
+      }
+
+      .container-carusel .swiper .swiper-slide .text p {
+        left: 20px;
+
+        font-size: 12px;
+        width: 200px;
+      }
+
+    .container-carusel .swiper .swiper-slide .text {
+        bottom: 500px;
+        right: 60px;
+      }
+
     .container-footer footer .info {
         row-gap: 20px;
         justify-items: start;
@@ -1875,6 +1913,27 @@ padding-bottom: 20px;
         height: 20vh;
           
       }
+
+
+      .container-about .abot{
+        font-size: 24px;
+       
+    }
+
+    .container-about .center h3 {
+        font-size: 21px;
+    }
+
+    .container-about .center p {
+        font-size: 16px;
+    }
+
+    .container-locations .locations .card1 p{
+        font-size: 16px;
+    }
+    
+ 
+    
   
     
    
