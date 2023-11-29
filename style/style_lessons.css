@@ -365,9 +365,6 @@ font-weight: 800;
 @media screen and (max-width: 1375px) {
     
 
-    .container-about .d-flex .MultiCollapse {
-        padding-left: 20px;
-    }
 
 
 }
@@ -376,57 +373,23 @@ font-weight: 800;
 @media screen and (max-width: 1300px) {
     
 
-    .container-locations .locations, 
-    .container-locations .locations-all {
-        /* grid-template-columns: 340px 340px 340px; */
-        -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    .container-info .information {
+     
         padding-left: 40px;
         padding-right: 40px;
-    }
-
-
-
-    .container-locations .locations .card1,
-    .container-locations .locations-all .card1 {
-        width: auto;
-       
+        padding-bottom: 40px;
+        font-size: 17px;
+        font-weight: 0;
+        line-height: 120%;
+        letter-spacing: 0.62px;
         text-align: center;
     }
 
-    .container-locations .locations .card1 a, 
-    .container-locations .locations-all .card1 a {
-        padding-bottom: 15px;
-        position: relative;
-    }
 
-    .container-locations .locations .card1 img,
-    .container-locations .locations-all .card1 img{
-        width: 100%;
-       height: auto;
-        /* height: 210px; */
-    }
-
-    
-    .container-about .d-flex {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-
-    .container-about .d-flex .MultiCollapse {
-        margin-top: -150px;
-        margin-right: 150px;
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
-    }
-
-    .container-about .d-flex  .map {
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
+    .container-info .lessons-table table {
+        padding-bottom: 30px;
+        padding-top: 11px;
+       
     }
 
   
@@ -460,25 +423,40 @@ font-weight: 800;
 
 @media screen and (max-width: 900px) {
 
+.container-info h1 {
+    font-size: 50px;
+}
+    .container-info .month {
+        padding-top: 40px;
+    }
 
-
-
-
-
-
-
+    .container-info h1 {
+        padding-top: 60px;
+    }
 }
 
-
-@media screen and (max-width: 750px) {
-  
-} 
 
 
 
 
 @media screen and (max-width: 700px) {
 
+    .container-info .information {
+        font-size: 14px;
+        text-align: start;
+    }
+
+    .container-info .month-slider {
+        
+        padding: 6px 40px;
+    }
+
+    .container-info .month {
+        padding-left: 90px;
+        padding-top: 20px;
+    }
+
+   
 
 }
 
@@ -490,12 +468,57 @@ font-weight: 800;
 
 @media screen and (max-width: 500px) {
 
+    .container-info .information {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container-info .month-slider {
+        
+        padding: 6px 20px;
+    }
+
+    .container-info .month {
+        padding-left: 50px;
+        padding-top: 20px;
+        gap: 10px;
+        align-items: center;
+        
+    }
+
+
+    .container-info h1 {
+        padding-left: 40px;
+        font-size:  40px;
+    }
+
+    .container-info .month h2 {
+        font-size: 30px;
+    }
+
+    .container-info hr {
+        margin: 0;
+    }
+
+    .container-info .lessons-table table {
+        padding-top: 0;
+    }
+
+    .container-info .lessons-table .month-slider .left-arrow,
+    .container-info .lessons-table .month-slider .right-arrow{
+        width: 25px;
+        height: 25px;
+    }
+
   }
 
 
 
 @media screen and (max-width: 400px) {
-   
+    .container-info .information {
+        font-size: 12px;
+        text-align: start;
+    }
    
 }
   
