@@ -639,13 +639,18 @@ text-align: left;
 }
 
 
-.container-about .center .city-show .card,
-.container-about .center .city-show .btn  {
+.container-about .center .city-show .card {
     background-color: #F4F6FF;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 0;
     border-radius: 0;
+    padding-bottom: 20px;
+}
+
+.container-about .center .city-show .btn  {
+    margin-bottom: 8px;
+
 }
 
 .container-about .center .city-show .btn {
@@ -674,6 +679,10 @@ text-align: left;
 .container-about .MultiCollapse {
   padding-left: 70px;
 }
+
+/* .container-about .MultiCollapse .city-show {
+    padding-left: 70px;
+  } */
 
 .container-about .MultiCollapse h6 {
     color: var(--, #030823);
