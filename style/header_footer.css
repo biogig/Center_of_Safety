@@ -103,13 +103,6 @@
 
 
 
-
-
-
-
-
-
-
 /***CONTAINER FOOTER***/
 
 .map {
@@ -160,30 +153,6 @@
     padding-left: 100px;
 }
 
-.container-footer footer .info > *:nth-child(1) {
-     -ms-grid-row: 1;
-     -ms-grid-column: 1;
-}
-
-.container-footer footer .info > *:nth-child(2) {
-     -ms-grid-row: 1;
-     -ms-grid-column: 2;
-}
-
-.container-footer footer .info > *:nth-child(3) {
-     -ms-grid-row: 1;
-     -ms-grid-column: 3;
-}
-
-.container-footer footer .info > *:nth-child(4) {
-     -ms-grid-row: 1;
-     -ms-grid-column: 4;
-}
-
-.container-footer footer .info > *:nth-child(5) {
-     -ms-grid-row: 1;
-     -ms-grid-column: 5;
-}
 
 .container-footer .center .geraldika {
     display: -webkit-box;
@@ -377,29 +346,6 @@
        
     }
 
-    .container-footer footer .info > *:nth-child(1) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 1;
-       
-    }
-
-    .container-footer footer .info > *:nth-child(2) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 2;
-       
-    }
-
-    .container-footer footer .info > *:nth-child(3) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 3;
-       
-    }
-
-    .container-footer footer .info > *:nth-child(4) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 4;
-       
-    }
 
     .container-navigation header .menu .tour a {
         -ms-flex-item-align: end;
@@ -445,35 +391,6 @@
 
     
 
-    .container-footer footer .info > *:nth-child(1) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 1;
-       
-    }
-
-    
-
-    .container-footer footer .info > *:nth-child(2) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 2;
-       
-    }
-
-    
-
-    .container-footer footer .info > *:nth-child(3) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 3;
-       
-    }
-
-    
-
-    .container-footer footer .info > *:nth-child(4) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 4;
-       
-    }
 
     .container-footer footer .up {
         padding-left: 90px;
@@ -792,17 +709,7 @@
         
     }
 
-    .container-footer footer .info > *:nth-child(1) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 1;
-       
-    }
 
-    .container-footer footer .info > *:nth-child(2) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 2;
-       
-    }
 
     .container-footer footer .info .up {
         display: none;
