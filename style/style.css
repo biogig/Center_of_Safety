@@ -469,25 +469,25 @@ text-align: left;
 }
 
 .container-about .center .city-show .btn {
-    color: var(--, #030823);
+    color: #030823;
     font-family: Manrope;
-    font-size: 19px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 300;
     line-height: 84%;
     letter-spacing: -0.25px;
-    text-transform: uppercase;
-    border: 0; 
+    border: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border-bottom: solid 1px rgb(189, 189, 189);
+    padding-bottom: 10px;
+    width: 300px;
+    text-align: left; 
 }
 
-/* .container-about .center .city-show .btn:hover {
-    text-decoration: underline;
-} */
 
-.city-show .btn {
 
-    --bs-accordion-btn-icon-width: 0;
-}
+
 
 .container-about .center .city-show .about {
     display: -webkit-box;
@@ -498,7 +498,7 @@ text-align: left;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: sp;
 }
 
 
@@ -537,19 +537,6 @@ text-align: left;
     padding-bottom: 20px;
 }
 
-.container-about .center .city-show .btn  {
-    margin-bottom: 8px;
-
-}
-
-.container-about .center .city-show .btn {
-    border-bottom: solid 1px rgb(189, 189, 189);
-    padding-bottom: 10px;
-    width: 300px;
-    text-align: left; 
-    font-weight: 500;
-}
-
 .container-about .center .city-show .row .col:nth-child(1){
     width: 300px;
     -webkit-box-pack: start;
@@ -557,21 +544,22 @@ text-align: left;
             justify-content: start;
 }
 
-.container-about .center .city-show .row {width: 200px;}
+.container-about .center .city-show .row {
+    width: 100px;
+}
 
-/* .container-about .center .city-show:nth-of-type(3),
-.container-about .center .city-show:nth-of-type(4){
-    
-  margin-top: -81px;
-} */
+.container-about .MultiCollapse .city-show .row .card-body .about p{
+    text-indent: 0;
+}
+
+.container-about .MultiCollapse .city-show .row .card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .container-about .MultiCollapse {
   padding-left: 70px;
 }
-
-/* .container-about .MultiCollapse .city-show {
-    padding-left: 70px;
-  } */
 
 .container-about .MultiCollapse h6 {
     color: var(--, #030823);
@@ -586,105 +574,10 @@ display: inline-block;
 padding-bottom: 20px;
 }
 
-
 .container-about .map {
-    /* box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2); */
     margin-left: 90px; 
     margin-bottom: 180px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-
-.container-about .center .accordion {
-    width: 65%;
-    margin: 0 auto;
-}
-
-.container-about .center .info{
-    color: #030823;
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0px;
-    cursor: pointer;
-    list-style-type: none;
-}
-
-
-.container-about .center .accordion .accordion-button{
-    font-weight: 400;
-}
-
-.container-about .center .accordion .accordion-item .show .about strong{
-    font-weight: 600;
-}
-
-.container-about .center .accordion .accordion-button {
-    text-transform: uppercase;
-    color: #030823;
-    font-family: Oswald;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 100.6%;
-    letter-spacing: 0.62px;
-    
-}
-
-.accordion-button {
-
-    --bs-accordion-btn-icon-width: 0;
-}
-
-.container-about .center .accordion .accordion-item .show .about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-.container-about .center .accordion .accordion-item .show .about img {
-    width: 40%;
-    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
-}
-
-.container-about .center .accordion .accordion-item .show .about {
-    padding-bottom: 32px;
-    padding-top: 32px;
-}
-
-.container-about .center .accordion .accordion-item .show .about hr {
-    padding: 0;
-    margin: 0;
-}
-
-
-.container-about .center .accordion .accordion-item,
-.container-about .center .accordion .accordion-button  {
-    background-color: #F4F6FF;
-    box-shadow: none;
-} */
-
 
 
 
@@ -731,6 +624,11 @@ padding-bottom: 20px;
         width: 100%;
        height: auto;
         /* height: 210px; */
+    }
+
+    .container-about .d-flex {
+                flex-direction: column-reverse;
+     
     }
 
     .container-about .d-flex {
@@ -794,9 +692,13 @@ padding-bottom: 20px;
         grid-template-columns: 1fr 1fr;
     }
 
+
+.container-about {
+    padding-bottom: 0;
+}
+
 .container-about .map {
         margin: 0 auto;
-       
     }
 
 .container-locations .locations .card1:nth-last-of-type(3) {
@@ -838,25 +740,40 @@ padding-bottom: 20px;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
- 
+            gap: 0 !important;
+            padding-top: 0!important;
+            flex-direction: column-reverse;
+}
+
+.container-about .d-flex .MultiCollapse {
+    margin-bottom: 20px;
+    padding-right: 0 !important;
 }
 
 .container-about .d-flex .MultiCollapse {
     margin-top: 0;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .container-about .d-flex .MultiCollapse h6 {
     margin-bottom: 20px;
     font-size: 24px;
+    padding-bottom: 0;
 }
 
-.container-about .d-flex .MultiCollapse .city-show .btn {
-    font-size: 15px;
+.container-about .center .city-show .btn {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    text-align: left; 
 }
 
 .container-about .d-flex .MultiCollapse{
   padding-right: 200px;
 }
+
 
 }
 
@@ -971,6 +888,27 @@ padding-bottom: 20px;
         width: 200px;
     }
 
+
+.container-about .MultiCollapse .city-show .row .card-body img{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+
+.container-about .d-flex .MultiCollapse .city-show .row .card-body 
+.about p {
+    font-size: 15px;
+  }
+
+  .container-about .center .city-show .btn {
+    font-size: 16px;
+  }
+
+.container-about .center .MultiCollapse h6 {
+    font-size: 22px;
+}
+
 .container-about .abot {
         font-size: 38px;
     }
@@ -1081,6 +1019,7 @@ padding-bottom: 20px;
           padding-top: 0;
       }
 
+
 .container-about .abot{
         font-size: 30px;
     }
@@ -1178,4 +1117,5 @@ padding-bottom: 20px;
     .container-about .d-flex .MultiCollapse .btn{
         width: 200px;
     }
+
 }
