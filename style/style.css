@@ -323,12 +323,11 @@
 
 
 
-
 .container-locations .locations .card1,
 .container-locations  .locations-all .card1
 
  {
-    background-color: #fafbff;
+    background-color: #F4F6FF;
 }
 
 
@@ -517,7 +516,7 @@
     width: 220px;
     -webkit-box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
             box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
-     margin-top: 25px;
+     margin-top: 10px;
 }
 
 .container-about .center .city-show p {
@@ -631,7 +630,6 @@ padding-bottom: 20px;
     .container-locations .show-all .locations-all .card1 img{
         width: 100%;
        height: auto;
-        /* height: 210px; */
     }
 
     .container-about .bottom-about-flex {
@@ -681,7 +679,7 @@ padding-bottom: 20px;
         height: 50vh;
       }
 
-      .container-carusel .swiper .swiper-slide .text {
+    .container-carusel .swiper .swiper-slide .text {
         bottom: 380px;
       }
 
@@ -755,8 +753,11 @@ padding-bottom: 20px;
 
 .container-about .bottom-about-flex .MultiCollapse {
     margin-bottom: 20px;
-    padding-right: 0 !important;
+    /* padding-right: 0 !important; */
+  
 }
+
+
 
 .container-about .bottom-about-flex .MultiCollapse {
     margin-top: 0;
@@ -899,7 +900,7 @@ padding-bottom: 20px;
 
 .container-about .MultiCollapse .city-show .row .card-body img{
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 
