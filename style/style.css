@@ -79,11 +79,8 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-    
     -webkit-box-pack: center;
-    
         -ms-flex-pack: center;
-    
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -679,13 +676,15 @@ padding-bottom: 20px;
         height: 50vh;
       }
 
-    .container-carusel .swiper .swiper-slide .text {
-        bottom: 380px;
-      }
-
     .container-locations .locations .card1 p{
         height: 100px;
     }
+
+  .container-carusel .swiper .swiper-slide .text {
+        bottom: 380px;
+      }
+  
+
 }
 
 
@@ -784,6 +783,8 @@ padding-bottom: 20px;
 }
 
 
+
+
 }
 
 
@@ -800,8 +801,14 @@ padding-bottom: 20px;
 
     .container-locations .info {
         gap: 120px;
-       
     }
+
+    /* .container-carusel .swiper .swiper-slide .text {
+        bottom: 380px;
+      } */
+    
+ 
+
 } 
 
 
@@ -946,6 +953,11 @@ padding-bottom: 20px;
 .container-locations .info h2 a {
         font-size: 30px;
     }
+
+    /* .container-carusel  .swiper-slide img {
+        height: max-content;
+        width: fit-content;
+   } */
  
 }
 

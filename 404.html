@@ -21,34 +21,63 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <body>
     <div class="wrapper">
         <!-- HEADER -->
-        <section class="container-navigation">
-            <header class="center">
-               <div class="emblem"> 
-               <a href="./index.html"><img alt="emblem" src="./images/emblem.png"></a> 
-                <form class="language">
-                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
-                        <option><a href="#">RU</a></option>
-                        <option value="./indexEN.html"><a href="#">EN</a></option>
-                    </select>
-            </form>
-               </div>
-                <nav class="menu">
-                    <ul class="m-0">
-                        <li class="menu-item"><a href="./index.html" title="Главная">Главная</a></li>
-                        <li class="menu-item"><a href="./locations.html" title="Площадки">Площадки</a></li>
-                        <li class="menu-item"><a href="./lessons.html" title="Занятия">Занятия</a></li>
-                        <li class="menu-item"><a href="./404.html" title="Тесты">Тесты</a></li>
-                        <li class="menu-item"><a href="./404.html" title="О центре">О центре</a></li>
-                        <li class="menu-item"><a href="./contacts.html" title="Контакты">Контакты</a></li>
-                        <li class="tour animate__animated animate__shakeX animate__delay-1s"><a href="https://center.ucp.by/virtual/" title="Виртуальный тур">3D-тур</a></li>
-                        <li class="close" id="close-btn">x</li>
-                    </ul>
-                    <div class="burger p-0">
-                        <img class="p-0" src="images/burger.svg" alt="burger">
-                    </div>
-                </nav>
-            </header>
-        </section>
+    <section class="container-navigation center">
+        <header class="center">
+           <div class="emblem"> 
+           <a href="./index.html" title="На главную"><img alt="emblem" src="./images/emblem.png"></a> 
+            <form class="language">
+                <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                    <option><a href="#" title="Русский">RU</a></option>
+                    <option value="./indexEN.html"><a href="#" title="Английский">EN</a></option>
+                </select>
+        </form>
+           </div>
+            <nav class="menu">
+                <ul class="m-0">
+                    <li class="menu-item">
+                      <a href="./index.html" title="Главная">
+                        Главная</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./locations.html" title="Площадки">
+                        Площадки
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./lessons.html" title="Занятия">
+                        Занятия
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./404.html" title="Тесты">
+                        Тесты
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./404.html" title="О центре">
+                        О центре
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="./contacts.html" title="Контакты">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="tour animate__animated animate__zoomIn animate__delay-1s">
+                      <a href="https://center.ucp.by/virtual/">
+                        3D-тур
+                      </a>
+                    </li>
+                    <li class="close" id="close-btn">
+                      ⨉
+                    </li>
+                </ul>
+                <div class="burger p-0">
+                  <img class="p-0" src="images/burger.svg" alt="burger">
+              </div>
+            </nav>
+        </header>
+    </section>
     
         <section class="container-main">
 
@@ -64,17 +93,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 
 
-
 <!--FOOTER-->
-  <section class="container-footer">
+<section class="container-footer">
     <footer class="center">
-
     <div class="geraldika">
     <div class="ucp"> 
-        <a href="https://ucp.by/"><img class="emblem" alt="emblem" src="./images/ucp-emblem.png">
+        <a href="https://ucp.by/" title="Сайт УГЗ"><img class="emblem" alt="emblem" src="./images/ucp-emblem.png">
        <p>УНИВЕРСИТЕТ<br> ГРАЖДАНСКОЙ<br> ЗАЩИТЫ</p></a>
     </div>
-
    <div class="slider">
 <div class="slide-track">
     <div class="slide">
@@ -155,44 +181,87 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </div>
 </div>
 </div>
-
 <div class="info">
         <div class="contacts">
             <h6 id="contacts">Контакты:</h6>
-            <ul>
-                <li><a href="tel:80172697060" title="Городской">8 (017) 269 - 70 - 60</a></li>
-                <li><a href="tel:80448040054" title="Мобильный Life">8 (029) 804 - 00 - 54</a></li>
-                <li><a href="mailto:cb@ucp.by" title="Почта">cb@ucp.by</a></li>
-                <li><a href="https://www.instagram.com/centr_bezopasnosti_minsk/" title="Наш Инстаграмм">Instagram</a></li>
+            <ul class="m-0">
+            <li>
+              <a href="tel:80172697060" title="Городской">
+                8 (017) 269 - 70 - 60
+              </a>
+            </li>
+            <li>
+              <a href="tel:80448040054" title="Мобильный Life">
+                8 (029) 804 - 00 - 54
+              </a>
+            </li>
+            <li>
+              <a href="mailto:cb@ucp.by" title="Почта">
+                cb@ucp.by
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/centr_bezopasnosti_minsk/" title="Наш Инстаграмм">
+                Instagram
+              </a>
+            </li>
             </ul>
         </div>
-
         <div class="menu"> 
             <h6>Сылки:</h6> 
-            <ul>
-                <li><a href="./locations.html">Площадки</a></li>
-                <li><a href="./lessons.html">Занятия</a></li>
-                <li><a href="./404.html">Тесты</a></li>
-                <li><a href="./404.html">О центре</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
+            <ul class="m-0">
+                <li>
+                  <a href="./locations.html" title="Площадки">
+                    Площадки
+                  </a>
+                </li>
+                <li>
+                  <a href="./lessons.html" title="Занятия">
+                    Занятия
+                  </a>
+                </li>
+                <li>
+                  <a href="./404.html" title="Тесты">
+                    Тесты
+                  </a>
+                </li>
+                <li>
+                  <a href="./404.html" title="О центре">
+                    О центре
+                  </a>
+                </li>
+                <li>
+                  <a href="./contacts.html" title="Контакты">
+                    Контакты
+                  </a>
+                </li>
             </ul>
         </div>
-
         <div class="payments">
             <h6>Платежные системы:</h6>
-            <ul>
-                <li><img alt="mastercard" src="./images/mastercard.svg"></li>
-                <li><img alt="visa" src="./images/visa.svg"></li>
-                <li><img alt="maestro" src="./images/maestro.svg"></li>
+            <ul class="m-0">
+                <li>
+                  <img alt="mastercard" src="./images/mastercard.svg">
+                </li>
+                <li>
+                  <img alt="visa" src="./images/visa.svg">
+                </li>
+                <li>
+                  <img alt="maestro" src="./images/maestro.svg">
+                </li>
             </ul>
         </div>
-
-        <div class="up"><a href="#" title="В начало"><img class="arrow" alt="arrow" src="./images/arrow.svg"></a>
+        <div class="up">
+          <a href="#" title="В начало">
+            <img class="arrow" alt="arrow" src="./images/arrow.svg">
+          </a>
         </div>
     </div>
     </footer>
-
-    <div class="ucp-bottom"><p>Образовательный центр безопасноти <br> Университет гражданоской защиты МЧС Республики Беларусь</p></div>
+    
+    <div class="ucp-bottom">
+      <p>Образовательный центр безопасноти <br> Университет гражданоской защиты МЧС Республики Беларусь</p>
+    </div>
 </section>
 </div>
 <script src="./js/wow.min.js"></script>
