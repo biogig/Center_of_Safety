@@ -207,6 +207,7 @@
     -webkit-column-gap: 31px;
        -moz-column-gap: 31px;
             column-gap: 31px;
+            row-gap: 31px;
 
 }
 
@@ -214,13 +215,14 @@
 .container-locations .show-all .locations-all .card1 {
 -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
         box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
-text-align: left;
+        text-align: left;
+
 
 }
 
-.container-locations .show-all .locations-all .card1 {
+/* .container-locations .show-all .locations-all .card1 {
     margin-bottom: 31px;
-}
+} */
 
 .container-locations .locations .card1 {
     text-align: center;
@@ -322,9 +324,11 @@ text-align: left;
 
 
 
-.container-locations .locations .card1 
+.container-locations .locations .card1,
+.container-locations  .locations-all .card1
+
  {
-    background-color: #F4F6FF;
+    background-color: #fafbff;
 }
 
 
@@ -614,7 +618,6 @@ padding-bottom: 20px;
     .container-locations .locations .card1,
     .container-locations .show-all .locations-all .card1 {
         width: auto;
-       
         text-align: center;
     }
 
@@ -645,10 +648,10 @@ padding-bottom: 20px;
 
     .container-about .bottom-about-flex .MultiCollapse {
         margin-top: -150px;
-        margin-right: 150px;
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
+            padding-left: 0;
     }
 
     .container-about .bottom-about-flex  .map {
@@ -908,6 +911,9 @@ padding-bottom: 20px;
 
   .container-about .center .city-show .btn {
     font-size: 16px;
+    margin: 0;
+    padding-bottom: 5px;
+   
   }
 
 .container-about .center .MultiCollapse h6 {
