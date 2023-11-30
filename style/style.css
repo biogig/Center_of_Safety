@@ -438,18 +438,31 @@ text-align: left;
     text-indent: 70px;
 }
 
-
-
 .container-about .map iframe {
     width: 630px;
     height: 430px;
 }
 
+/* .button._view_air-alt .button__icon+.button__text,.button._view_air-round .button__icon+.button__text,.button._view_air .button__icon+.button__text {
+    display: none;
+}
 
+.button._view_air-alt._size_small,
+.button._view_air-round._size_small,
+.button._view_air._size_small {
+    display: none;
+}
+
+._map-widget-mobile
+.map-widget-app
+.map-widget-panorama-player-app
+.panorama-player
+.map-widget-panorama-player-app__name{
+    display: none;
+} */
 
 .container-about .center .city-show {
     width: 65%;
-    
 }
 
 .container-about .center .info{
@@ -461,7 +474,6 @@ text-align: left;
     cursor: pointer;
     list-style-type: none;
 }
-
 
 
 .container-about .center .city-show .show .about strong{
@@ -485,10 +497,6 @@ text-align: left;
     text-align: left; 
 }
 
-
-
-
-
 .container-about .center .city-show .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -500,7 +508,6 @@ text-align: left;
     -ms-flex-pack: distribute;
         justify-content: sp;
 }
-
 
 .container-about .center .city-show  img {
     width: 220px;
@@ -521,12 +528,10 @@ text-align: left;
     grid-template-columns: 3fr 1fr;
 }
 
-
 .container-about .center .city-show .about hr {
     padding: 0;
     margin: 0;
 }
-
 
 .container-about .center .city-show .card {
     background-color: #F4F6FF;
@@ -562,7 +567,7 @@ text-align: left;
 }
 
 .container-about .MultiCollapse h6 {
-    color: var(--, #030823);
+color:  #030823;
 font-family: Oswald;
 font-size: 30px;
 font-style: normal;
@@ -588,7 +593,7 @@ padding-bottom: 20px;
 
 @media screen and (max-width: 1375px) {
 
-    .container-about .d-flex .MultiCollapse {
+    .container-about .bottom-about-flex .MultiCollapse {
         padding-left: 20px;
     }
 
@@ -626,19 +631,19 @@ padding-bottom: 20px;
         /* height: 210px; */
     }
 
-    .container-about .d-flex {
+    .container-about .bottom-about-flex {
                 flex-direction: column-reverse;
      
     }
 
-    .container-about .d-flex {
+    .container-about .bottom-about-flex {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
 
-    .container-about .d-flex .MultiCollapse {
+    .container-about .bottom-about-flex .MultiCollapse {
         margin-top: -150px;
         margin-right: 150px;
         -ms-flex-item-align: center;
@@ -646,7 +651,7 @@ padding-bottom: 20px;
             align-self: center;
     }
 
-    .container-about .d-flex  .map {
+    .container-about .bottom-about-flex  .map {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
@@ -736,7 +741,7 @@ padding-bottom: 20px;
     margin-bottom: 40px;
 }
 
-.container-about .d-flex {
+.container-about .bottom-about-flex {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
@@ -745,18 +750,18 @@ padding-bottom: 20px;
             flex-direction: column-reverse;
 }
 
-.container-about .d-flex .MultiCollapse {
+.container-about .bottom-about-flex .MultiCollapse {
     margin-bottom: 20px;
     padding-right: 0 !important;
 }
 
-.container-about .d-flex .MultiCollapse {
+.container-about .bottom-about-flex .MultiCollapse {
     margin-top: 0;
     padding-right: 0;
     margin-right: 0;
 }
 
-.container-about .d-flex .MultiCollapse h6 {
+.container-about .bottom-about-flex .MultiCollapse h6 {
     margin-bottom: 20px;
     font-size: 24px;
     padding-bottom: 0;
@@ -770,7 +775,7 @@ padding-bottom: 20px;
     text-align: left; 
 }
 
-.container-about .d-flex .MultiCollapse{
+.container-about .bottom-about-flex .MultiCollapse{
   padding-right: 200px;
 }
 
@@ -869,7 +874,7 @@ padding-bottom: 20px;
         margin-left: 0px ;
      } 
 
-.container-about .d-flex .MultiCollapse .city-show .row {
+.container-about .bottom-about-flex .MultiCollapse .city-show .row {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -879,12 +884,12 @@ padding-bottom: 20px;
                 flex-direction: column;
     } 
 
-.container-about .d-flex .MultiCollapse  {
+.container-about .bottom-about-flex .MultiCollapse  {
         padding-right: 0;
         margin-right: 0;
     }
 
-.container-about .d-flex .MultiCollapse .city-show .card-body .about{
+.container-about .bottom-about-flex .MultiCollapse .city-show .card-body .about{
         width: 200px;
     }
 
@@ -896,7 +901,7 @@ padding-bottom: 20px;
 
 
 
-.container-about .d-flex .MultiCollapse .city-show .row .card-body 
+.container-about .bottom-about-flex .MultiCollapse .city-show .row .card-body 
 .about p {
     font-size: 15px;
   }
@@ -1114,8 +1119,12 @@ padding-bottom: 20px;
 
 @media screen and (max-width: 350px) {
   
-    .container-about .d-flex .MultiCollapse .btn{
+    .container-about .bottom-about-flex .MultiCollapse .btn{
         width: 200px;
+    }
+
+    .container-about .bottom-about-flex .MultiCollapse{
+        padding-left: 0;
     }
 
 }
