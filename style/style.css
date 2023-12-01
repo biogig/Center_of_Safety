@@ -73,9 +73,9 @@
     width: 100%;
     height: 100%;
     padding-top: 90px;
-  }
+}
 
-  .container-carusel  .swiper-slide {
+.container-carusel  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -87,19 +87,19 @@
             align-items: center;
     width: 100%;
     height: 803px;
-  }
+}
 
-  .container-carusel  .swiper-slide img {
+.container-carusel  .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
+}
 
 
 
-  .container-carusel  .swiper-slide .text {
+.container-carusel  .swiper-slide .text {
     position: relative;
     bottom: 250px;
     display: -webkit-box;
@@ -110,13 +110,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding-left: 70px;
-  }
+}
 
-  .container-carusel  .swiper-slide a {
+.container-carusel  .swiper-slide a {
     text-decoration: none;
-  }
+}
 
-  .container-carusel  .swiper-slide .text h2  {
+.container-carusel  .swiper-slide .text h2  {
     color: #F4F6FF;
     font-family: Oswald;
     font-size: 62px;
@@ -125,11 +125,10 @@
     letter-spacing: 0.62px;
     position: relative;
     width: 800px;
-    text-align: left;
-    
+    text-align: left; 
   }
 
-  .container-carusel  .swiper-slide .text p {
+.container-carusel  .swiper-slide .text p {
     color:  #F4F6FF;
     font-family: Manrope;
     font-size: 18px;
@@ -143,7 +142,7 @@
     top: 15px;
     width: 400px;
     
-  }
+}
 
   .container-carusel .swiper-button-next, 
   .container-carusel .swiper-button-prev
@@ -154,9 +153,6 @@
   .container-carusel .swiper-pagination .swiper-pagination-bullet{
     background-color: #fff;
   }
-
-
-
 
 
 /*LOCATIONS*/
@@ -216,8 +212,6 @@
 
 
 }
-
-
 
 .container-locations .locations .card1 {
     text-align: center;
@@ -370,9 +364,6 @@
 
 
 /***CONTAINER ABOUT***/
-
-
-
 
 .container-about {
     background-color: #F4F6FF;
@@ -592,9 +583,9 @@ padding-bottom: 20px;
 
 @media screen and (max-width: 1375px) {
 
-    .container-about .bottom-about-flex .MultiCollapse {
+.container-about .bottom-about-flex .MultiCollapse {
         padding-left: 20px;
-    }
+}
 
     
 
@@ -603,90 +594,88 @@ padding-bottom: 20px;
 
 @media screen and (max-width: 1300px) {
     
-    .container-locations .locations, 
-    .container-locations .show-all .locations-all {
+.container-locations .locations, 
+.container-locations .show-all .locations-all {
         /* grid-template-columns: 340px 340px 340px; */
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         padding-left: 40px;
         padding-right: 40px;
-    }
+}
 
-    .container-locations .locations .card1,
-    .container-locations .show-all .locations-all .card1 {
+.container-locations .locations .card1,
+.container-locations .show-all .locations-all .card1 {
         width: auto;
         text-align: center;
-    }
+}
 
-    .container-locations .locations .card1 a, 
-    .container-locations .show-all .locations-all .card1 a {
+.container-locations .locations .card1 a, 
+.container-locations .show-all .locations-all .card1 a {
         padding-bottom: 15px;
         position: relative;
-    }
+}
 
-    .container-locations .locations .card1 img,
-    .container-locations .show-all .locations-all .card1 img{
+.container-locations .locations .card1 img,
+.container-locations .show-all .locations-all .card1 img{
         width: 100%;
        height: auto;
-    }
+}
 
-    .container-about .bottom-about-flex {
-                flex-direction: column-reverse;
+.container-about .bottom-about-flex {
+            flex-direction: column-reverse;
      
-    }
+}
 
-    .container-about .bottom-about-flex {
+.container-about .bottom-about-flex {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-    }
+}
 
-    .container-about .bottom-about-flex .MultiCollapse {
+.container-about .bottom-about-flex .MultiCollapse {
         margin-top: -150px;
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
             padding-left: 0;
             padding-right: 55px;
-    }
+}
 
-    .container-about .bottom-about-flex  .map {
+.container-about .bottom-about-flex  .map {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
-    }
+}
 
 }
 
 
 @media screen and (max-width: 1200px) {
     
-    .container-locations .locations .card1 h5 {
+.container-locations .locations .card1 h5 {
         font-size: 27px;
-    }
+}
 
-    .container-locations .locations .card1 p {
+.container-locations .locations .card1 p {
         font-size: 16px;
-    }
+}
 }
 
 
 @media screen and (max-width: 1060px){
 
-    .container-carusel .swiper {
+.container-carusel .swiper {
         height: 50vh;
-      }
+}
 
-    .container-locations .locations .card1 p{
+.container-locations .locations .card1 p{
         height: 100px;
-    }
+}
 
   .container-carusel .swiper .swiper-slide .text {
         bottom: 380px;
-      }
-  
-
+}
 }
 
 
@@ -697,8 +686,9 @@ padding-bottom: 20px;
 .container-locations .show-all .locations-all {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    }
-
+        padding-left: 20px;
+        padding-right: 20px;
+}
 
 .container-about {
     padding-bottom: 0;
@@ -706,11 +696,11 @@ padding-bottom: 20px;
 
 .container-about .map {
         margin: 0 auto;
-    }
+}
 
 .container-locations .locations .card1:nth-last-of-type(3) {
        display: none;
-    }
+}
 
 .container-about .abot,
 .container-about .center p {
@@ -728,6 +718,7 @@ padding-bottom: 20px;
     padding: 0;
     padding-left: 20px;
     text-indent: 20px;
+    padding-right: 20px;
 }
 
 .container-about .center .abot h3 {
@@ -758,8 +749,6 @@ padding-bottom: 20px;
   
 }
 
-
-
 .container-about .bottom-about-flex .MultiCollapse {
     margin-top: 0;
     padding-right: 0;
@@ -784,33 +773,28 @@ padding-bottom: 20px;
   padding-right: 200px;
 }
 
-
-
-
 }
 
 
 @media screen and (max-width: 750px) {
    
-    .container-carusel .swiper-slide .text h2 {
+.container-carusel .swiper-slide .text h2 {
         font-size: 44px;
-    }
+}
 
-    .container-carusel  .swiper-slide .text p {
+.container-carusel  .swiper-slide .text p {
         left: 50px;
         font-size: 15px;
-    }
+}
 
-    .container-locations .info {
+.container-locations .info {
         gap: 120px;
-    }
+}
 
     /* .container-carusel .swiper .swiper-slide .text {
         bottom: 380px;
       } */
     
- 
-
 } 
 
 
@@ -847,29 +831,28 @@ padding-bottom: 20px;
 
 .container-carusel .swiper {
     height: 50vh;
-  }
+}
 
   .container-carusel .swiper .swiper-slide .text {
     bottom: 400px;
-  }
+}
 
   .container-about .abot {
     font-size: 41px;
     padding: 20px;
     margin: 0;
 
-  }
+}
 
   .container-about .abot p {
     padding: 20px;
-  }
+}
 
   .container-carusel .swiper .swiper-button-next,
   .container-carusel .swiper .swiper-button-prev{
        --swiper-navigation-size: 30px;
-  }
+}
 
-  
 }
 
 
@@ -885,7 +868,7 @@ padding-bottom: 20px;
 
 .container-about .center ul {
         margin-left: 0px ;
-     } 
+} 
 
 .container-about .bottom-about-flex .MultiCollapse .city-show .row {
         display: -webkit-box;
@@ -895,17 +878,16 @@ padding-bottom: 20px;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-    } 
+} 
 
 .container-about .bottom-about-flex .MultiCollapse  {
         padding-right: 0;
         margin-right: 0;
-    }
+}
 
 .container-about .bottom-about-flex .MultiCollapse .city-show .card-body .about{
         width: 200px;
-    }
-
+}
 
 .container-about .MultiCollapse .city-show .row .card-body img{
     margin-top: 0;
@@ -917,14 +899,13 @@ padding-bottom: 20px;
 .container-about .bottom-about-flex .MultiCollapse .city-show .row .card-body 
 .about p {
     font-size: 15px;
-  }
+}
 
   .container-about .center .city-show .btn {
     font-size: 16px;
     margin: 0;
     padding-bottom: 5px;
-   
-  }
+}
 
 .container-about .center .MultiCollapse h6 {
     font-size: 22px;
@@ -932,29 +913,29 @@ padding-bottom: 20px;
 
 .container-about .abot {
         font-size: 38px;
-    }
+}
 
 .container-carusel .swiper {
         height: 40vh;
-      }
+}
     
 .container-carusel .swiper .swiper-slide .text {
         bottom: 500px;
         right: 50px;
-      }
+}
 
 .container-carusel .swiper .text h2 {
         font-size: 2px;
-      }
+}
 
 
 .container-carusel .swiper .swiper-slide .text h2{
         font-size: 35px;
-      }
+}
 
 .container-locations .info h2 a {
         font-size: 30px;
-    }
+}
 
     /* .container-carusel  .swiper-slide img {
         height: max-content;
@@ -968,93 +949,86 @@ padding-bottom: 20px;
 
 .container-carusel .swiper {
         height: 50vh;
-      }
+}
     
 .container-carusel .swiper .swiper-slide .text {
         bottom: 600px;
         right: 20px;
-      }
+}
 
 .container-carusel .swiper .swiper-button-next,
 .container-carusel .swiper .swiper-button-prev{
            --swiper-navigation-size: 25px;
-      }
+}
 
 .container-carusel .swiper .swiper-slide .text h2 {
         font-size: 30px;
-      }
+}
 
 .container-carusel .swiper .swiper-slide .text p {
         left: 0;
         font-size: 14px;
         width: 200px;
-      }
+}
 
 .container-about .center ul {
         padding-left: 50px !important ;
         padding-right: 0 !important;
-     } 
+} 
 
 .container-about .center ul {
         margin-left: 0px ;
-     } 
+} 
 
 
 
 .container-locations .locations, 
-.container-locations .show-all .locations-all
-    {
+.container-locations .show-all .locations-all{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         row-gap: 30px
         ;
-    }
+}
 
 .container-locations .locations .card1:nth-last-of-type(3) {
         display: block;
-     }
+}
 
   
 .container-locations .info {
         gap: 50px;
-    }
-
-
-
-
+}
 
 .container-locations .locations .card1 p {
         font-size: 18px;
-    }
+}
 
 .container-locations .locations .card1 h5 {
         font-size: 30px;
-    }
+}
 
 .container-about .map iframe {
         width: 90vw;
-        height: 20vh;
-          
-      }
+        height: 15vh; 
+}
   
 .container-about .MultiCollapse{
           padding-top: 0;
-      }
+}
 
 
 .container-about .abot{
         font-size: 30px;
-    }
+}
 
 .container-about .center h3 {
         font-size: 24px;
-    }
+}
 
 .container-locations .locations .card1,
 .container-locations .show-all .locations-all .card1 {
-        width: 100vw;
-        
-    }
+        width: 100vw; 
+}
 
 .container-locations .locations .card1 p,
 .container-locations .show-all .locations-all .card1 p {
@@ -1072,7 +1046,7 @@ padding-bottom: 20px;
     font-size: 14px;
 }
 
-  }
+}
 
 
 
@@ -1080,56 +1054,52 @@ padding-bottom: 20px;
 
 .container-carusel .swiper .swiper-slide .text h2 {
         font-size: 25px;
-      }
+}
 
 .container-carusel .swiper .swiper-slide .text p {
         left: 20px;
         font-size: 12px;
         width: 200px;
-      }
-
-
-.container-locations .info {
-      
-        gap: 20px;
-    }
-
-    .container-locations .info h2 a {
-        font-size: 24px;
-    }
-
-    
-.container-about .map iframe {
-        width: 90vw;
-        height: 20vh;      
 }
 
+.container-locations .info { 
+        gap: 20px;
+}
+
+.container-locations .info h2 a {
+        font-size: 24px;
+}
+
+.container-about .map iframe {
+        width: 90vw;
+        height: 10vh;
+        margin-bottom: 15px;      
+}
 
 .container-about .abot{
-        font-size: 24px;
-       
-    }
+        font-size: 24px; 
+}
 
 .container-about .center h3 {
         font-size: 21px;
-    }
+}
 
 .container-about .center p {
         font-size: 16px;
-    }
+}
 
 .container-locations .locations .card1 p{
         font-size: 16px;
-    }
+}
     
 .container-carusel .swiper {
         height: 50vh;
-      }
+}
     
 .container-carusel .swiper .swiper-slide .text {
         bottom: 400px;
         right: 60px;
-      }
+}
     
 }
   
@@ -1138,10 +1108,10 @@ padding-bottom: 20px;
   
     .container-about .bottom-about-flex .MultiCollapse .btn{
         width: 200px;
-    }
+}
 
     .container-about .bottom-about-flex .MultiCollapse{
         padding-left: 0;
-    }
+}
 
 }
