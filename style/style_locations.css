@@ -99,6 +99,7 @@ table {
     line-height: 116.667%;
     letter-spacing: -0.18px;
     margin: 55px 132px 55px 132px;
+    text-align: justify;
 }
 
 .container-locations select {
@@ -539,17 +540,13 @@ margin-right: 15px;
 
     .container-locations .summary {
         margin: 0;
-        padding: 20px 70px;
+        padding: 15px 40px;
     }
 
-
-
-
-
+  
 
     .container-locations .locations, 
     .container-locations .show-all .locations-all {
-        /* grid-template-columns: 340px 340px 340px; */
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         padding-left: 40px;
@@ -575,7 +572,6 @@ margin-right: 15px;
     .container-locations .show-all .locations-all .card1 img{
         width: 100%;
        height: auto;
-        /* height: 210px; */
     }
 
   
@@ -611,8 +607,6 @@ margin-right: 15px;
         font-size: 20px;
     }
 
-    
-
     .container-locations .locations .card1 p{
         height: 100px;
     }
@@ -637,6 +631,12 @@ margin-right: 15px;
 
     .container-locations h1 {
         font-size: 48px;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .container-locations .summary {
+        padding-left: 40px;
     }
 
 .container-locations .locations, 
@@ -654,6 +654,12 @@ margin-right: 15px;
 .container-locations .locations .card1:nth-last-of-type(3) {
        display: none;
     }
+
+
+.container-locations .summary p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
     
 
@@ -674,8 +680,8 @@ margin-right: 15px;
     }
 
 
-    .container-locations .summary,
-    .container-locations h1 {
+    .container-locations .summary 
+    {
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -683,6 +689,11 @@ margin-right: 15px;
     .container-locations h1 {
         font-size: 40px;
     }
+
+    
+.container-locations {
+    padding-top: 70px;
+}
 
 } 
 
@@ -723,6 +734,9 @@ margin-right: 15px;
 
 @media screen and (max-width: 600px) {
 
+    .container-locations h1 {
+        font-size: 32px;
+    }
 
 .container-locations .locations .card1 p,
 .container-locations .show-all .locations-all .card1 p{
@@ -749,6 +763,10 @@ margin-right: 15px;
       
         margin: 10px;
     }
+.container-locations h1 {
+        font-size: 38px;
+        padding-top: 10px;
+    }
 
    
       }
@@ -757,9 +775,7 @@ margin-right: 15px;
 
 @media screen and (max-width: 500px) {
 
-    .container-locations h1 {
-        font-size: 32px;
-    }
+    
 
     .container-locations .locations, 
     .container-locations .show-all .locations-all {
@@ -770,7 +786,7 @@ margin-right: 15px;
 
     .container-locations .show-all .locations-all .card1 .about-btn,
     .container-locations .locations .card1   .about-btn{
-        font-size: 20px;
+        font-size: 16px;
     }
 
 
@@ -786,14 +802,11 @@ margin-right: 15px;
 
     .container-locations .locations .card1 p,
     .container-locations .show-all .locations-all .card1 p {
-        font-size: 18px;
+      
         margin-bottom: 10px;
     }
 
-    .container-locations .locations .card1 h5,
-    .container-locations .show-all .locations-all .card1 h5 {
-        font-size: 30px;
-    }
+    
 
    
 
@@ -808,6 +821,12 @@ margin-right: 15px;
      gap: 0px;
     }
 
+    .container-locations select {
+        width: auto;
+        margin-left: 10px;
+    }
+
+ 
     
   
 }
@@ -818,8 +837,9 @@ margin-right: 15px;
     .container-locations h1 {
         font-size: 28px;
     }
+
    
-  
+    .container-locations .summary p,
     .container-locations .locations .card1 p,
     .container-locations .show-all .locations-all .card1 p{
         font-size: 16px;
