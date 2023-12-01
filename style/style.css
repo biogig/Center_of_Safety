@@ -217,9 +217,7 @@
 
 }
 
-/* .container-locations .show-all .locations-all .card1 {
-    margin-bottom: 31px;
-} */
+
 
 .container-locations .locations .card1 {
     text-align: center;
@@ -301,7 +299,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 35px auto;
+    margin: 0 auto;
+    margin-top: 45px;
     padding: 14px 35px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -344,8 +343,6 @@
     /* border: solid rgba(0, 0, 0, 0.1) 1px;
     width: 407px; */
     /* border-radius: 7px; */
-  
-    
 }
 
 /* .custom-popover {
@@ -400,9 +397,11 @@
     line-height: 100.6%; 
     letter-spacing: 0.62px;
     padding-left: 70px;
+    padding-top: 40px;
     padding-bottom: 42px;
     
 }
+
 
 .container-about .center p,
 .container-about .center ul {
@@ -597,6 +596,8 @@ padding-bottom: 20px;
         padding-left: 20px;
     }
 
+    
+
 }
 
 
@@ -647,6 +648,7 @@ padding-bottom: 20px;
             -ms-grid-row-align: center;
             align-self: center;
             padding-left: 0;
+            padding-right: 55px;
     }
 
     .container-about .bottom-about-flex  .map {
@@ -839,7 +841,7 @@ padding-bottom: 20px;
 }
 
 .container-about .map iframe {
-    width: 500px;
+    width: 90vw;
     height: 250px;
 }
 
@@ -1019,11 +1021,7 @@ padding-bottom: 20px;
 
 
 
-.container-about .map iframe {
-        width: 100%;
-        height: 70%;
-        
-    }
+
 
 .container-locations .locations .card1 p {
         font-size: 18px;
