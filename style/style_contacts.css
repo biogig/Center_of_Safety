@@ -366,9 +366,10 @@ text-indent: 70px;
     position: relative;
     left: 800px;
     bottom: 25px;
-    -webkit-box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
-            box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.2);
-
+    -webkit-box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
+   
 }
 
 
@@ -621,9 +622,17 @@ text-indent: 70px;
         gap: 0;
     }
 
+    .container-contacts .info .map {
+        margin-top: 15px;
+    }
+
     .container-contacts .info .address p {
         margin: 0;
         padding: 0;
+    }
+
+    .container-contacts .info .address h2:nth-of-type(2) {
+        padding-top: 15px;
     }
 
     .container-contacts .info .transport .bus,
@@ -645,7 +654,7 @@ text-indent: 70px;
     .container-contacts .info {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 20px;
+       
     }
 
     .container-contacts hr {
@@ -659,11 +668,17 @@ text-indent: 70px;
         padding-top: 90px;
     }
 
+    .container-contacts .info .contacts {
+        margin-top: -10px;
+    }
 
-    .container-contacts .info .contacts .insta .btn {
-        font-size: 15px;
-        width: auto;
-        margin-top: 15px;
+
+    .container-contacts .info .contacts .insta  {
+        padding-bottom: 0;
+    }
+
+    .container-contacts .payment-methods .qr img {
+        left: 200px;
     }
 
 }
@@ -673,6 +688,10 @@ text-indent: 70px;
     .container-contacts .rules h3 {
         padding-bottom: 10px;
         margin-bottom: 0;
+    }
+
+    .container-contacts .payment-methods .qr img {
+        left: 150px;
     }
 
  
@@ -695,7 +714,9 @@ text-indent: 70px;
         font-size: 28px;
     }
 
-  
+    .container-contacts .payment-methods .qr img {
+        left: 100px;
+    }
    
 }
   
