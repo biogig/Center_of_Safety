@@ -361,11 +361,12 @@ text-align: justify;
 text-indent: 70px;
 }
 
+
+
 .container-contacts .payment-methods .qr img {
-    width: 140px;
-    position: relative;
-    left: 800px;
-    bottom: 25px;
+    width: 200px;
+    display: block;
+    margin: 15px auto;
     -webkit-box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 -moz-box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
@@ -424,16 +425,10 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
         display: none;
     }
 
-    .container-contacts .payment-methods .qr img {
-        width: 110px;
- 
-        left: 430px;
-        bottom: 0;
-        top: 10px;
-    }
+
 
     .container-contacts .payment-methods .urlica {
-        margin-top: 30px;
+        
         display: inline-block;
     }
 
@@ -507,6 +502,11 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
         justify-items: center;
     } */
 
+    .container-contacts .payment-methods .qr img {
+        width: 150px;
+        margin: 10px auto; 
+    }
+
     .container-contacts  .info .transport .metro  {
         flex-wrap: wrap;
         padding-left: 5px;
@@ -539,9 +539,6 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 @media screen and (max-width: 900px) {
 
 
-    .container-contacts .payment-methods .qr img {
-        left: 360px;
-    }
 
     .container-contacts .info {
         grid-template-columns: 1fr; 
@@ -601,7 +598,8 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 
 
     .container-contacts .payment-methods .qr img {
-        left: 280px;
+        width: 120px;
+        margin: 10px auto; 
     }
 
 }
@@ -614,9 +612,7 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 @media screen and (max-width: 600px) {
 
 
-    .container-contacts .payment-methods .qr img {
-        left: 220px;
-    }
+ 
 
     .container-contacts .info {
         gap: 0;
@@ -677,9 +673,6 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
         padding-bottom: 0;
     }
 
-    .container-contacts .payment-methods .qr img {
-        left: 200px;
-    }
 
 }
 
@@ -690,9 +683,6 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
         margin-bottom: 0;
     }
 
-    .container-contacts .payment-methods .qr img {
-        left: 150px;
-    }
 
  
   } 
@@ -714,9 +704,6 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
         font-size: 28px;
     }
 
-    .container-contacts .payment-methods .qr img {
-        left: 100px;
-    }
-   
+
 }
   
