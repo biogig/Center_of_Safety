@@ -210,6 +210,19 @@ table {
     color: #F4F6FF;
 }
 
+
+.container-contacts .info .contacts  h2,
+.container-contacts .info .address  h2 {
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.container-contacts .info .transport  h2 {
+    padding-bottom: 12px;
+    margin: 0;
+    letter-spacing: 0pt;
+}
+
 .container-contacts .info .transport .bus p,
 .container-contacts .info .transport .tram p {
     
@@ -456,14 +469,16 @@ text-indent: 70px;
     .container-contacts .info .address h2,
     .container-contacts .info .contacts  h2
                                         {
-       padding: 0;
-       margin: 0;
+       padding-bottom: 5px;
+
+       
     }
 
     .container-contacts .info .contacts .insta .btn {
         font-size: 15px;
         width: auto;
-        margin-top: 15px;
+        justify-self: center;
+       
     }
 
     .container-contacts .rules h3 {
@@ -484,15 +499,16 @@ text-indent: 70px;
         grid-template-rows: 1fr 1fr;
     }
 
-    .container-contacts .info .map {
+    /* .container-contacts .info .map {
         grid-row: 2;
         grid-column: 1/span3;
         width: 90vw;
         justify-items: center;
-    }
+    } */
 
     .container-contacts  .info .transport .metro  {
         flex-wrap: wrap;
+        padding-left: 5px;
     }
 
    
@@ -522,17 +538,23 @@ text-indent: 70px;
 @media screen and (max-width: 900px) {
 
 
-
     .container-contacts .payment-methods .qr img {
         left: 360px;
     }
 
     .container-contacts .info {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr; 
         gap: 10px;
         padding-left: 20px;
         padding-right: 20px; 
+        padding-top: 0;
     }
+/* 
+    .container-contacts .info .map {
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        justify-items: center;
+    } */
 
     .container-contacts h1 {
         font-size: 52px;
@@ -540,15 +562,10 @@ text-indent: 70px;
     }
 
     .container-contacts hr {
-        margin: 20px;
+        margin: 5px;
     }
 
-    .container-contacts .info .map {
-        grid-row: 2;
-        grid-column: 1 / span 3;
-        /* justify-items: center; */
-        
-    }
+  
 
     .container-contacts .rules ol {
         padding-left: 40px;

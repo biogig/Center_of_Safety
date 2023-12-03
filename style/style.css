@@ -1097,10 +1097,30 @@ padding-bottom: 20px;
 }
     
 .container-carusel .swiper .swiper-slide .text {
-        bottom: 400px;
-        right: 60px;
+        bottom: 640px;
+        right: 30px;
+}
+
+.container-carusel .swiper .swiper-button-next,
+.container-carusel .swiper .swiper-button-prev{
+     --swiper-navigation-size: 17px;
+     margin-bottom: 10px;
 }
     
+}
+
+@media screen and (max-width: 380px) {
+
+    .container-carusel .swiper .swiper-slide .text {
+        bottom: 720px;
+        right: 30px;
+}
+
+.container-carusel .swiper .swiper-button-next,
+.container-carusel .swiper .swiper-button-prev{
+     --swiper-navigation-size: 17px;
+     margin-bottom: 10px;
+}
 }
   
 
@@ -1113,5 +1133,6 @@ padding-bottom: 20px;
     .container-about .bottom-about-flex .MultiCollapse{
         padding-left: 0;
 }
+
 
 }
