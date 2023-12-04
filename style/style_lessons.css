@@ -303,27 +303,46 @@ font-weight: 800;
     width: 100%;
     color: black;
     margin-top: -42px;
+    font-family: Manrope;
    
    
   }
 
   td:nth-of-type(1){
     height: auto;
-     border-left: none;
-    border-right: none;
-    border-top: 1px solid #F4F6FF ;
+    font-family: Manrope;
   }
 
-  #DaysOfWeek{
-    display: none;
+  tr:nth-of-type(1) {
+    font-weight: 700;
+    font-family: Manrope;
   }
+
+  
+  tr:nth-of-type(2),
+  tr:nth-of-type(3),
+  tr:nth-of-type(4),
+  tr:nth-of-type(5),
+  tr:nth-of-type(6),
+  tr:nth-of-type(7) {
+    height: 140px;
+    font-family: Manrope;
+  }
+
   
   td {
-    height: 140px;
+    font-family: Manrope;
     text-align: center;
     vertical-align: middle;
-    font-size: 32px;
+    font-size: 39px;
     width: 14.28571429%;
+  }
+
+  td.today {
+    font-weight: 800;
+    color: #28283b;
+    font-size: 44px;
+    vertical-align: middle;
   }
 
   
@@ -338,12 +357,7 @@ font-weight: 800;
     
   }
 
-  td.today {
-    font-weight: 800;
-    color: #28283b;
-    font-size: 20px;
-    vertical-align: middle;
-  }
+  
 
   #btnPrev,
   #btnNext {
@@ -493,10 +507,24 @@ font-weight: 800;
         padding-top: 60px;
     }
 
-    td {
+    tr:nth-of-type(2),
+    tr:nth-of-type(3),
+    tr:nth-of-type(4),
+    tr:nth-of-type(5),
+    tr:nth-of-type(6),
+    tr:nth-of-type(7) {
         height: 100px;
-        font-size: 24px;
+        font-size: 21px;
       }
+
+        
+  td {
+    font-size: 30px;
+  }
+
+  td.today {
+    font-size: 20px;
+  }
 }
 
 
@@ -533,8 +561,22 @@ font-weight: 800;
     }
 
     
-    td {
+    tr:nth-of-type(2),
+    tr:nth-of-type(3),
+    tr:nth-of-type(4),
+    tr:nth-of-type(5),
+    tr:nth-of-type(6),
+    tr:nth-of-type(7) {
         height: 80px;
+        font-size: 20px;
+       
+      }
+
+      td {
+        font-size: 20px;
+      }
+    
+      td.today {
         font-size: 20px;
       }
 }
@@ -603,6 +645,25 @@ font-weight: 800;
         font-size: 12px;
         text-align: start;
     }
+
+    tr:nth-of-type(2),
+    tr:nth-of-type(3),
+    tr:nth-of-type(4),
+    tr:nth-of-type(5),
+    tr:nth-of-type(6),
+    tr:nth-of-type(7) {
+        height: 50px;
+        font-size: 20px;
+       
+      }
+
+      td {
+        font-size: 14px;
+      }
+    
+      td.today {
+        font-size: 14px;
+      }
    
 }
   
