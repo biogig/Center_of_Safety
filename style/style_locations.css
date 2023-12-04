@@ -286,11 +286,7 @@ margin-bottom: 30px;
 .modal .modal-content {
     background-color: #F4F6FF;
     border-radius: 0;
-
-
-  
 }
-
 
 .modal .modal-content label {
     margin: 0;
@@ -328,18 +324,13 @@ margin-bottom: 30px;
     margin-left: 71px;
 }
 
-
-
 .container-locations .locations .card1 .modal .modal-content{
     width: 100%;
 }
 
-.container-locations .locations .card1 .modal .modal-content .modal-body
-
-{background-color: #F4F6FF;
-
+.container-locations .locations .card1 .modal .modal-content .modal-body{
+    background-color: #F4F6FF;
 }
-
 
 .container-locations .locations .card1 .modal .modal-footer .about_location p {
     padding-top: 25px;
@@ -382,7 +373,6 @@ margin-right: 15px;
 }
 
 .modal .btn-close{
-
     --bs-btn-close-focus-shadow: 0;
 }
 
@@ -399,8 +389,7 @@ margin-right: 15px;
 .container-locations .locations .cards-wiper-style .modal-body  .swiper {
       width: 100%;
       height: 100%;
-      
-    }
+}
 
 .container-locations .locations .cards-wiper-style .modal-body  .swiper-slide {
       text-align: center;
@@ -530,20 +519,19 @@ margin-right: 15px;
     
 
 
-   
-
 }
 
 
 @media screen and (max-width: 1300px) {
     
-
     .container-locations .summary {
         margin: 0;
         padding: 15px 40px;
     }
 
-  
+    .container-locations h1 {
+        padding-top: 30px;
+    }
 
     .container-locations .locations, 
     .container-locations .show-all .locations-all {
@@ -552,8 +540,6 @@ margin-right: 15px;
         padding-left: 40px;
         padding-right: 40px;
     }
-
-
 
     .container-locations .locations .card1,
     .container-locations .show-all .locations-all .card1 {
@@ -574,14 +560,11 @@ margin-right: 15px;
        height: auto;
     }
 
-  
-
 }
 
 
 @media screen and (max-width: 1200px) {
     
-
     .container-locations .locations .card1 h5,
     .container-locations .show-all .locations-all .card1 h5 {
         font-size: 27px;
@@ -590,6 +573,15 @@ margin-right: 15px;
     .container-locations .locations .card1 p,
     .container-locations .show-all .locations-all .card1 p {
         font-size: 16px;
+    }
+
+    /* .container-locations .locations .card1 .modal .modal-content {
+        width: 100vw;
+        height: 100vh;
+    } */
+
+    .modal-xl {
+        --bs-modal-width: 1840px;
     }
 }
 
@@ -620,23 +612,19 @@ margin-right: 15px;
         padding-top: 25px;
     }
     
-
-
-
 }
-
-
 
 @media screen and (max-width: 900px) {
 
     .container-locations h1 {
         font-size: 48px;
         margin-top: 20px;
-        padding-left: 20px;
+        padding-left: 40px;
     }
 
     .container-locations .summary {
-        padding-left: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 .container-locations .locations, 
@@ -650,7 +638,6 @@ margin-right: 15px;
        
     }
 
-
 .container-locations .locations .card1:nth-last-of-type(3) {
        display: none;
     }
@@ -661,39 +648,22 @@ margin-right: 15px;
     padding-right: 20px;
 }
 
-    
-
 }
-
 
 @media screen and (max-width: 750px) {
    
-
-
     .container-locations .info {
         gap: 120px;
-       
     }
 
     .container-navigation header .menu .tour {
         margin-left: 0px;
     }
 
-
-    .container-locations .summary 
-    {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     .container-locations h1 {
         font-size: 40px;
+        padding-top: 20px;
     }
-
-    
-.container-locations {
-    padding-top: 70px;
-}
 
 } 
 
@@ -702,13 +672,9 @@ margin-right: 15px;
 
 @media screen and (max-width: 700px) {
 
-
-
 .container-locations .info {
     gap: 100px;
-   
 }
-
 
 .container-locations .info h2 a {
     font-size: 40px;
@@ -731,11 +697,12 @@ margin-right: 15px;
 
 }
 
-
 @media screen and (max-width: 600px) {
 
     .container-locations h1 {
         font-size: 32px;
+        padding-top: 10px;
+        margin-top: 0;
     }
 
 .container-locations .locations .card1 p,
@@ -752,8 +719,6 @@ margin-right: 15px;
     padding-top: 15px;
 }
 
-
-
 .container-locations .summary{
         font-size: 16px;
 
@@ -763,19 +728,12 @@ margin-right: 15px;
       
         margin: 10px;
     }
-.container-locations h1 {
-        font-size: 38px;
-        padding-top: 10px;
-    }
-
    
-      }
+}
 
 
 
 @media screen and (max-width: 500px) {
-
-    
 
     .container-locations .locations, 
     .container-locations .show-all .locations-all {
@@ -789,7 +747,6 @@ margin-right: 15px;
         font-size: 16px;
     }
 
-
     .container-locations .info {
         gap: 50px;
     }
@@ -798,17 +755,11 @@ margin-right: 15px;
         font-size: 30px;
     }
 
-    
-
     .container-locations .locations .card1 p,
     .container-locations .show-all .locations-all .card1 p {
       
         margin-bottom: 10px;
     }
-
-    
-
-   
 
     .container-locations .locations .card1,
     .container-locations .show-all .locations-all .card1 {
@@ -826,25 +777,24 @@ margin-right: 15px;
         margin-left: 10px;
     }
 
- 
-    
-  
-}
-
-
-@media screen and (max-width: 400px) {
-
     .container-locations h1 {
         font-size: 28px;
     }
+  
+}
 
-   
+@media screen and (max-width: 400px) {
+
     .container-locations .summary p,
     .container-locations .locations .card1 p,
     .container-locations .show-all .locations-all .card1 p{
         font-size: 16px;
     }
-    
-   
 }
   
+@media screen and (max-width: 350px) {
+    .container-locations h1 {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+}
