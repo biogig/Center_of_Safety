@@ -320,10 +320,8 @@ table {
 }
 
 .container-contacts .price-list .table {
-
-  
     border-collapse: collapse;
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
     font-weight: normal;
     font-size: 22px;
@@ -410,10 +408,7 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 
 @media screen and (max-width: 1140px){
     .container-contacts .info {
-        grid-template-columns: repeat( auto-fill, 1fr);
-        /* grid-template-columns: 1fr; */
-        /* justify-items: start; */
-        
+        grid-template-columns: repeat( auto-fill, 1fr);    
     }
 
     .container-contacts .info .address,
@@ -422,15 +417,17 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
     }
     
     .container-contacts .price-list {
-        display: none;
+        /* display: none; */
+
     }
 
-
-
-    .container-contacts .payment-methods .urlica {
-        
-        display: inline-block;
+    .container-contacts .price-list h3,
+    .container-contacts .payment-methods h3,
+    .container-contacts .rules h3 {
+        padding-bottom: 10px;
     }
+
+    
 
     .container-contacts .info .transport .bus p,
     .container-contacts .info .transport .mini-bus p,
@@ -463,11 +460,9 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
     .container-contacts .info .contacts  p,
     .container-contacts .info .transport  h2,
     .container-contacts .info .address h2,
-    .container-contacts .info .contacts  h2
-                                        {
-       padding-bottom: 5px;
+    .container-contacts .info .contacts  h2{
 
-       
+       padding-bottom: 5px; 
     }
 
     .container-contacts .info .contacts .insta .btn {
@@ -477,9 +472,7 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
        
     }
 
-    .container-contacts .rules h3 {
-        padding-bottom: 20px;
-    }
+   
 
     .container-contacts hr {
         margin-bottom: 15px;
@@ -492,15 +485,12 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 @media screen and (max-width: 1060px){
     .container-contacts .info {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
-    /* .container-contacts .info .map {
-        grid-row: 2;
-        grid-column: 1/span3;
-        width: 90vw;
-        justify-items: center;
-    } */
+    .container-contacts .info .transport .mini-bus {
+        flex-wrap: wrap;
+    }
+
 
     .container-contacts .payment-methods .qr img {
         width: 150px;
@@ -525,11 +515,21 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
     }
 
     .container-contacts .rules h3,
-    .container-contacts .payment-methods h3 {
-        padding-bottom: 20px;
+    .container-contacts .payment-methods h3,
+    .container-contacts .price-list h3 {
         font-size: 24px;
-        margin-bottom: 0;
     }
+
+    .container-contacts .price-list .table {
+        font-size: 18px;
+    }
+
+    .container-contacts .price-list h3,
+    .container-contacts .payment-methods h3,
+    .container-contacts .rules h3 {
+        padding-bottom: 10px;
+    }
+
   
 
 }
@@ -547,12 +547,6 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
         padding-right: 20px; 
         padding-top: 0;
     }
-/* 
-    .container-contacts .info .map {
-        grid-row: 2;
-        grid-column: 1 / span 3;
-        justify-items: center;
-    } */
 
     .container-contacts h1 {
         font-size: 52px;
@@ -562,8 +556,6 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
     .container-contacts hr {
         margin: 5px;
     }
-
-  
 
     .container-contacts .rules ol {
         padding-left: 40px;
@@ -579,10 +571,6 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
     .container-contacts .rules ol li{
        padding-bottom: 10px;
     }
-
-
-
-
 }
 
 
@@ -606,13 +594,7 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
 
 
 
-
-
-
 @media screen and (max-width: 600px) {
-
-
- 
 
     .container-contacts .info {
         gap: 0;
@@ -665,12 +647,21 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
     }
 
     .container-contacts .info .contacts {
-        margin-top: -10px;
+        margin-top: 15px;
     }
 
 
     .container-contacts .info .contacts .insta  {
         padding-bottom: 0;
+    }
+
+    .container-contacts .price-list .table {
+        font-size: 16px;
+    }
+
+    .container-contacts .price-list .table td,
+    .container-contacts .price-list .table th {
+        padding: 0;
     }
 
 
@@ -704,6 +695,97 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
         font-size: 28px;
     }
 
+    .container-contacts .price-list .table {
+        font-size: 12px;
+    }
 
+    .container-contacts .rules h3,
+    .container-contacts .payment-methods h3,
+    .container-contacts .price-list h3 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container-contacts .info .transport .mini-bus,
+    .container-contacts .info .transport .bus,
+    .container-contacts .info .transport .tram {
+        flex-wrap: wrap;
+    }
+
+    .container-contacts .info .transport .mini-bus img,
+    .container-contacts .info .transport .bus img,
+    .container-contacts .info .transport .tram img,
+    .container-contacts .info .transport .metro img {
+        width: 23px;
+        height: 23px;
+        align-items: center;
+    }
+
+    .container-contacts .info .transport .mini-bus img,
+    .container-contacts .info .transport .bus img,
+    .container-contacts .info .transport .tram img {
+        margin-top: 4px;
+        margin-right: 2px;
+    }
+
+
+    .container-contacts .info .transport .bus p
+    {
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 12px;
+        width: auto;
+        padding: 8px;
+    }
+
+    .container-contacts .info .transport .mini-bus p {
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 12px;
+        width: auto;
+        padding: 8px 6px;
+    }
+
+    .container-contacts .info .transport .metro p {
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .container-contacts .info .transport .tram p {
+        margin-right: 2px;
+        margin-left: 2px;
+        font-size: 12px;
+        width: auto;
+        padding: 8px 12px;
+    }
+
+    .container-contacts .info .contacts .insta .btn {
+        font-size: 12px;
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container-contacts .info .contacts .insta .btn img {
+        padding-left: 0;
+        height: 15px;
+    }
+
+    .container-contacts .info .address p,
+    .container-contacts .info .contacts  p,
+    .container-contacts .info .transport  h2,
+    .container-contacts .info .address h2,
+    .container-contacts .info .contacts  h2
+                                        {
+      font-size: 16px;
+    }
+
+    .container-contacts .info .contacts a {
+        font-size: 16px;
+    }
+
+   
 }
   

@@ -1007,10 +1007,7 @@ padding-bottom: 20px;
         font-size: 30px;
 }
 
-.container-about .map iframe {
-        width: 90vw;
-        height: 15vh; 
-}
+
   
 .container-about .MultiCollapse{
           padding-top: 0;
@@ -1072,7 +1069,7 @@ padding-bottom: 20px;
 
 .container-about .map iframe {
         width: 90vw;
-        height: 10vh;
+        height: 25vh;
         margin-bottom: 15px;      
 }
 
