@@ -337,7 +337,7 @@ margin-bottom: 30px;
     padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 35px;
-    text-indent: 50px;
+    text-indent: 40px;
     color: var(--, #030823);
     font-family: Manrope;
     font-size: 18px;
@@ -674,6 +674,8 @@ border-radius: 0;
      margin-left: 30px;
 
     }
+
+    
  
      .container-locations .locations .card1 .modal .modal-body .col-4 p {
          font-size: 14px;
@@ -694,6 +696,7 @@ border-radius: 0;
          padding-right: 0;
          padding-bottom: 0;
          margin-bottom: 0;
+         text-indent: 30px;
      }
  
      .container-locations .locations .card1 .modal .modal-footer .btn {
