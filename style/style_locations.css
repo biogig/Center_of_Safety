@@ -412,6 +412,14 @@ margin-right: 15px;
 .container-locations .locations .cards-wiper-style .modal-body .mySwiper4 
 .swiper-slide img,
 .container-locations .locations .cards-wiper-style .modal-body .mySwiper6 
+.swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper8 
+.swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper10 
+.swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper12 
+.swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper14 
 .swiper-slide img{
       display: block;
       width: 100%;
@@ -427,7 +435,11 @@ margin-right: 15px;
 
 .container-locations .locations .cards-wiper-style .modal-body .mySwiper .swiper-slide img,
 .container-locations .locations .cards-wiper-style .modal-body .mySwiper3 .swiper-slide img,
-.container-locations .locations .cards-wiper-style .modal-body .mySwiper5 .swiper-slide img {
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper5 .swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper7 .swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper9 .swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper11 .swiper-slide img,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper13 .swiper-slide img {
         display: block;
         width: 100%;
         height: 110px;
@@ -461,14 +473,22 @@ margin-right: 15px;
 
 .container-locations .locations .cards-wiper-style .modal-body.mySwiper2,
 .container-locations .locations .cards-wiper-style .modal-body.mySwiper4,
-.container-locations .locations .cards-wiper-style .modal-body.mySwiper6 {
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper6,
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper8,
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper10,
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper12,
+.container-locations .locations .cards-wiper-style .modal-body.mySwiper14 {
       height: 100%;
       width: 100%;
     }
 
 .container-locations .locations .cards-wiper-style .modal-body .mySwiper,
 .container-locations .locations .cards-wiper-style .modal-body .mySwiper3,
-.container-locations .locations .cards-wiper-style .modal-body .mySwiper5 {
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper5,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper7,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper9,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper11,
+.container-locations .locations .cards-wiper-style .modal-body .mySwiper13  {
       height: 20%;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -477,7 +497,11 @@ margin-right: 15px;
 
 .container-locations .locations .cards-wiper-style .modal-body  .mySwiper .swiper-slide,
 .container-locations .locations .cards-wiper-style .modal-body  .mySwiper3 .swiper-slide,
-.container-locations .locations .cards-wiper-style .modal-body  .mySwiper5 .swiper-slide {
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper5 .swiper-slide,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper7 .swiper-slide,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper9 .swiper-slide,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper11 .swiper-slide,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper13 .swiper-slide {
       width: 100%;
       height: 100%;
       opacity: 0.4;
@@ -485,7 +509,11 @@ margin-right: 15px;
 
 .container-locations .locations .cards-wiper-style .modal-body  .mySwiper .swiper-slide-thumb-active,
 .container-locations .locations .cards-wiper-style .modal-body  .mySwiper3 .swiper-slide-thumb-active,
-.container-locations .locations .cards-wiper-style .modal-body  .mySwiper5 .swiper-slide-thumb-active {
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper5 .swiper-slide-thumb-active,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper7 .swiper-slide-thumb-active,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper9 .swiper-slide-thumb-active,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper11 .swiper-slide-thumb-active,
+.container-locations .locations .cards-wiper-style .modal-body  .mySwiper13 .swiper-slide-thumb-active {
       opacity: 1;
     }
 

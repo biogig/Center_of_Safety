@@ -653,7 +653,8 @@ box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
     }
 
     .container-contacts .price-list .table {
-        font-size: 16px;
+        font-size: 13px;
+        width: 95%;
     }
 
     .container-contacts .price-list .table td,

@@ -1131,5 +1131,10 @@ padding-bottom: 20px;
         padding-left: 0;
 }
 
+.container-carusel .swiper .swiper-slide .text {
+    bottom: 800px;
+    right: 30px;
+}
+
 
 }
