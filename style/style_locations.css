@@ -344,6 +344,7 @@ margin-bottom: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 122.222%;
+    text-align: justify;
 }
 
 .container-locations .locations .card1 .modal .modal-body .col-4 p {
@@ -353,6 +354,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 110%;
+text-align: justify;
 }
 
 .container-locations .locations .card1 .modal .modal-footer .btn {
@@ -365,6 +367,7 @@ font-weight: 400;
 line-height: 122.222%;
 height: 40px;
 margin-right: 15px;
+border-radius: 0;
 }
 
 .container-locations .locations .card1 .modal .modal-footer .btn:hover {
@@ -572,7 +575,6 @@ margin-right: 15px;
     .container-locations .locations .card1,
     .container-locations .show-all .locations-all .card1 {
         width: auto;
-       
         text-align: center;
     }
 
@@ -586,6 +588,7 @@ margin-right: 15px;
     .container-locations .show-all .locations-all .card1 img{
         width: 100%;
        height: auto;
+        
     }
 
 }
@@ -603,14 +606,37 @@ margin-right: 15px;
         font-size: 16px;
     }
 
-    /* .container-locations .locations .card1 .modal .modal-content {
-        width: 100vw;
-        height: 100vh;
-    } */
+ 
 
     .modal-xl {
         --bs-modal-width: 1840px;
     }
+
+  
+
+   .modal h2,
+   .modal h3 {
+    font-size: 40px;
+   }
+
+    .container-locations .locations .card1 .modal .modal-body .col-4 p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .container-locations .locations .card1 .modal .modal-footer .about_location p {
+        font-size: 14px;
+        padding-top: 10px;
+        text-align: justify;
+    }
+
+    .container-locations .locations .card1 .modal .modal-footer .btn {
+        font-size: 14px;
+        width: 10%;
+    }
+
+    
+    
 }
 
 
@@ -639,14 +665,69 @@ margin-right: 15px;
     .container-locations .locations {
         padding-top: 25px;
     }
+
+
+    .modal h2,
+    .modal h3 {
+     font-size: 30px;
+     margin-top: 0;
+     margin-left: 30px;
+
+    }
+ 
+     .container-locations .locations .card1 .modal .modal-body .col-4 p {
+         font-size: 14px;
+         text-align: justify;
+         padding-left: 0;
+         padding-right: 0;
+         display: block;
+         height: auto;
+         
+     }
+ 
+     .container-locations .locations .card1 .modal .modal-footer .about_location p {
+         font-size: 12px;
+         padding-top: 10px;
+         display: block;
+         height: auto;
+         padding-left: 0;
+         padding-right: 0;
+         padding-bottom: 0;
+         margin-bottom: 0;
+     }
+ 
+     .container-locations .locations .card1 .modal .modal-footer .btn {
+         font-size: 14px;
+         width: 100px !important; 
+     }
+
+     .container-locations .locations .card1 .modal .swiper-button-next:after,
+     .container-locations .locations .card1 .modal  .swiper-button-prev:after 
+      {
+         font-size: 30px;
+     }
+     
+     .container-locations .locations .card1 .modal .modal-content {
+         height: 100%;   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+     }
+/* 
+     .container-locations .locations .card1 .modal .modal-footer {
+        height: fit-content;
+     } */
     
+}
+
+@media screen and (max-width: 992px) {
+    .container-locations .locations .card1 .modal .modal-content {
+        width: 100vw;   
+        margin-right: 500px;
+    }
 }
 
 @media screen and (max-width: 900px) {
 
     .container-locations h1 {
         font-size: 48px;
-        margin-top: 20px;
         padding-left: 40px;
     }
 
@@ -690,8 +771,39 @@ margin-right: 15px;
 
     .container-locations h1 {
         font-size: 40px;
-        padding-top: 20px;
     }
+
+    .container-locations {
+        padding-top: 100px;
+    }
+
+    .modal h2,
+    .modal h3 {
+     font-size: 24px;
+    }
+ 
+     .container-locations .locations .card1 .modal .modal-body .col-4 p {
+         font-size: 12px;
+         
+     }
+ 
+     .container-locations .locations .card1 .modal .modal-footer .about_location p {
+         font-size: 10px;
+     }
+ 
+     .container-locations .locations .card1 .modal .modal-footer .btn {
+         font-size: 12px;
+         width: 10%;
+     }
+
+     .modal .modal-header,
+     .modal .modal-footer {
+        padding: 10px;
+     }
+
+
+     
+    
 
 } 
 
@@ -723,13 +835,25 @@ margin-right: 15px;
     font-size: 16px;
 }
 
+.modal .modal-body {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.modal .col-8 {
+    padding-left: 10px !important;
+}
+
+.modal h2 {
+    margin-bottom: 10px;
+}
+
 }
 
 @media screen and (max-width: 600px) {
 
     .container-locations h1 {
         font-size: 32px;
-        padding-top: 10px;
         margin-top: 0;
     }
 
@@ -755,6 +879,10 @@ margin-right: 15px;
 .container-locations hr {
       
         margin: 10px;
+    }
+
+    .container-locations {
+        padding-top: 70px;
     }
    
 }
@@ -808,7 +936,39 @@ margin-right: 15px;
     .container-locations h1 {
         font-size: 28px;
     }
-  
+
+    .container-locations .locations .card1 .modal .modal-body .col-4 p {
+        display: none;
+    }
+
+    .container-locations .locations .card1 .modal .col-8 {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .container-locations .locations .card1 .modal .swiper-button-next:after,
+    .container-locations .locations .card1 .modal  .swiper-button-prev:after 
+     {
+        font-size: 22px;
+    }
+
+    .modal h2,
+    .modal h3 {
+     margin-bottom: 4px;
+     font-size: 18px;
+    }
+
+    .modal .btn-close {
+        width: 10px;
+    }
+
+    .container-locations .locations .card1 .modal .modal-footer .btn {
+        font-size: 10px;
+        height: 20px;
+        margin-top: 10px;
+        border-radius: 0;
+    }
+    
 }
 
 @media screen and (max-width: 400px) {
