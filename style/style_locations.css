@@ -347,6 +347,11 @@ margin-bottom: 30px;
     text-align: justify;
 }
 
+.container-locations .locations .card1 .modal .modal-body .col-4 {
+    padding: 0;
+    padding-right: 10px;
+}
+
 .container-locations .locations .card1 .modal .modal-body .col-4 p {
     color: var(--, #030823);
 font-family: Manrope;
@@ -355,6 +360,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 110%;
 text-align: justify;
+padding: 0;
 }
 
 .container-locations .locations .card1 .modal .modal-footer .btn {
@@ -367,7 +373,7 @@ font-weight: 400;
 line-height: 122.222%;
 height: 40px;
 margin-right: 15px;
-border-radius: 0;
+border-radius: 3px;
 }
 
 .container-locations .locations .card1 .modal .modal-footer .btn:hover {
@@ -703,6 +709,7 @@ border-radius: 0;
          font-size: 14px;
          width: 100px !important; 
          height: 30px;
+         margin-top: 0px;
      }
 
      .container-locations .locations .card1 .modal .swiper-button-next:after,
@@ -722,10 +729,9 @@ border-radius: 0;
 }
 
 @media screen and (max-width: 992px) {
-    .container-locations .locations .card1 .modal .modal-content {
+    /* .container-locations .locations .card1 .modal .modal-content {
         width: 100vw;   
-        margin-right: 500px;
-    }
+    } */
 }
 
 @media screen and (max-width: 900px) {
@@ -759,6 +765,12 @@ border-radius: 0;
 .container-locations .summary p {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.container-locations .locations .card1 .modal .swiper-button-next:after,
+.container-locations .locations .card1 .modal  .swiper-button-prev:after 
+ {
+    font-size: 24px;
 }
 
 }
@@ -971,7 +983,7 @@ border-radius: 0;
         font-size: 10px;
         height: 20px;
         margin-top: 10px;
-        border-radius: 0;
+        border-radius: 3px;
         margin: 0 auto;
         display: block;
         margin-top: 5px;
