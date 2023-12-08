@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тесты</title>
+    <link rel="shortcut icon" href="./images/emblem.png" type="images/png">
+    <link rel="stylesheet" href="./style/style_tests.css">
+    <link rel="stylesheet" href="./style/header_footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <div class="wrapper">
+         <!-- HEADER -->
+    <section class="container-navigation center">
+      <header class="center">
+         <div class="emblem"> 
+         <a href="./index.html" title="На главную"><img alt="emblem" src="./images/emblem.png"></a> 
+          <form class="language">
+              <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                  <option><a href="#" title="Русский">RU</a></option>
+                  <option value="./indexEN.html"><a href="#" title="Английский">EN</a></option>
+              </select>
+      </form>
+         </div>
+          <nav class="menu">
+              <ul class="m-0">
+                  <li class="menu-item">
+                    <a href="./index.html" title="Главная">
+                      Главная</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./locations.html" title="Площадки">
+                      Площадки
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./lessons.html" title="Занятия">
+                      Занятия
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./404.html" title="Тесты">
+                      Тесты
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./404.html" title="О центре">
+                      О центре
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="./contacts.html" title="Контакты">
+                      Контакты
+                    </a>
+                  </li>
+                  <li class="tour animate__animated animate__zoomIn animate__delay-1s">
+                    <a href="https://center.ucp.by/virtual/">
+                      3D-тур
+                    </a>
+                  </li>
+                  <li class="close" id="close-btn">
+                    ⨉
+                  </li>
+              </ul>
+              <div class="burger p-0">
+                <img class="p-0" src="images/burger.svg" alt="burger">
+            </div>
+          </nav>
+      </header>
+  </section>
+
+  <!--LOCATIONS-->
+
+  <section class="container-locations">
+    <div class="center">
+    <h1>Каталог образовательных площадок</h1>
+    <p class="summary">В центре представлено более 36 интерактивных обучающих площадок, кторые направлены на изучение основных правил 
+        и техник безопасности. Каждая площадка имеет несколько тренажеров, в которых представлены новые технологии, такие как VR, дополненная реальность, датчики движения, интерактивные сценарии и т.д.  </p>
+        <hr>
+       
+            
+
+        <div class="locations">
+
+
+          <div class="test-card">
+                
+                <h5>Лесные пожары</h5>
+                <p>Обучающая площадка предназначена для
+                  отработки навыка безопасного перехода проезжей части по пешеходному переходу.</p>
+                <p>Обучающая площадка предназначена для
+                    отработки навыка безопасного перехода проезжей части по пешеходному переходу.</p>
+                <p>Обучающая площадка предназначена для
+                      отработки навыка безопасного перехода проезжей части по пешеходному переходу.</p>
+                <button type="button" class="about-btn btn p-0 mt border-0" data-bs-toggle="modal" data-bs-target="#road">Больше информации</button>
+              </div>
+    </div>
+
+
+
+
+
+   
+  
+<!--FOOTER-->
+<section class="container-footer">
+  <footer class="center">
+  <div class="geraldika">
+  <div class="ucp"> 
+      <a target="_blank" href="https://ucp.by/" title="Сайт УГЗ"><img class="emblem" alt="emblem" src="./images/ucp-emblem.png">
+     <p>УНИВЕРСИТЕТ<br> ГРАЖДАНСКОЙ<br> ЗАЩИТЫ</p></a>
+  </div>
+ <div class="slider">
+<div class="slide-track">
+<div class="slide">
+<img src="./images/emblem.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/ucp-emblem.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/ippk.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/bdpo.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/nii.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/min_aduk.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/bsuir.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/medik.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/emblem.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/ucp-emblem.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/ippk.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/bdpo.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/nii.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/min_aduk.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/bsuir.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/medik.png" height="110"  alt="emblem">
+</div>
+  <div class="slide">
+<img src="./images/emblem.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/ucp-emblem.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/ippk.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/bdpo.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/nii.png" height="110" alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/min_aduk.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/bsuir.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/medik.png" height="110"  alt="emblem">
+</div>
+<div class="slide">
+<img src="./images/emblem.png" height="110" alt="emblem">
+</div>
+</div>
+</div>
+</div>
+<div class="info">
+      <div class="contacts">
+          <h6 id="contacts">Контакты:</h6>
+          <ul class="m-0">
+          <li>
+            <a href="tel:80172697060" title="Городской">
+              8 (017) 269 - 70 - 60
+            </a>
+          </li>
+          <li>
+            <a href="tel:80448040054" title="Мобильный Life">
+              8 (029) 804 - 00 - 54
+            </a>
+          </li>
+          <li>
+            <a href="mailto:cb@ucp.by" title="Почта">
+              cb@ucp.by
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/centr_bezopasnosti_minsk/" title="Наш Инстаграмм">
+              Instagram
+            </a>
+          </li>
+          </ul>
+      </div>
+      <div class="menu"> 
+          <h6>Сылки:</h6> 
+          <ul class="m-0">
+              <li>
+                <a href="./locations.html" title="Площадки">
+                  Площадки
+                </a>
+              </li>
+              <li>
+                <a href="./lessons.html" title="Занятия">
+                  Занятия
+                </a>
+              </li>
+              <li>
+                <a href="./404.html" title="Тесты">
+                  Тесты
+                </a>
+              </li>
+              <li>
+                <a href="./404.html" title="О центре">
+                  О центре
+                </a>
+              </li>
+              <li>
+                <a href="./contacts.html" title="Контакты">
+                  Контакты
+                </a>
+              </li>
+          </ul>
+      </div>
+      <div class="payments">
+          <h6>Платежные системы:</h6>
+          <ul class="m-0">
+              <li>
+                <img alt="mastercard" src="./images/mastercard.svg">
+              </li>
+              <li>
+                <img alt="visa" src="./images/visa.svg">
+              </li>
+              <li>
+                <img alt="maestro" src="./images/maestro.svg">
+              </li>
+          </ul>
+      </div>
+      <div class="up">
+        <a href="#" title="В начало">
+          <img class="arrow" alt="arrow" src="./images/arrow.svg">
+        </a>
+      </div>
+  </div>
+  </footer>
+  
+  <div class="ucp-bottom">
+    <p>Образовательный центр безопасноти <br> Университет гражданоской защиты МЧС Республики Беларусь</p>
+  </div>
+</section>
+</div>
+<script src="./js/wow.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+<!-- SWIPER Slider -->
+
+<!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 5,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper3", {
+      loop: true,
+      spaceBetween: 5,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper4", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },  
+    });
+</script>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper5", {
+      loop: true,
+      spaceBetween: 5,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper6", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+</script> -->
+
+
+
+  <!-- ОБЩИЙ ДЛЯ ВСЕХ <script>
+    function swipe(class1, class2) {
+      var swiper = new Swiper(class1, {
+        loop: true,
+        spaceBetween: 5,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(class2, {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    }
+    window.addEventListener('load', () => {
+      swipe(".mySwiper", ".mySwiper");
+    });
+</script> -->
+
+
+
+<!-- all location hide -->
+
+<script> 
+   document.getElementById('all-locations').onclick = function() {
+      document.getElementById('all-locations').hidden = true;
+    }
+</script>
+
+
+<!-- <script>
+  var el = document.getElementById("div-02");
+el.remove();  // Удалит элемент div с идентификатором 'div-02'
+</script> -->
+
+<script src="./js/script.js"></script>
+<script src="./js/swiper-locations.js"></script>
+</body>
+</html>
+

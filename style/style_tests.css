@@ -1,0 +1,195 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***WRAPPER***/
+
+
+.wrapper {
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto; 
+}
+
+.center {
+   max-width: 1440px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+
+
+
+
+
+
+/***CONTAINER LOCATIONS***/
+
+.container-locations {
+    padding-top: 100px;
+    background-color: #F4F6FF;
+    padding-bottom: 55px;
+}
+
+
+.container-locations h1 {
+    color:  #030823;
+    font-family: Oswald;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 100.6%; /* 62.372px */
+    letter-spacing: 0.62px;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+.container-locations .summary {
+    color:  #030823;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 116.667%;
+    letter-spacing: -0.18px;
+    margin: 55px 132px 55px 132px;
+    text-align: justify;
+}
+
+.container-locations select {
+    background-color: #F4F6FF;
+    border: 0;
+    margin-left: 70px;
+    outline: none;
+    width: 250px;
+}
+
+
+
+.container-locations .show-all .all-locations
+{
+    color: #030823;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 122.222%;
+    width: 267px;
+    height: 52px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 7px;
+    display: block;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 35px auto;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    padding: 14px 35px;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
+.container-locations .show-all .all-locations:hover {
+    background-color: #030823;
+    color: #F4F6FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-locations .show-all .locations-all {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 407px 31px 407px 31px 407px;
+    grid-template-columns: 407px 407px 407px;
+    -webkit-column-gap: 31px;
+       -moz-column-gap: 31px;
+            column-gap: 31px;
+}
+
+
+.container-locations .locations,
+.container-locations .show-all .all-locations .locations-all  {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 407px 31px 407px 31px 407px;
+    grid-template-columns: 407px 407px 407px;
+    -webkit-column-gap: 31px;
+       -moz-column-gap: 31px;
+            column-gap: 31px;
+
+}

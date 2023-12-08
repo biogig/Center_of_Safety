@@ -360,7 +360,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 110%;
 text-align: justify;
-padding: 0;
+padding: 0 20px;
 }
 
 .container-locations .locations .card1 .modal .modal-footer .btn {
@@ -628,6 +628,7 @@ border-radius: 3px;
     .container-locations .locations .card1 .modal .modal-body .col-4 p {
         font-size: 16px;
         text-align: justify;
+        padding: 0 15px;
     }
 
     .container-locations .locations .card1 .modal .modal-footer .about_location p {
@@ -709,7 +710,7 @@ border-radius: 3px;
          font-size: 14px;
          width: 100px !important; 
          height: 30px;
-         margin-top: 0px;
+         margin-top: 20px;
      }
 
      .container-locations .locations .card1 .modal .swiper-button-next:after,
