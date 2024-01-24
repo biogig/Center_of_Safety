@@ -205,6 +205,11 @@ table {
 text-align: left;
 margin-bottom: 30px;
 
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+
+
 }
 
 .container-locations .locations-all .card1,
@@ -223,6 +228,9 @@ margin-bottom: 30px;
     height: 270px;
     padding: 15px;
     border-radius: 19px;
+    
+   flex-grow: 2;
+    
 }
 
 .container-locations .locations .card1 h5,
@@ -267,6 +275,8 @@ margin-bottom: 30px;
     padding-bottom: 40px;
     text-decoration: none;
     margin-bottom: 40px;
+
+    
 }
 
 
@@ -960,7 +970,7 @@ border-radius: 3px;
 
     .container-locations .locations .card1 .modal .col-8 {
         width: 100%;
-        padding-right: 20px;
+        
     }
 
     .container-locations .locations .card1 .modal .swiper-button-next:after,

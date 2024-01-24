@@ -120,6 +120,7 @@
     padding-bottom: 8px; 
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 11px;
     
 }
 
@@ -514,6 +515,7 @@
 
 .container-footer .geraldika .ucp p {
     font-size: 20px;
+    padding-top: 29px;
 }
 
 .container-footer .geraldika .ucp img {
@@ -526,12 +528,16 @@
     padding-top: 25px;
 }
 
-.container-footer footer .info .up {
+/* .container-footer footer .info .up {
     padding: 0;
     
-}
+} */
 .container-footer footer .info .up img {
     height: 50px;
+}
+
+.container-footer .geraldika .slider {
+    margin-top: 60px;
 }
 
 .slider .slide {
@@ -547,6 +553,8 @@
 .container-navigation header .menu ul {
     gap: 30px;
 }
+
+
 
 .container-footer .ucp-bottom {
     font-size: 8px;
